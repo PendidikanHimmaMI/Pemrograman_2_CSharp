@@ -7,3 +7,13 @@ F:\WorkTools_RentalPS\ProjekBesarPendidikan\ProjekBesarPendidikan\obj\Debug\Proj
 F:\WorkTools_RentalPS\ProjekBesarPendidikan\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.csproj.CoreCompileInputs.cache
 F:\WorkTools_RentalPS\ProjekBesarPendidikan\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.exe
 F:\WorkTools_RentalPS\ProjekBesarPendidikan\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.pdb
+C:\Users\Dell\Source\Repos\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\ProjekBesarPendidikan.exe.config
+C:\Users\Dell\Source\Repos\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\ProjekBesarPendidikan.exe
+C:\Users\Dell\Source\Repos\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\ProjekBesarPendidikan.pdb
+C:\Users\Dell\Source\Repos\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.csproj.AssemblyReference.cache
+C:\Users\Dell\Source\Repos\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Properties.Resources.resources
+C:\Users\Dell\Source\Repos\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.csproj.GenerateResource.cache
+C:\Users\Dell\Source\Repos\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Source\Repos\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.exe
+C:\Users\Dell\Source\Repos\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.pdb
+C:\Users\Dell\Source\Repos\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Login.resources
