@@ -1,0 +1,9 @@
+F:\WorkTools_RentalPS\ProjekBesarPendidikan\ProjekBesarPendidikan\bin\Debug\ProjekBesarPendidikan.exe.config
+F:\WorkTools_RentalPS\ProjekBesarPendidikan\ProjekBesarPendidikan\bin\Debug\ProjekBesarPendidikan.exe
+F:\WorkTools_RentalPS\ProjekBesarPendidikan\ProjekBesarPendidikan\bin\Debug\ProjekBesarPendidikan.pdb
+F:\WorkTools_RentalPS\ProjekBesarPendidikan\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.csproj.AssemblyReference.cache
+F:\WorkTools_RentalPS\ProjekBesarPendidikan\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Properties.Resources.resources
+F:\WorkTools_RentalPS\ProjekBesarPendidikan\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.csproj.GenerateResource.cache
+F:\WorkTools_RentalPS\ProjekBesarPendidikan\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.csproj.CoreCompileInputs.cache
+F:\WorkTools_RentalPS\ProjekBesarPendidikan\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.exe
+F:\WorkTools_RentalPS\ProjekBesarPendidikan\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.pdb
