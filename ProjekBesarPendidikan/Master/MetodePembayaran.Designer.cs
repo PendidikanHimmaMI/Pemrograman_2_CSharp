@@ -3,7 +3,7 @@ using System;
 using System.Windows.Forms;
 
 namespace ProjekBesarPendidikan {
-    partial class MetodePembayaran {
+    partial class MetodePembayaranCreate {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -28,64 +28,71 @@ namespace ProjekBesarPendidikan {
         /// </summary>
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txt_Search = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_add = new Guna.UI2.WinForms.Guna2Button();
             this.p_Filter = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.btn_clearF = new Guna.UI2.WinForms.Guna2Button();
             this.label13 = new System.Windows.Forms.Label();
             this.cb_SortType = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btn_Filter = new Guna.UI2.WinForms.Guna2Button();
-            this.Gpnl_Produk_Data = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.Gpnl_Data = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.timer_filter = new System.Windows.Forms.Timer(this.components);
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.dgv_MetodePembayaran = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.p_Filter.SuspendLayout();
+            this.Gpnl_Data.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_MetodePembayaran)).BeginInit();
             this.SuspendLayout();
             // 
             // txt_Search
             // 
-            this.txt_Search.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txt_Search.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_Search.BackColor = System.Drawing.Color.Transparent;
-            this.txt_Search.BorderRadius = 10;
+            this.txt_Search.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
+            this.txt_Search.BorderRadius = 20;
+            this.txt_Search.BorderThickness = 4;
             this.txt_Search.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_Search.DefaultText = "";
             this.txt_Search.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txt_Search.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txt_Search.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_Search.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_Search.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(59)))), ((int)(((byte)(80)))));
             this.txt_Search.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Search.Font = new System.Drawing.Font("Segoe UI", 15.75F);
-            this.txt_Search.ForeColor = System.Drawing.Color.White;
+            this.txt_Search.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
+            this.txt_Search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.txt_Search.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_Search.IconRightOffset = new System.Drawing.Point(10, 0);
             this.txt_Search.IconRightSize = new System.Drawing.Size(30, 30);
-            this.txt_Search.Location = new System.Drawing.Point(483, 38);
+            this.txt_Search.Location = new System.Drawing.Point(210, 38);
             this.txt_Search.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txt_Search.Name = "txt_Search";
-            this.txt_Search.PlaceholderForeColor = System.Drawing.Color.White;
-            this.txt_Search.PlaceholderText = "Search by name...";
+            this.txt_Search.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
+            this.txt_Search.PlaceholderText = "Cari...";
             this.txt_Search.SelectedText = "";
-            this.txt_Search.Size = new System.Drawing.Size(511, 46);
+            this.txt_Search.ShortcutsEnabled = false;
+            this.txt_Search.Size = new System.Drawing.Size(730, 46);
             this.txt_Search.TabIndex = 0;
             this.txt_Search.IconRightClick += new System.EventHandler(this.txt_Search_IconRightClick);
             this.txt_Search.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Search_KeyPress);
             // 
             // guna2CustomGradientPanel1
             // 
-            this.guna2CustomGradientPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.guna2CustomGradientPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2CustomGradientPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.guna2CustomGradientPanel1.BackColor = System.Drawing.Color.White;
             this.guna2CustomGradientPanel1.BorderRadius = 10;
             this.guna2CustomGradientPanel1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2Button1);
+            this.guna2CustomGradientPanel1.Controls.Add(this.btn_add);
             this.guna2CustomGradientPanel1.Controls.Add(this.p_Filter);
             this.guna2CustomGradientPanel1.Controls.Add(this.btn_Filter);
-            this.guna2CustomGradientPanel1.Controls.Add(this.Gpnl_Produk_Data);
+            this.guna2CustomGradientPanel1.Controls.Add(this.Gpnl_Data);
             this.guna2CustomGradientPanel1.Controls.Add(this.txt_Search);
             this.guna2CustomGradientPanel1.CustomizableEdges.BottomLeft = false;
             this.guna2CustomGradientPanel1.CustomizableEdges.BottomRight = false;
@@ -94,24 +101,26 @@ namespace ProjekBesarPendidikan {
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1180, 678);
             this.guna2CustomGradientPanel1.TabIndex = 1;
             // 
-            // guna2Button1
+            // btn_add
             // 
-            this.guna2Button1.BackColor = System.Drawing.Color.White;
-            this.guna2Button1.BorderRadius = 6;
-            this.guna2Button1.BorderThickness = 3;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.White;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.ImageOffset = new System.Drawing.Point(-4, 0);
-            this.guna2Button1.Location = new System.Drawing.Point(22, 38);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(130, 46);
-            this.guna2Button1.TabIndex = 10;
-            this.guna2Button1.Text = "Filter";
+            this.btn_add.BackColor = System.Drawing.Color.White;
+            this.btn_add.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
+            this.btn_add.BorderRadius = 20;
+            this.btn_add.BorderThickness = 4;
+            this.btn_add.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_add.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_add.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_add.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_add.FillColor = System.Drawing.Color.White;
+            this.btn_add.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_add.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
+            this.btn_add.ImageOffset = new System.Drawing.Point(-4, 0);
+            this.btn_add.Location = new System.Drawing.Point(22, 38);
+            this.btn_add.Name = "btn_add";
+            this.btn_add.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
+            this.btn_add.Size = new System.Drawing.Size(180, 46);
+            this.btn_add.TabIndex = 10;
+            this.btn_add.Text = "Tambah Data";
             // 
             // p_Filter
             // 
@@ -183,68 +192,105 @@ namespace ProjekBesarPendidikan {
             // 
             this.btn_Filter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Filter.BackColor = System.Drawing.Color.White;
-            this.btn_Filter.BorderRadius = 6;
-            this.btn_Filter.BorderThickness = 3;
+            this.btn_Filter.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
+            this.btn_Filter.BorderRadius = 20;
+            this.btn_Filter.BorderThickness = 4;
             this.btn_Filter.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_Filter.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_Filter.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_Filter.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_Filter.FillColor = System.Drawing.Color.White;
             this.btn_Filter.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Filter.ForeColor = System.Drawing.Color.Black;
+            this.btn_Filter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.btn_Filter.ImageOffset = new System.Drawing.Point(-4, 0);
-            this.btn_Filter.Location = new System.Drawing.Point(1015, 38);
+            this.btn_Filter.Location = new System.Drawing.Point(948, 38);
             this.btn_Filter.Name = "btn_Filter";
-            this.btn_Filter.Size = new System.Drawing.Size(130, 46);
+            this.btn_Filter.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
+            this.btn_Filter.Size = new System.Drawing.Size(197, 46);
             this.btn_Filter.TabIndex = 8;
-            this.btn_Filter.Text = "Filter";
+            this.btn_Filter.Text = "Sort & Filter";
+            this.btn_Filter.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Filter.Click += new System.EventHandler(this.btn_Filter_Click);
             // 
-            // Gpnl_Produk_Data
+            // Gpnl_Data
             // 
-            this.Gpnl_Produk_Data.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.Gpnl_Data.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Gpnl_Produk_Data.BackColor = System.Drawing.Color.White;
-            this.Gpnl_Produk_Data.BorderRadius = 6;
-            this.Gpnl_Produk_Data.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(107)))), ((int)(((byte)(135)))));
-            this.Gpnl_Produk_Data.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(107)))), ((int)(((byte)(135)))));
-            this.Gpnl_Produk_Data.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(107)))), ((int)(((byte)(135)))));
-            this.Gpnl_Produk_Data.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(107)))), ((int)(((byte)(135)))));
-            this.Gpnl_Produk_Data.Location = new System.Drawing.Point(22, 116);
-            this.Gpnl_Produk_Data.Name = "Gpnl_Produk_Data";
-            this.Gpnl_Produk_Data.Size = new System.Drawing.Size(1123, 529);
-            this.Gpnl_Produk_Data.TabIndex = 1;
+            this.Gpnl_Data.BackColor = System.Drawing.Color.White;
+            this.Gpnl_Data.BorderRadius = 6;
+            this.Gpnl_Data.Controls.Add(this.dgv_MetodePembayaran);
+            this.Gpnl_Data.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
+            this.Gpnl_Data.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
+            this.Gpnl_Data.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
+            this.Gpnl_Data.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
+            this.Gpnl_Data.Location = new System.Drawing.Point(22, 116);
+            this.Gpnl_Data.Name = "Gpnl_Data";
+            this.Gpnl_Data.Size = new System.Drawing.Size(1142, 546);
+            this.Gpnl_Data.TabIndex = 1;
             // 
             // timer_filter
             // 
             this.timer_filter.Interval = 1;
             this.timer_filter.Tick += new System.EventHandler(this.timer_filter_Tick);
             // 
-            // guna2TextBox1
+            // dgv_MetodePembayaran
             // 
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(716, 32);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(200, 36);
-            this.guna2TextBox1.TabIndex = 2;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgv_MetodePembayaran.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgv_MetodePembayaran.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
+            | System.Windows.Forms.AnchorStyles.Right)));
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_MetodePembayaran.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgv_MetodePembayaran.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_MetodePembayaran.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgv_MetodePembayaran.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgv_MetodePembayaran.Location = new System.Drawing.Point(17, 15);
+            this.dgv_MetodePembayaran.Name = "dgv_MetodePembayaran";
+            this.dgv_MetodePembayaran.RowHeadersVisible = false;
+            this.dgv_MetodePembayaran.Size = new System.Drawing.Size(1106, 515);
+            this.dgv_MetodePembayaran.TabIndex = 0;
+            this.dgv_MetodePembayaran.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgv_MetodePembayaran.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dgv_MetodePembayaran.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dgv_MetodePembayaran.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dgv_MetodePembayaran.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dgv_MetodePembayaran.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dgv_MetodePembayaran.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgv_MetodePembayaran.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dgv_MetodePembayaran.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgv_MetodePembayaran.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgv_MetodePembayaran.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgv_MetodePembayaran.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_MetodePembayaran.ThemeStyle.HeaderStyle.Height = 4;
+            this.dgv_MetodePembayaran.ThemeStyle.ReadOnly = false;
+            this.dgv_MetodePembayaran.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgv_MetodePembayaran.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgv_MetodePembayaran.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgv_MetodePembayaran.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgv_MetodePembayaran.ThemeStyle.RowsStyle.Height = 22;
+            this.dgv_MetodePembayaran.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgv_MetodePembayaran.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
             // MetodePembayaran
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1200, 800);
-            this.Controls.Add(this.guna2TextBox1);
             this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Enabled = false;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -255,6 +301,8 @@ namespace ProjekBesarPendidikan {
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             this.p_Filter.ResumeLayout(false);
             this.p_Filter.PerformLayout();
+            this.Gpnl_Data.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_MetodePembayaran)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -299,8 +347,8 @@ namespace ProjekBesarPendidikan {
         private Guna.UI2.WinForms.Guna2Button btn_Filter;
         private System.Windows.Forms.Timer timer_filter;
         private Guna.UI2.WinForms.Guna2Button btn_clearF;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2CustomGradientPanel Gpnl_Produk_Data;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2Button btn_add;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel Gpnl_Data;
+        private Guna.UI2.WinForms.Guna2DataGridView dgv_MetodePembayaran;
     }
 }

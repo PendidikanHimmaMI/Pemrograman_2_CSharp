@@ -23,7 +23,6 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashboardAdmin));
             this.MenuDash = new System.Windows.Forms.Panel();
             this.flp_Menu = new System.Windows.Forms.FlowLayoutPanel();
@@ -37,19 +36,20 @@
             this.lb_Welcome = new System.Windows.Forms.Label();
             this.L_Name = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.time_EButton = new System.Windows.Forms.Timer(this.components);
             this.pnl_filForm = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txt_ActiveUser = new Guna.UI2.WinForms.Guna2TextBox();
             this.MenuDash.SuspendLayout();
             this.flp_Menu.SuspendLayout();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // MenuDash
             // 
             this.MenuDash.AutoSize = true;
-            this.MenuDash.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(59)))), ((int)(((byte)(80)))));
+            this.MenuDash.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.MenuDash.Controls.Add(this.flp_Menu);
             this.MenuDash.Controls.Add(this.guna2GradientPanel1);
             this.MenuDash.Controls.Add(this.pictureBox1);
@@ -81,7 +81,7 @@
             this.btn_Beranda.DisabledState.CustomBorderColor = System.Drawing.Color.IndianRed;
             this.btn_Beranda.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_Beranda.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Beranda.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(59)))), ((int)(((byte)(80)))));
+            this.btn_Beranda.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.btn_Beranda.Font = new System.Drawing.Font("Segoe UI", 15.75F);
             this.btn_Beranda.ForeColor = System.Drawing.Color.White;
             this.btn_Beranda.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -101,7 +101,7 @@
             this.btn_PS.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_PS.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_PS.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_PS.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(59)))), ((int)(((byte)(80)))));
+            this.btn_PS.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.btn_PS.Font = new System.Drawing.Font("Segoe UI", 15.75F);
             this.btn_PS.ForeColor = System.Drawing.Color.White;
             this.btn_PS.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -123,7 +123,7 @@
             this.btn_JenisPS.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_JenisPS.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_JenisPS.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_JenisPS.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(59)))), ((int)(((byte)(80)))));
+            this.btn_JenisPS.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.btn_JenisPS.Font = new System.Drawing.Font("Segoe UI", 15.75F);
             this.btn_JenisPS.ForeColor = System.Drawing.Color.White;
             this.btn_JenisPS.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -146,7 +146,7 @@
             this.btn_Karyawan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_Karyawan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_Karyawan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Karyawan.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(59)))), ((int)(((byte)(80)))));
+            this.btn_Karyawan.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.btn_Karyawan.Font = new System.Drawing.Font("Segoe UI", 15.75F);
             this.btn_Karyawan.ForeColor = System.Drawing.Color.White;
             this.btn_Karyawan.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -165,7 +165,7 @@
             this.btn_MetodePembayaran.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_MetodePembayaran.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_MetodePembayaran.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_MetodePembayaran.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(59)))), ((int)(((byte)(80)))));
+            this.btn_MetodePembayaran.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.btn_MetodePembayaran.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_MetodePembayaran.ForeColor = System.Drawing.Color.White;
             this.btn_MetodePembayaran.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -184,7 +184,7 @@
             this.btn_Logout.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_Logout.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_Logout.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Logout.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(59)))), ((int)(((byte)(80)))));
+            this.btn_Logout.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.btn_Logout.Font = new System.Drawing.Font("Segoe UI", 15.75F);
             this.btn_Logout.ForeColor = System.Drawing.Color.White;
             this.btn_Logout.Image = ((System.Drawing.Image)(resources.GetObject("btn_Logout.Image")));
@@ -256,11 +256,40 @@
             // 
             this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel1.Controls.Add(this.txt_ActiveUser);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(287, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1163, 85);
             this.panel1.TabIndex = 2;
+            // 
+            // txt_ActiveUser
+            // 
+            this.txt_ActiveUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_ActiveUser.BorderColor = System.Drawing.Color.White;
+            this.txt_ActiveUser.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_ActiveUser.DefaultText = "Admin";
+            this.txt_ActiveUser.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_ActiveUser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_ActiveUser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_ActiveUser.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_ActiveUser.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_ActiveUser.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.txt_ActiveUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
+            this.txt_ActiveUser.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_ActiveUser.IconLeftSize = new System.Drawing.Size(40, 40);
+            this.txt_ActiveUser.IconRight = global::ProjekBesarPendidikan.Properties.Resources.user;
+            this.txt_ActiveUser.IconRightSize = new System.Drawing.Size(40, 40);
+            this.txt_ActiveUser.Location = new System.Drawing.Point(895, 12);
+            this.txt_ActiveUser.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.txt_ActiveUser.Name = "txt_ActiveUser";
+            this.txt_ActiveUser.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
+            this.txt_ActiveUser.PlaceholderText = "";
+            this.txt_ActiveUser.ReadOnly = true;
+            this.txt_ActiveUser.SelectedText = "";
+            this.txt_ActiveUser.Size = new System.Drawing.Size(233, 62);
+            this.txt_ActiveUser.TabIndex = 3;
             // 
             // DashboardAdmin
             // 
@@ -280,6 +309,7 @@
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -296,11 +326,11 @@
         private Guna.UI2.WinForms.Guna2Button btn_Beranda;
         private Guna.UI2.WinForms.Guna2Button btn_JenisPS;
         private Guna.UI2.WinForms.Guna2Button btn_MetodePembayaran;
-        private System.Windows.Forms.Timer time_EButton;
-        private System.Windows.Forms.Panel pnl_filForm;
         private Guna.UI2.WinForms.Guna2Button btn_Logout;
         private Guna.UI2.WinForms.Guna2Button btn_Karyawan;
         private Guna.UI2.WinForms.Guna2Button btn_PS;
         private System.Windows.Forms.Panel panel1;
+        private Guna.UI2.WinForms.Guna2TextBox txt_ActiveUser;
+        public System.Windows.Forms.Panel pnl_filForm;
     }
 }

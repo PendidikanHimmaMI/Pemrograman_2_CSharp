@@ -40,8 +40,6 @@ namespace ProjekBesarPendidikan {
             pnl_filForm.Tag = form;
             form.Show();
             form.Enabled = true;
-            GC.Collect();
-            GC.WaitForPendingFinalizers();
         }
 
         private void btn_CheckedChanged_Padding(object sender, EventArgs e) {
@@ -57,7 +55,7 @@ namespace ProjekBesarPendidikan {
         }
 
         private void btn_Beranda_Click(object sender, EventArgs e) {
-            ShowFormInPanel(new MetodePembayaran(), (Guna2Button)sender);
+            ShowFormInPanel(new MetodePembayaranCreate(this), (Guna2Button)sender);
         }
 
         private void btn_Logout_Click(object sender, EventArgs e) {

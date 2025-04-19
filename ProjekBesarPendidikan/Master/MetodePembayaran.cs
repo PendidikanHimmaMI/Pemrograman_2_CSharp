@@ -1,23 +1,26 @@
 ﻿using CustomMessageBox;
+using Guna.UI2.WinForms;
 using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
+using System.Linq;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using ToastNotifications;
 
 namespace ProjekBesarPendidikan{
-    public partial class MetodePembayaran : Form {
+    public partial class MetodePembayaranCreate : Form {
         private Notification toastNotification;
-
-        public MetodePembayaran() {
+        private string Connection = "Server=127.0.0.4,9210;Initial Catalog=Db_RentalPlayStation;TrustServerCertificate=true;user id=Pendidikan;password=123";
+        private DashboardAdmin admin;
+        public MetodePembayaranCreate(DashboardAdmin dashboardAdmin) {
+            admin = dashboardAdmin;
             InitializeComponent();
         }
 
         private void Produk_EnabledChanged(object sender, EventArgs e) {
-            autoId();
             LoadData();
         }
         private void Produk_Load(object sender, EventArgs e) {
@@ -28,9 +31,94 @@ namespace ProjekBesarPendidikan{
         }
 
 
-        private void LoadData() {
-           
+        private void ShowFormInPanel(Form form) {
+            if (admin.pnl_filForm.Tag is Form FormPanel) {
+                Form form1 = (Form)admin.pnl_filForm.Tag;
+                form1.Close();
+                admin.pnl_filForm.Controls.Clear();
+                admin.pnl_filForm.Tag = null;
+            }
+            form.TopLevel = false;
+            form.Dock = DockStyle.Fill;
+            admin.pnl_filForm.Controls.Add(form);
+            admin.pnl_filForm.Tag = form;
+            form.Show();
+            form.Enabled = true;
         }
+
+        private void LoadData(string search = null, string status = null, string sortColumn = "mpb_id", string sortOrder = "ASC") {
+            using (SqlConnection conn = new SqlConnection(Connection)) {
+                try {
+                    conn.Open();
+                    using (SqlCommand cmd = new SqlCommand("rps_getListMetodePembayaran", conn)) {
+                        cmd.CommandType = CommandType.StoredProcedure;
+
+                        cmd.Parameters.AddWithValue("@search", (object)search ?? DBNull.Value);
+                        cmd.Parameters.AddWithValue("@status", (object)status ?? DBNull.Value);
+                        cmd.Parameters.AddWithValue("@sortColumn", sortColumn);
+                        cmd.Parameters.AddWithValue("@sortOrder", sortOrder);
+
+                        SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        adapter.Fill(dt);
+
+                        dgv_MetodePembayaran.DataSource = dt;
+
+                        // Add buttons column only once
+                        // Add buttons only if they don't exist
+                        dgv_MetodePembayaran.CellClick += dgv_MetodePembayaran_CellClick;
+                        bool editExists = dgv_MetodePembayaran.Columns.Cast<DataGridViewColumn>().Any(c => c.Name == "Edit");
+                        bool deleteExists = dgv_MetodePembayaran.Columns.Cast<DataGridViewColumn>().Any(c => c.Name == "Delete");
+
+                        if (!editExists) {
+                            DataGridViewButtonColumn editButton = new DataGridViewButtonColumn();
+                            editButton.Name = "Edit";
+                            editButton.HeaderText = "";
+                            editButton.Text = "Edit";
+                            editButton.UseColumnTextForButtonValue = true;
+                            dgv_MetodePembayaran.Columns.Add(editButton);
+                        }
+
+                        if (!deleteExists) {
+                            DataGridViewButtonColumn deleteButton = new DataGridViewButtonColumn();
+                            deleteButton.Name = "Delete";
+                            deleteButton.HeaderText = "";
+                            deleteButton.Text = "Delete";
+                            deleteButton.UseColumnTextForButtonValue = true;
+                            dgv_MetodePembayaran.Columns.Add(deleteButton);
+                        }
+
+
+                    }
+                } catch (Exception ex) {
+                    MessageBox.Show("Error loading data: " + ex.Message);
+                }
+            }
+        }
+
+        private void dgv_MetodePembayaran_CellClick(object sender, DataGridViewCellEventArgs e) {
+            if (e.RowIndex >= 0) {
+                // Edit Button
+                if (dgv_MetodePembayaran.Columns[e.ColumnIndex].Name == "Edit") {
+                    string id = dgv_MetodePembayaran.Rows[e.RowIndex].Cells["mpb_id"].Value.ToString();
+                    MessageBox.Show("Edit clicked for ID: " + id);
+                    // TODO: Open edit form or logic here
+                }
+
+                // Delete Button
+                else if (dgv_MetodePembayaran.Columns[e.ColumnIndex].Name == "Delete") {
+                    string id = dgv_MetodePembayaran.Rows[e.RowIndex].Cells["mpb_id"].Value.ToString();
+                    DialogResult confirm = MessageBox.Show("Are you sure to delete ID: " + id + "?", "Confirm Delete", MessageBoxButtons.YesNo);
+                    if (confirm == DialogResult.Yes) {
+                        //DeleteData(id);
+                        LoadData(); // Refresh table
+                    }
+                }
+            }
+        }
+
+
+
         private void filter() {
 
         }
