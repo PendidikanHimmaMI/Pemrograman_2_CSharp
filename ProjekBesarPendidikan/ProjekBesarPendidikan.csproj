@@ -205,6 +205,18 @@
     <Compile Include="Master\MetodePembayaran.Designer.cs">
       <DependentUpon>MetodePembayaran.cs</DependentUpon>
     </Compile>
+    <Compile Include="Master\MetodePembayaranCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\MetodePembayaranCreate.Designer.cs">
+      <DependentUpon>MetodePembayaranCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\MetodePembayaranUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\MetodePembayaranUpdate.Designer.cs">
+      <DependentUpon>MetodePembayaranUpdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="DashboardAdmin.resx">
@@ -225,6 +237,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Master\MetodePembayaran.resx">
       <DependentUpon>MetodePembayaran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\MetodePembayaranCreate.resx">
+      <DependentUpon>MetodePembayaranCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\MetodePembayaranUpdate.resx">
+      <DependentUpon>MetodePembayaranUpdate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

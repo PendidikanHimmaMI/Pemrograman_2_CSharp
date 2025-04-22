@@ -234,7 +234,6 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(12, 9);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(272, 76);
@@ -279,7 +278,6 @@
             this.txt_ActiveUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.txt_ActiveUser.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_ActiveUser.IconLeftSize = new System.Drawing.Size(40, 40);
-            this.txt_ActiveUser.IconRight = global::ProjekBesarPendidikan.Properties.Resources.user;
             this.txt_ActiveUser.IconRightSize = new System.Drawing.Size(40, 40);
             this.txt_ActiveUser.Location = new System.Drawing.Point(895, 12);
             this.txt_ActiveUser.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);

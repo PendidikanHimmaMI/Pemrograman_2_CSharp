@@ -55,7 +55,7 @@ namespace ProjekBesarPendidikan {
         }
 
         private void btn_Beranda_Click(object sender, EventArgs e) {
-            ShowFormInPanel(new MetodePembayaranCreate(this), (Guna2Button)sender);
+            ShowFormInPanel(new MetodePembayaran(this), (Guna2Button)sender);
         }
 
         private void btn_Logout_Click(object sender, EventArgs e) {

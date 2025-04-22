@@ -1,5 +1,6 @@
 ﻿using CustomMessageBox;
 using Guna.UI2.WinForms;
+using ProjekBesarPendidikan.Master;
 using System;
 using System.Data;
 using System.Data.SqlClient;
@@ -11,11 +12,11 @@ using System.Windows.Forms;
 using ToastNotifications;
 
 namespace ProjekBesarPendidikan{
-    public partial class MetodePembayaranCreate : Form {
+    public partial class MetodePembayaran : Form {
         private Notification toastNotification;
         private string Connection = "Server=127.0.0.4,9210;Initial Catalog=Db_RentalPlayStation;TrustServerCertificate=true;user id=Pendidikan;password=123";
         private DashboardAdmin admin;
-        public MetodePembayaranCreate(DashboardAdmin dashboardAdmin) {
+        public MetodePembayaran(DashboardAdmin dashboardAdmin) {
             admin = dashboardAdmin;
             InitializeComponent();
         }
@@ -32,12 +33,8 @@ namespace ProjekBesarPendidikan{
 
 
         private void ShowFormInPanel(Form form) {
-            if (admin.pnl_filForm.Tag is Form FormPanel) {
-                Form form1 = (Form)admin.pnl_filForm.Tag;
-                form1.Close();
-                admin.pnl_filForm.Controls.Clear();
-                admin.pnl_filForm.Tag = null;
-            }
+            admin.pnl_filForm.Controls.Clear();
+            admin.pnl_filForm.Tag = null;
             form.TopLevel = false;
             form.Dock = DockStyle.Fill;
             admin.pnl_filForm.Controls.Add(form);
@@ -100,9 +97,12 @@ namespace ProjekBesarPendidikan{
             if (e.RowIndex >= 0) {
                 // Edit Button
                 if (dgv_MetodePembayaran.Columns[e.ColumnIndex].Name == "Edit") {
-                    string id = dgv_MetodePembayaran.Rows[e.RowIndex].Cells["mpb_id"].Value.ToString();
-                    MessageBox.Show("Edit clicked for ID: " + id);
-                    // TODO: Open edit form or logic here
+                    int id = Convert.ToInt32(dgv_MetodePembayaran.Rows[e.RowIndex].Cells["mpb_id"].Value);
+                    string nama = dgv_MetodePembayaran.Rows[e.RowIndex].Cells["mpb_nama"].Value.ToString();
+                    string desc = dgv_MetodePembayaran.Rows[e.RowIndex].Cells["mpb_deskripsi"].Value.ToString();
+                    MessageBox.Show(id+nama+desc);
+                    ShowFormInPanel(new MetodePembayaranUpdate(admin,id,nama,desc));
+
                 }
 
                 // Delete Button
@@ -201,6 +201,10 @@ namespace ProjekBesarPendidikan{
             if (e.KeyChar == (char)Keys.Enter) {
                 filter();
             }
+        }
+
+        private void btn_add_Click(object sender, EventArgs e) {
+            ShowFormInPanel(new MetodePembayaranCreate(admin));
         }
     }
 }

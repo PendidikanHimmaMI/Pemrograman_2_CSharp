@@ -3,7 +3,7 @@ using System;
 using System.Windows.Forms;
 
 namespace ProjekBesarPendidikan {
-    partial class MetodePembayaranCreate {
+    partial class MetodePembayaran {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -40,8 +40,8 @@ namespace ProjekBesarPendidikan {
             this.cb_SortType = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btn_Filter = new Guna.UI2.WinForms.Guna2Button();
             this.Gpnl_Data = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.timer_filter = new System.Windows.Forms.Timer(this.components);
             this.dgv_MetodePembayaran = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.timer_filter = new System.Windows.Forms.Timer(this.components);
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.p_Filter.SuspendLayout();
             this.Gpnl_Data.SuspendLayout();
@@ -121,6 +121,7 @@ namespace ProjekBesarPendidikan {
             this.btn_add.Size = new System.Drawing.Size(180, 46);
             this.btn_add.TabIndex = 10;
             this.btn_add.Text = "Tambah Data";
+            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
             // p_Filter
             // 
@@ -229,11 +230,6 @@ namespace ProjekBesarPendidikan {
             this.Gpnl_Data.Size = new System.Drawing.Size(1142, 546);
             this.Gpnl_Data.TabIndex = 1;
             // 
-            // timer_filter
-            // 
-            this.timer_filter.Interval = 1;
-            this.timer_filter.Tick += new System.EventHandler(this.timer_filter_Tick);
-            // 
             // dgv_MetodePembayaran
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
@@ -249,7 +245,8 @@ namespace ProjekBesarPendidikan {
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgv_MetodePembayaran.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgv_MetodePembayaran.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_MetodePembayaran.ColumnHeadersHeight = 4;
+            this.dgv_MetodePembayaran.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -275,7 +272,7 @@ namespace ProjekBesarPendidikan {
             this.dgv_MetodePembayaran.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgv_MetodePembayaran.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgv_MetodePembayaran.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgv_MetodePembayaran.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_MetodePembayaran.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgv_MetodePembayaran.ThemeStyle.HeaderStyle.Height = 4;
             this.dgv_MetodePembayaran.ThemeStyle.ReadOnly = false;
             this.dgv_MetodePembayaran.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
@@ -286,7 +283,12 @@ namespace ProjekBesarPendidikan {
             this.dgv_MetodePembayaran.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_MetodePembayaran.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // MetodePembayaran
+            // timer_filter
+            // 
+            this.timer_filter.Interval = 1;
+            this.timer_filter.Tick += new System.EventHandler(this.timer_filter_Tick);
+            // 
+            // MetodePembayaranCreate
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
@@ -294,7 +296,7 @@ namespace ProjekBesarPendidikan {
             this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Enabled = false;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "MetodePembayaran";
+            this.Name = "MetodePembayaranCreate";
             this.Text = "Produk";
             this.Load += new System.EventHandler(this.Produk_Load);
             this.EnabledChanged += new System.EventHandler(this.Produk_EnabledChanged);
@@ -306,37 +308,6 @@ namespace ProjekBesarPendidikan {
             this.ResumeLayout(false);
 
         }
-        /*        private void LoadObjectsOnForm() {
-                    // Simulate a delay to mimic loading time
-                    Thread.Sleep(2000); // Adjust the delay time as needed
-                        // 
-                        // txt_Search
-                        // 
-                        this.txt_Search.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-                        this.txt_Search.BackColor = System.Drawing.Color.Transparent;
-                        this.txt_Search.BorderRadius = 10;
-                        this.txt_Search.Cursor = System.Windows.Forms.Cursors.IBeam;
-                        this.txt_Search.DefaultText = "";
-                        this.txt_Search.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-                        this.txt_Search.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-                        this.txt_Search.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-                        this.txt_Search.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-                        this.txt_Search.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(59)))), ((int)(((byte)(80)))));
-                        this.txt_Search.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-                        this.txt_Search.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-                        this.txt_Search.ForeColor = System.Drawing.Color.White;
-                        this.txt_Search.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-                        this.txt_Search.Location = new System.Drawing.Point(22, 38);
-                        this.txt_Search.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-                        this.txt_Search.NameDiscount = "txt_Search";
-                        this.txt_Search.PasswordChar = '\0';
-                        this.txt_Search.PlaceholderForeColor = System.Drawing.Color.White;
-                        this.txt_Search.PlaceholderText = "Search...";
-                        this.txt_Search.SelectedText = "";
-                        this.txt_Search.Size = new System.Drawing.Size(649, 46);
-                        this.txt_Search.TabIndex = 0;
-                }*/
 
         #endregion
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
