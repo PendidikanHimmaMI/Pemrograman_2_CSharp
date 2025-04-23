@@ -22,6 +22,7 @@ namespace ProjekBesarPendidikan{
         public MetodePembayaran(DashboardAdmin dashboardAdmin) {
             admin = dashboardAdmin;
             InitializeComponent();
+            dgv_MetodePembayaran.CellClick += dgv_MetodePembayaran_CellClick;
         }
 
         private void Produk_EnabledChanged(object sender, EventArgs e) {
@@ -107,7 +108,6 @@ namespace ProjekBesarPendidikan{
 
                         // Add buttons column only once
                         // Add buttons only if they don't exist
-                        dgv_MetodePembayaran.CellClick += dgv_MetodePembayaran_CellClick;
                         bool editExists = dgv_MetodePembayaran.Columns.Cast<DataGridViewColumn>().Any(c => c.Name == "Edit");
                         bool deleteExists = dgv_MetodePembayaran.Columns.Cast<DataGridViewColumn>().Any(c => c.Name == "Delete");
 
@@ -172,8 +172,9 @@ namespace ProjekBesarPendidikan{
                 // Delete Button
                 else if (dgv_MetodePembayaran.Columns[e.ColumnIndex].Name == "Delete") {
                     string id = dgv_MetodePembayaran.Rows[e.RowIndex].Cells["mpb_id"].Value.ToString();
+                    string nama = dgv_MetodePembayaran.Rows[e.RowIndex].Cells["mpb_nama"].Value.ToString();
 
-                    DialogResult confirm = RJMessageBox.Show("ds", "Warning", MessageBoxButtons.YesNo);
+                    DialogResult confirm = RJMessageBox.Show("Are you sure want to delete "+ nama, "Warning", MessageBoxButtons.YesNo);
                     if (confirm == DialogResult.Yes) {
                         ToggleMetodePembayaranStatus(Convert.ToInt32(dgv_MetodePembayaran.Rows[e.RowIndex].Cells["mpb_id"].Value));
                         LoadData(); // Refresh table
