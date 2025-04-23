@@ -2,6 +2,7 @@
 using Guna.UI2.WinForms;
 using ProjekBesarPendidikan.Master;
 using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -16,12 +17,55 @@ namespace ProjekBesarPendidikan{
         private Notification toastNotification;
         private string Connection = "Server=127.0.0.4,9210;Initial Catalog=Db_RentalPlayStation;TrustServerCertificate=true;user id=Pendidikan;password=123";
         private DashboardAdmin admin;
+
+
         public MetodePembayaran(DashboardAdmin dashboardAdmin) {
             admin = dashboardAdmin;
             InitializeComponent();
         }
 
         private void Produk_EnabledChanged(object sender, EventArgs e) {
+
+            var statusItems = new Dictionary<string, string>
+            {
+                { "Aktif", "AKTIF" },
+                { "Tidak Aktif", "NONAKTIF" }
+            };
+
+            cb_SortStatus.DataSource = new BindingSource(statusItems, null);
+            cb_SortStatus.DisplayMember = "Key";
+            cb_SortStatus.ValueMember = "Value";
+            cb_SortStatus.SelectedIndex = 0;
+
+            // Sort Column ComboBox using Dictionary as DataSource
+            var sortColumnItems = new Dictionary<string, string>
+            {
+                { "ID", "mpb_id" },
+                { "Nama", "mpb_nama" },
+                { "Deskripsi", "mpb_deskripsi" },
+                { "Status", "mpb_status" },
+                { "Dibuat Oleh", "mpb_created_by" },
+                { "Tanggal Dibuat", "mpb_created_date" },
+                { "Diubah Oleh", "mpb_modif_by" },
+                { "Tanggal Diubah", "mpb_modif_date" }
+            };
+
+            cb_SortColumn.DataSource = new BindingSource(sortColumnItems, null);
+            cb_SortColumn.DisplayMember = "Key";
+            cb_SortColumn.ValueMember = "Value";
+            cb_SortColumn.SelectedIndex = 0;
+
+            // Sort Order ComboBox using Dictionary as DataSource
+            var sortOrderItems = new Dictionary<string, string>
+            {
+                { "Naik (A-Z)", "ASC" },
+                { "Turun (Z-A)", "DESC" }
+            };
+
+            cb_SortOrder.DataSource = new BindingSource(sortOrderItems, null);
+            cb_SortOrder.DisplayMember = "Key";
+            cb_SortOrder.ValueMember = "Value";
+            cb_SortOrder.SelectedIndex = 0;
             LoadData();
         }
         private void Produk_Load(object sender, EventArgs e) {
@@ -88,10 +132,31 @@ namespace ProjekBesarPendidikan{
 
                     }
                 } catch (Exception ex) {
-                    MessageBox.Show("Error loading data: " + ex.Message);
+                    RJMessageBox.Show("Error loading data: " + ex.Message);
                 }
             }
         }
+        private void ToggleMetodePembayaranStatus(int id) {
+            using (SqlConnection conn = new SqlConnection(Connection)) {
+                try {
+                    conn.Open();
+
+                    using (SqlCommand cmd = new SqlCommand("rps_setStatusMetodePembayaran", conn)) {
+                        cmd.CommandType = CommandType.StoredProcedure;
+
+                        // Add parameter with explicit type
+                        cmd.Parameters.Add(new SqlParameter("@mpb_id", SqlDbType.Int) { Value = id });
+
+                        cmd.ExecuteNonQuery();
+                    }
+                } catch (SqlException sqlEx) {
+                    RJMessageBox.Show("SQL Error: " + sqlEx.Message);
+                } catch (Exception ex) {
+                    RJMessageBox.Show("General Error: " + ex.Message);
+                }
+            }
+        }
+
 
         private void dgv_MetodePembayaran_CellClick(object sender, DataGridViewCellEventArgs e) {
             if (e.RowIndex >= 0) {
@@ -100,7 +165,6 @@ namespace ProjekBesarPendidikan{
                     int id = Convert.ToInt32(dgv_MetodePembayaran.Rows[e.RowIndex].Cells["mpb_id"].Value);
                     string nama = dgv_MetodePembayaran.Rows[e.RowIndex].Cells["mpb_nama"].Value.ToString();
                     string desc = dgv_MetodePembayaran.Rows[e.RowIndex].Cells["mpb_deskripsi"].Value.ToString();
-                    MessageBox.Show(id+nama+desc);
                     ShowFormInPanel(new MetodePembayaranUpdate(admin,id,nama,desc));
 
                 }
@@ -108,9 +172,10 @@ namespace ProjekBesarPendidikan{
                 // Delete Button
                 else if (dgv_MetodePembayaran.Columns[e.ColumnIndex].Name == "Delete") {
                     string id = dgv_MetodePembayaran.Rows[e.RowIndex].Cells["mpb_id"].Value.ToString();
-                    DialogResult confirm = MessageBox.Show("Are you sure to delete ID: " + id + "?", "Confirm Delete", MessageBoxButtons.YesNo);
+
+                    DialogResult confirm = RJMessageBox.Show("ds", "Warning", MessageBoxButtons.YesNo);
                     if (confirm == DialogResult.Yes) {
-                        //DeleteData(id);
+                        ToggleMetodePembayaranStatus(Convert.ToInt32(dgv_MetodePembayaran.Rows[e.RowIndex].Cells["mpb_id"].Value));
                         LoadData(); // Refresh table
                     }
                 }
@@ -141,11 +206,11 @@ namespace ProjekBesarPendidikan{
         bool p_filterExpand = false;
         private void timer_filter_Tick(object sender, EventArgs e) {
             if (!p_filterExpand) {
-                if (p_Filter.Height < 130) {
+                if (p_Filter.Height < 285) {
                     p_Filter.Height += 12;
                     p_Filter.ShadowDecoration.Enabled = true;
                 } else {
-                    p_Filter.Height = 130;
+                    p_Filter.Height = 285;
                     timer_filter.Stop();
                     p_filterExpand = true;
                 }
@@ -167,7 +232,7 @@ namespace ProjekBesarPendidikan{
         }
 
         private void btn_clear_Click(object sender, EventArgs e) {
-            cb_SortType.Text = null;
+            cb_SortColumn.Text = null;
         }
 
         private void txt_Name_KeyPress(object sender, KeyPressEventArgs e) {
@@ -205,6 +270,39 @@ namespace ProjekBesarPendidikan{
 
         private void btn_add_Click(object sender, EventArgs e) {
             ShowFormInPanel(new MetodePembayaranCreate(admin));
+        }
+
+        private void cb_SortStatus_SelectedIndexChanged(object sender, EventArgs e) {
+            ApplyFilters();
+        }
+
+        private void cb_SortColumn_SelectedIndexChanged(object sender, EventArgs e) {
+            ApplyFilters();
+        }
+
+        private void cb_SortOrder_SelectedIndexChanged(object sender, EventArgs e) {
+            ApplyFilters();
+        }
+        private void ApplyFilters() {
+            string search = txt_Search.Text;
+
+            string status = cb_SortStatus.SelectedItem != null
+                ? ((KeyValuePair<string, string>)cb_SortStatus.SelectedItem).Value
+                : null;
+
+            string sortColumn = cb_SortColumn.SelectedItem != null
+                ? ((KeyValuePair<string, string>)cb_SortColumn.SelectedItem).Value
+                : "mpb_id";
+
+            string sortOrder = cb_SortOrder.SelectedItem != null
+                ? ((KeyValuePair<string, string>)cb_SortOrder.SelectedItem).Value
+                : "ASC";
+
+            LoadData(search, status, sortColumn, sortOrder);
+        }
+
+        private void txt_Search_TextChanged(object sender, EventArgs e) {
+            ApplyFilters();
         }
     }
 }

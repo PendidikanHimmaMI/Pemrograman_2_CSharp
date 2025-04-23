@@ -76,39 +76,50 @@
             // 
             // txt_nama
             // 
-            this.txt_nama.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_nama.DefaultText = "";
-            this.txt_nama.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_nama.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_nama.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_nama.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_nama.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_nama.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_nama.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_nama.Location = new System.Drawing.Point(35, 49);
-            this.txt_nama.Name = "txt_nama";
-            this.txt_nama.PlaceholderText = "";
-            this.txt_nama.SelectedText = "";
-            this.txt_nama.Size = new System.Drawing.Size(271, 57);
-            this.txt_nama.TabIndex = 0;
-            // 
-            // txt_deskripsi
-            // 
+            this.txt_deskripsi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
+            this.txt_deskripsi.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
+            this.txt_deskripsi.BorderRadius = 30;
             this.txt_deskripsi.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_deskripsi.DefaultText = "";
             this.txt_deskripsi.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txt_deskripsi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txt_deskripsi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_deskripsi.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_deskripsi.FillColor = System.Drawing.Color.WhiteSmoke;
             this.txt_deskripsi.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_deskripsi.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_deskripsi.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
+            this.txt_deskripsi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.txt_deskripsi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_deskripsi.Location = new System.Drawing.Point(362, 49);
+            this.txt_deskripsi.Multiline = true;
             this.txt_deskripsi.Name = "txt_deskripsi";
             this.txt_deskripsi.PlaceholderText = "";
             this.txt_deskripsi.SelectedText = "";
-            this.txt_deskripsi.Size = new System.Drawing.Size(271, 57);
+            this.txt_deskripsi.Size = new System.Drawing.Size(749, 144);
             this.txt_deskripsi.TabIndex = 1;
+            // 
+            // txt_nama
+            // 
+            this.txt_nama.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
+            this.txt_nama.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
+            this.txt_nama.BorderRadius = 30;
+            this.txt_nama.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_nama.DefaultText = "";
+            this.txt_nama.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_nama.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_nama.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_nama.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_nama.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.txt_nama.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_nama.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
+            this.txt_nama.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
+            this.txt_nama.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_nama.Location = new System.Drawing.Point(35, 49);
+            this.txt_nama.Name = "txt_nama";
+            this.txt_nama.PlaceholderText = "";
+            this.txt_nama.SelectedText = "";
+            this.txt_nama.Size = new System.Drawing.Size(305, 57);
+            this.txt_nama.TabIndex = 0;
             // 
             // btn_back
             // 

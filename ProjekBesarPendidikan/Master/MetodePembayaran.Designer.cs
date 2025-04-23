@@ -35,9 +35,13 @@ namespace ProjekBesarPendidikan {
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.btn_add = new Guna.UI2.WinForms.Guna2Button();
             this.p_Filter = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cb_SortStatus = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cb_SortOrder = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btn_clearF = new Guna.UI2.WinForms.Guna2Button();
             this.label13 = new System.Windows.Forms.Label();
-            this.cb_SortType = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cb_SortColumn = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btn_Filter = new Guna.UI2.WinForms.Guna2Button();
             this.Gpnl_Data = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.dgv_MetodePembayaran = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -50,7 +54,7 @@ namespace ProjekBesarPendidikan {
             // 
             // txt_Search
             // 
-            this.txt_Search.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.txt_Search.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_Search.BackColor = System.Drawing.Color.Transparent;
             this.txt_Search.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
@@ -78,12 +82,13 @@ namespace ProjekBesarPendidikan {
             this.txt_Search.Size = new System.Drawing.Size(730, 46);
             this.txt_Search.TabIndex = 0;
             this.txt_Search.IconRightClick += new System.EventHandler(this.txt_Search_IconRightClick);
+            this.txt_Search.TextChanged += new System.EventHandler(this.txt_Search_TextChanged);
             this.txt_Search.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Search_KeyPress);
             // 
             // guna2CustomGradientPanel1
             // 
-            this.guna2CustomGradientPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.guna2CustomGradientPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2CustomGradientPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.guna2CustomGradientPanel1.BackColor = System.Drawing.Color.White;
@@ -126,17 +131,81 @@ namespace ProjekBesarPendidikan {
             // p_Filter
             // 
             this.p_Filter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.p_Filter.Controls.Add(this.label2);
+            this.p_Filter.Controls.Add(this.cb_SortStatus);
+            this.p_Filter.Controls.Add(this.label1);
+            this.p_Filter.Controls.Add(this.cb_SortOrder);
             this.p_Filter.Controls.Add(this.btn_clearF);
             this.p_Filter.Controls.Add(this.label13);
-            this.p_Filter.Controls.Add(this.cb_SortType);
+            this.p_Filter.Controls.Add(this.cb_SortColumn);
             this.p_Filter.Location = new System.Drawing.Point(933, 89);
-            this.p_Filter.MaximumSize = new System.Drawing.Size(212, 130);
+            this.p_Filter.MaximumSize = new System.Drawing.Size(212, 285);
             this.p_Filter.MinimumSize = new System.Drawing.Size(212, 12);
             this.p_Filter.Name = "p_Filter";
             this.p_Filter.ShadowDecoration.Depth = 15;
             this.p_Filter.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(7);
             this.p_Filter.Size = new System.Drawing.Size(212, 12);
             this.p_Filter.TabIndex = 9;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(29, 13);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(150, 20);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Sorting By Status";
+            // 
+            // cb_SortStatus
+            // 
+            this.cb_SortStatus.BackColor = System.Drawing.Color.White;
+            this.cb_SortStatus.BorderColor = System.Drawing.Color.White;
+            this.cb_SortStatus.BorderRadius = 6;
+            this.cb_SortStatus.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cb_SortStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_SortStatus.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
+            this.cb_SortStatus.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cb_SortStatus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cb_SortStatus.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.cb_SortStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cb_SortStatus.ItemHeight = 30;
+            this.cb_SortStatus.Location = new System.Drawing.Point(29, 42);
+            this.cb_SortStatus.Name = "cb_SortStatus";
+            this.cb_SortStatus.Size = new System.Drawing.Size(158, 36);
+            this.cb_SortStatus.TabIndex = 6;
+            this.cb_SortStatus.SelectedIndexChanged += new System.EventHandler(this.cb_SortStatus_SelectedIndexChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(29, 161);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(109, 20);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Sorting start";
+            // 
+            // cb_SortOrder
+            // 
+            this.cb_SortOrder.BackColor = System.Drawing.Color.White;
+            this.cb_SortOrder.BorderColor = System.Drawing.Color.White;
+            this.cb_SortOrder.BorderRadius = 6;
+            this.cb_SortOrder.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cb_SortOrder.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_SortOrder.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
+            this.cb_SortOrder.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cb_SortOrder.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cb_SortOrder.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.cb_SortOrder.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cb_SortOrder.ItemHeight = 30;
+            this.cb_SortOrder.Location = new System.Drawing.Point(29, 190);
+            this.cb_SortOrder.Name = "cb_SortOrder";
+            this.cb_SortOrder.Size = new System.Drawing.Size(158, 36);
+            this.cb_SortOrder.TabIndex = 4;
+            this.cb_SortOrder.SelectedIndexChanged += new System.EventHandler(this.cb_SortOrder_SelectedIndexChanged);
             // 
             // btn_clearF
             // 
@@ -146,10 +215,10 @@ namespace ProjekBesarPendidikan {
             this.btn_clearF.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_clearF.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_clearF.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_clearF.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(59)))), ((int)(((byte)(80)))));
+            this.btn_clearF.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.btn_clearF.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_clearF.ForeColor = System.Drawing.Color.White;
-            this.btn_clearF.Location = new System.Drawing.Point(26, 87);
+            this.btn_clearF.Location = new System.Drawing.Point(28, 237);
             this.btn_clearF.Name = "btn_clearF";
             this.btn_clearF.Size = new System.Drawing.Size(158, 33);
             this.btn_clearF.TabIndex = 3;
@@ -161,33 +230,30 @@ namespace ProjekBesarPendidikan {
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.White;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(26, 13);
+            this.label13.Location = new System.Drawing.Point(28, 87);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(135, 20);
+            this.label13.Size = new System.Drawing.Size(157, 20);
             this.label13.TabIndex = 2;
-            this.label13.Text = "Sorting By Type";
+            this.label13.Text = "Sorting By Column";
             // 
-            // cb_SortType
+            // cb_SortColumn
             // 
-            this.cb_SortType.BackColor = System.Drawing.Color.White;
-            this.cb_SortType.BorderColor = System.Drawing.Color.White;
-            this.cb_SortType.BorderRadius = 6;
-            this.cb_SortType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cb_SortType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cb_SortType.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(181)))), ((int)(((byte)(203)))));
-            this.cb_SortType.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cb_SortType.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cb_SortType.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.cb_SortType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cb_SortType.ItemHeight = 30;
-            this.cb_SortType.Items.AddRange(new object[] {
-            "ID",
-            "Name",
-            "Min Point"});
-            this.cb_SortType.Location = new System.Drawing.Point(26, 42);
-            this.cb_SortType.Name = "cb_SortType";
-            this.cb_SortType.Size = new System.Drawing.Size(158, 36);
-            this.cb_SortType.TabIndex = 0;
+            this.cb_SortColumn.BackColor = System.Drawing.Color.White;
+            this.cb_SortColumn.BorderColor = System.Drawing.Color.White;
+            this.cb_SortColumn.BorderRadius = 6;
+            this.cb_SortColumn.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cb_SortColumn.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_SortColumn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
+            this.cb_SortColumn.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cb_SortColumn.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cb_SortColumn.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.cb_SortColumn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cb_SortColumn.ItemHeight = 30;
+            this.cb_SortColumn.Location = new System.Drawing.Point(28, 116);
+            this.cb_SortColumn.Name = "cb_SortColumn";
+            this.cb_SortColumn.Size = new System.Drawing.Size(158, 36);
+            this.cb_SortColumn.TabIndex = 0;
+            this.cb_SortColumn.SelectedIndexChanged += new System.EventHandler(this.cb_SortColumn_SelectedIndexChanged);
             // 
             // btn_Filter
             // 
@@ -215,8 +281,8 @@ namespace ProjekBesarPendidikan {
             // 
             // Gpnl_Data
             // 
-            this.Gpnl_Data.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.Gpnl_Data.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Gpnl_Data.BackColor = System.Drawing.Color.White;
             this.Gpnl_Data.BorderRadius = 6;
@@ -232,10 +298,12 @@ namespace ProjekBesarPendidikan {
             // 
             // dgv_MetodePembayaran
             // 
+            this.dgv_MetodePembayaran.AllowUserToAddRows = false;
+            this.dgv_MetodePembayaran.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dgv_MetodePembayaran.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgv_MetodePembayaran.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.dgv_MetodePembayaran.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
@@ -245,7 +313,7 @@ namespace ProjekBesarPendidikan {
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgv_MetodePembayaran.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgv_MetodePembayaran.ColumnHeadersHeight = 4;
+            this.dgv_MetodePembayaran.ColumnHeadersHeight = 20;
             this.dgv_MetodePembayaran.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
@@ -258,6 +326,7 @@ namespace ProjekBesarPendidikan {
             this.dgv_MetodePembayaran.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_MetodePembayaran.Location = new System.Drawing.Point(17, 15);
             this.dgv_MetodePembayaran.Name = "dgv_MetodePembayaran";
+            this.dgv_MetodePembayaran.ReadOnly = true;
             this.dgv_MetodePembayaran.RowHeadersVisible = false;
             this.dgv_MetodePembayaran.Size = new System.Drawing.Size(1106, 515);
             this.dgv_MetodePembayaran.TabIndex = 0;
@@ -273,8 +342,8 @@ namespace ProjekBesarPendidikan {
             this.dgv_MetodePembayaran.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgv_MetodePembayaran.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgv_MetodePembayaran.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgv_MetodePembayaran.ThemeStyle.HeaderStyle.Height = 4;
-            this.dgv_MetodePembayaran.ThemeStyle.ReadOnly = false;
+            this.dgv_MetodePembayaran.ThemeStyle.HeaderStyle.Height = 20;
+            this.dgv_MetodePembayaran.ThemeStyle.ReadOnly = true;
             this.dgv_MetodePembayaran.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgv_MetodePembayaran.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgv_MetodePembayaran.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -288,7 +357,7 @@ namespace ProjekBesarPendidikan {
             this.timer_filter.Interval = 1;
             this.timer_filter.Tick += new System.EventHandler(this.timer_filter_Tick);
             // 
-            // MetodePembayaranCreate
+            // MetodePembayaran
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
@@ -296,7 +365,7 @@ namespace ProjekBesarPendidikan {
             this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Enabled = false;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "MetodePembayaranCreate";
+            this.Name = "MetodePembayaran";
             this.Text = "Produk";
             this.Load += new System.EventHandler(this.Produk_Load);
             this.EnabledChanged += new System.EventHandler(this.Produk_EnabledChanged);
@@ -314,12 +383,16 @@ namespace ProjekBesarPendidikan {
         private Guna.UI2.WinForms.Guna2TextBox txt_Search;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel p_Filter;
         private Label label13;
-        private Guna.UI2.WinForms.Guna2ComboBox cb_SortType;
+        private Guna.UI2.WinForms.Guna2ComboBox cb_SortColumn;
         private Guna.UI2.WinForms.Guna2Button btn_Filter;
         private System.Windows.Forms.Timer timer_filter;
         private Guna.UI2.WinForms.Guna2Button btn_clearF;
         private Guna.UI2.WinForms.Guna2Button btn_add;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel Gpnl_Data;
         private Guna.UI2.WinForms.Guna2DataGridView dgv_MetodePembayaran;
+        private Label label1;
+        private Guna.UI2.WinForms.Guna2ComboBox cb_SortOrder;
+        private Label label2;
+        private Guna.UI2.WinForms.Guna2ComboBox cb_SortStatus;
     }
 }
