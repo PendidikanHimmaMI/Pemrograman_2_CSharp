@@ -59,5 +59,15 @@ namespace ProjekBesarPendidikan.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap a2ffb4a3657a6d6981688d69c8265832096f20b4 {
+            get {
+                object obj = ResourceManager.GetObject("a2ffb4a3657a6d6981688d69c8265832096f20b4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

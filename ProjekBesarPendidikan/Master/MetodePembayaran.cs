@@ -17,12 +17,12 @@ namespace ProjekBesarPendidikan{
         private Notification toastNotification;
         private string Connection = "Server=127.0.0.4,9210;Initial Catalog=Db_RentalPlayStation;TrustServerCertificate=true;user id=Pendidikan;password=123";
         private DashboardAdmin admin;
-
-
-        public MetodePembayaran(DashboardAdmin dashboardAdmin) {
-            admin = dashboardAdmin;
+        private String nameKry;
+        public MetodePembayaran(DashboardAdmin dashboardAdmin,String nameKry) {
             InitializeComponent();
+            admin = dashboardAdmin;
             dgv_MetodePembayaran.CellClick += dgv_MetodePembayaran_CellClick;
+            this.Name = nameKry;
         }
 
         private void Produk_EnabledChanged(object sender, EventArgs e) {
@@ -165,7 +165,7 @@ namespace ProjekBesarPendidikan{
                     int id = Convert.ToInt32(dgv_MetodePembayaran.Rows[e.RowIndex].Cells["mpb_id"].Value);
                     string nama = dgv_MetodePembayaran.Rows[e.RowIndex].Cells["mpb_nama"].Value.ToString();
                     string desc = dgv_MetodePembayaran.Rows[e.RowIndex].Cells["mpb_deskripsi"].Value.ToString();
-                    ShowFormInPanel(new MetodePembayaranUpdate(admin,id,nama,desc));
+                    ShowFormInPanel(new MetodePembayaranUpdate(admin,id,nama,desc,nameKry));
 
                 }
 
@@ -270,7 +270,7 @@ namespace ProjekBesarPendidikan{
         }
 
         private void btn_add_Click(object sender, EventArgs e) {
-            ShowFormInPanel(new MetodePembayaranCreate(admin));
+            ShowFormInPanel(new MetodePembayaranCreate(admin,nameKry));
         }
 
         private void cb_SortStatus_SelectedIndexChanged(object sender, EventArgs e) {
