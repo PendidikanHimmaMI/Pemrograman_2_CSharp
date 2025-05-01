@@ -116,6 +116,8 @@
             this.btn_PS.TabIndex = 2;
             this.btn_PS.Text = "PlayStation";
             this.btn_PS.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_PS.CheckedChanged += new System.EventHandler(this.btn_CheckedChanged_Padding);
+            this.btn_PS.Click += new System.EventHandler(this.btn_PS_Click);
             // 
             // btn_JenisPS
             // 
@@ -139,6 +141,7 @@
             this.btn_JenisPS.Text = "Jenis PlayStation";
             this.btn_JenisPS.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_JenisPS.CheckedChanged += new System.EventHandler(this.btn_CheckedChanged_Padding);
+            this.btn_JenisPS.Click += new System.EventHandler(this.btn_JenisPS_Click);
             // 
             // btn_Karyawan
             // 
@@ -176,6 +179,8 @@
             this.btn_MetodePembayaran.TabIndex = 5;
             this.btn_MetodePembayaran.Text = "Metode Pembayaran";
             this.btn_MetodePembayaran.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_MetodePembayaran.CheckedChanged += new System.EventHandler(this.btn_CheckedChanged_Padding);
+            this.btn_MetodePembayaran.Click += new System.EventHandler(this.btn_MetodePembayaran_Click);
             // 
             // btn_Logout
             // 

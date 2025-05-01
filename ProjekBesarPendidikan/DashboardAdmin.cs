@@ -63,11 +63,23 @@ namespace ProjekBesarPendidikan {
         }
 
         private void btn_Beranda_Click(object sender, EventArgs e) {
+        }
+
+        private void btn_JenisPS_Click(object sender, EventArgs e) {
+
+        }
+
+        private void btn_PS_Click(object sender, EventArgs e) {
+
+        }
+
+        private void btn_MetodePembayaran_Click(object sender, EventArgs e) {
             ShowFormInPanel(new MetodePembayaran(this,nameKry), (Guna2Button)sender);
         }
 
         private void btn_Logout_Click(object sender, EventArgs e) {
 
         }
+
     }
 }
