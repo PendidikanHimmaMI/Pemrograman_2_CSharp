@@ -1,9 +1,7 @@
-﻿using System.Threading;
-using System;
-using System.Windows.Forms;
-
-namespace ProjekBesarPendidikan {
-    partial class MetodePembayaran {
+﻿namespace ProjekBesarPendidikan.Master
+{
+    partial class PlayStation
+    {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -13,8 +11,10 @@ namespace ProjekBesarPendidikan {
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing) {
-            if (disposing && (components != null)) {
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
                 components.Dispose();
             }
             base.Dispose(disposing);
@@ -26,14 +26,13 @@ namespace ProjekBesarPendidikan {
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent() {
-            this.components = new System.ComponentModel.Container();
+        private void InitializeComponent()
+        {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.txt_Search = new Guna.UI2.WinForms.Guna2TextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PlayStation));
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.btn_add = new Guna.UI2.WinForms.Guna2Button();
             this.p_Filter = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.cb_SortStatus = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -42,48 +41,15 @@ namespace ProjekBesarPendidikan {
             this.btn_clearF = new Guna.UI2.WinForms.Guna2Button();
             this.label13 = new System.Windows.Forms.Label();
             this.cb_SortColumn = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.btn_Filter = new Guna.UI2.WinForms.Guna2Button();
             this.Gpnl_Data = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.dgv_MetodePembayaran = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.timer_filter = new System.Windows.Forms.Timer(this.components);
+            this.dgvPlayStation = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.btnTambahData = new Guna.UI2.WinForms.Guna2Button();
+            this.txtCariPlaystation = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.p_Filter.SuspendLayout();
             this.Gpnl_Data.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_MetodePembayaran)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPlayStation)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txt_Search
-            // 
-            this.txt_Search.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_Search.BackColor = System.Drawing.Color.Transparent;
-            this.txt_Search.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
-            this.txt_Search.BorderRadius = 20;
-            this.txt_Search.BorderThickness = 4;
-            this.txt_Search.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_Search.DefaultText = "";
-            this.txt_Search.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_Search.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_Search.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_Search.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_Search.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Search.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
-            this.txt_Search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
-            this.txt_Search.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Search.IconRightOffset = new System.Drawing.Point(10, 0);
-            this.txt_Search.IconRightSize = new System.Drawing.Size(30, 30);
-            this.txt_Search.Location = new System.Drawing.Point(210, 38);
-            this.txt_Search.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.txt_Search.Name = "txt_Search";
-            this.txt_Search.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
-            this.txt_Search.PlaceholderText = "Cari...";
-            this.txt_Search.SelectedText = "";
-            this.txt_Search.ShortcutsEnabled = false;
-            this.txt_Search.Size = new System.Drawing.Size(730, 46);
-            this.txt_Search.TabIndex = 0;
-            this.txt_Search.IconRightClick += new System.EventHandler(this.txt_Search_IconRightClick);
-            this.txt_Search.TextChanged += new System.EventHandler(this.txt_Search_TextChanged);
-            this.txt_Search.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Search_KeyPress);
             // 
             // guna2CustomGradientPanel1
             // 
@@ -94,39 +60,16 @@ namespace ProjekBesarPendidikan {
             this.guna2CustomGradientPanel1.BackColor = System.Drawing.Color.White;
             this.guna2CustomGradientPanel1.BorderRadius = 10;
             this.guna2CustomGradientPanel1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.guna2CustomGradientPanel1.Controls.Add(this.btn_add);
+            this.guna2CustomGradientPanel1.Controls.Add(this.txtCariPlaystation);
+            this.guna2CustomGradientPanel1.Controls.Add(this.btnTambahData);
             this.guna2CustomGradientPanel1.Controls.Add(this.p_Filter);
-            this.guna2CustomGradientPanel1.Controls.Add(this.btn_Filter);
             this.guna2CustomGradientPanel1.Controls.Add(this.Gpnl_Data);
-            this.guna2CustomGradientPanel1.Controls.Add(this.txt_Search);
             this.guna2CustomGradientPanel1.CustomizableEdges.BottomLeft = false;
             this.guna2CustomGradientPanel1.CustomizableEdges.BottomRight = false;
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(7, 100);
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(10, 101);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1180, 678);
-            this.guna2CustomGradientPanel1.TabIndex = 1;
-            // 
-            // btn_add
-            // 
-            this.btn_add.BackColor = System.Drawing.Color.White;
-            this.btn_add.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
-            this.btn_add.BorderRadius = 20;
-            this.btn_add.BorderThickness = 4;
-            this.btn_add.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_add.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_add.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_add.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_add.FillColor = System.Drawing.Color.White;
-            this.btn_add.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_add.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
-            this.btn_add.ImageOffset = new System.Drawing.Point(-4, 0);
-            this.btn_add.Location = new System.Drawing.Point(22, 38);
-            this.btn_add.Name = "btn_add";
-            this.btn_add.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
-            this.btn_add.Size = new System.Drawing.Size(180, 46);
-            this.btn_add.TabIndex = 10;
-            this.btn_add.Text = "Tambah Data";
-            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
+            this.guna2CustomGradientPanel1.TabIndex = 2;
             // 
             // p_Filter
             // 
@@ -175,7 +118,6 @@ namespace ProjekBesarPendidikan {
             this.cb_SortStatus.Name = "cb_SortStatus";
             this.cb_SortStatus.Size = new System.Drawing.Size(158, 36);
             this.cb_SortStatus.TabIndex = 6;
-            this.cb_SortStatus.SelectedIndexChanged += new System.EventHandler(this.cb_SortStatus_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -205,7 +147,6 @@ namespace ProjekBesarPendidikan {
             this.cb_SortOrder.Name = "cb_SortOrder";
             this.cb_SortOrder.Size = new System.Drawing.Size(158, 36);
             this.cb_SortOrder.TabIndex = 4;
-            this.cb_SortOrder.SelectedIndexChanged += new System.EventHandler(this.cb_SortOrder_SelectedIndexChanged);
             // 
             // btn_clearF
             // 
@@ -223,7 +164,6 @@ namespace ProjekBesarPendidikan {
             this.btn_clearF.Size = new System.Drawing.Size(158, 33);
             this.btn_clearF.TabIndex = 3;
             this.btn_clearF.Text = "Clear";
-            this.btn_clearF.Click += new System.EventHandler(this.btn_clear_Click);
             // 
             // label13
             // 
@@ -253,31 +193,6 @@ namespace ProjekBesarPendidikan {
             this.cb_SortColumn.Name = "cb_SortColumn";
             this.cb_SortColumn.Size = new System.Drawing.Size(158, 36);
             this.cb_SortColumn.TabIndex = 0;
-            this.cb_SortColumn.SelectedIndexChanged += new System.EventHandler(this.cb_SortColumn_SelectedIndexChanged);
-            // 
-            // btn_Filter
-            // 
-            this.btn_Filter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Filter.BackColor = System.Drawing.Color.White;
-            this.btn_Filter.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
-            this.btn_Filter.BorderRadius = 20;
-            this.btn_Filter.BorderThickness = 4;
-            this.btn_Filter.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Filter.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Filter.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Filter.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Filter.FillColor = System.Drawing.Color.White;
-            this.btn_Filter.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Filter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
-            this.btn_Filter.ImageOffset = new System.Drawing.Point(-4, 0);
-            this.btn_Filter.Location = new System.Drawing.Point(948, 38);
-            this.btn_Filter.Name = "btn_Filter";
-            this.btn_Filter.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
-            this.btn_Filter.Size = new System.Drawing.Size(197, 46);
-            this.btn_Filter.TabIndex = 8;
-            this.btn_Filter.Text = "Sort & Filter";
-            this.btn_Filter.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_Filter.Click += new System.EventHandler(this.btn_Filter_Click);
             // 
             // Gpnl_Data
             // 
@@ -285,8 +200,8 @@ namespace ProjekBesarPendidikan {
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Gpnl_Data.BackColor = System.Drawing.Color.White;
-            this.Gpnl_Data.BorderRadius = 6;
-            this.Gpnl_Data.Controls.Add(this.dgv_MetodePembayaran);
+            this.Gpnl_Data.BorderRadius = 25;
+            this.Gpnl_Data.Controls.Add(this.dgvPlayStation);
             this.Gpnl_Data.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.Gpnl_Data.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.Gpnl_Data.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
@@ -296,13 +211,13 @@ namespace ProjekBesarPendidikan {
             this.Gpnl_Data.Size = new System.Drawing.Size(1142, 546);
             this.Gpnl_Data.TabIndex = 1;
             // 
-            // dgv_MetodePembayaran
+            // dgvPlayStation
             // 
-            this.dgv_MetodePembayaran.AllowUserToAddRows = false;
-            this.dgv_MetodePembayaran.AllowUserToDeleteRows = false;
+            this.dgvPlayStation.AllowUserToAddRows = false;
+            this.dgvPlayStation.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgv_MetodePembayaran.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgv_MetodePembayaran.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgvPlayStation.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvPlayStation.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -312,9 +227,9 @@ namespace ProjekBesarPendidikan {
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_MetodePembayaran.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgv_MetodePembayaran.ColumnHeadersHeight = 20;
-            this.dgv_MetodePembayaran.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgvPlayStation.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvPlayStation.ColumnHeadersHeight = 20;
+            this.dgvPlayStation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -322,79 +237,121 @@ namespace ProjekBesarPendidikan {
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_MetodePembayaran.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgv_MetodePembayaran.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgv_MetodePembayaran.Location = new System.Drawing.Point(17, 15);
-            this.dgv_MetodePembayaran.Name = "dgv_MetodePembayaran";
-            this.dgv_MetodePembayaran.ReadOnly = true;
-            this.dgv_MetodePembayaran.RowHeadersVisible = false;
-            this.dgv_MetodePembayaran.RowHeadersWidth = 51;
-            this.dgv_MetodePembayaran.Size = new System.Drawing.Size(1106, 515);
-            this.dgv_MetodePembayaran.TabIndex = 0;
-            this.dgv_MetodePembayaran.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgv_MetodePembayaran.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dgv_MetodePembayaran.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dgv_MetodePembayaran.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dgv_MetodePembayaran.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgv_MetodePembayaran.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dgv_MetodePembayaran.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgv_MetodePembayaran.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dgv_MetodePembayaran.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgv_MetodePembayaran.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgv_MetodePembayaran.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgv_MetodePembayaran.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgv_MetodePembayaran.ThemeStyle.HeaderStyle.Height = 20;
-            this.dgv_MetodePembayaran.ThemeStyle.ReadOnly = true;
-            this.dgv_MetodePembayaran.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgv_MetodePembayaran.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgv_MetodePembayaran.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgv_MetodePembayaran.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgv_MetodePembayaran.ThemeStyle.RowsStyle.Height = 22;
-            this.dgv_MetodePembayaran.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgv_MetodePembayaran.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgv_MetodePembayaran.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_MetodePembayaran_CellClick);
+            this.dgvPlayStation.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvPlayStation.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvPlayStation.Location = new System.Drawing.Point(48, 35);
+            this.dgvPlayStation.Name = "dgvPlayStation";
+            this.dgvPlayStation.ReadOnly = true;
+            this.dgvPlayStation.RowHeadersVisible = false;
+            this.dgvPlayStation.RowHeadersWidth = 51;
+            this.dgvPlayStation.Size = new System.Drawing.Size(1040, 463);
+            this.dgvPlayStation.TabIndex = 0;
+            this.dgvPlayStation.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvPlayStation.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dgvPlayStation.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dgvPlayStation.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dgvPlayStation.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dgvPlayStation.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dgvPlayStation.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvPlayStation.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dgvPlayStation.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvPlayStation.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvPlayStation.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgvPlayStation.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgvPlayStation.ThemeStyle.HeaderStyle.Height = 20;
+            this.dgvPlayStation.ThemeStyle.ReadOnly = true;
+            this.dgvPlayStation.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvPlayStation.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvPlayStation.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvPlayStation.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvPlayStation.ThemeStyle.RowsStyle.Height = 22;
+            this.dgvPlayStation.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvPlayStation.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvPlayStation.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPlayStation_CellClick);
             // 
-            // timer_filter
+            // btnTambahData
             // 
-            this.timer_filter.Interval = 1;
-            this.timer_filter.Tick += new System.EventHandler(this.timer_filter_Tick);
+            this.btnTambahData.BackColor = System.Drawing.Color.Transparent;
+            this.btnTambahData.BorderColor = System.Drawing.Color.Transparent;
+            this.btnTambahData.BorderRadius = 20;
+            this.btnTambahData.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnTambahData.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnTambahData.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnTambahData.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnTambahData.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
+            this.btnTambahData.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.btnTambahData.ForeColor = System.Drawing.Color.White;
+            this.btnTambahData.Location = new System.Drawing.Point(22, 41);
+            this.btnTambahData.Name = "btnTambahData";
+            this.btnTambahData.Size = new System.Drawing.Size(230, 51);
+            this.btnTambahData.TabIndex = 10;
+            this.btnTambahData.Text = "Tambah Data";
+            this.btnTambahData.Click += new System.EventHandler(this.btnTambahData_Click);
             // 
-            // MetodePembayaran
+            // txtCariPlaystation
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.txtCariPlaystation.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCariPlaystation.BackColor = System.Drawing.Color.Transparent;
+            this.txtCariPlaystation.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
+            this.txtCariPlaystation.BorderRadius = 19;
+            this.txtCariPlaystation.BorderThickness = 2;
+            this.txtCariPlaystation.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCariPlaystation.DefaultText = "";
+            this.txtCariPlaystation.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCariPlaystation.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCariPlaystation.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCariPlaystation.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCariPlaystation.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCariPlaystation.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.txtCariPlaystation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
+            this.txtCariPlaystation.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCariPlaystation.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtCariPlaystation.IconLeft")));
+            this.txtCariPlaystation.IconLeftOffset = new System.Drawing.Point(10, 0);
+            this.txtCariPlaystation.Location = new System.Drawing.Point(274, 41);
+            this.txtCariPlaystation.Name = "txtCariPlaystation";
+            this.txtCariPlaystation.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
+            this.txtCariPlaystation.PlaceholderText = "Cari...";
+            this.txtCariPlaystation.SelectedText = "";
+            this.txtCariPlaystation.Size = new System.Drawing.Size(596, 51);
+            this.txtCariPlaystation.TabIndex = 11;
+            this.txtCariPlaystation.Tag = "";
+            this.txtCariPlaystation.TextOffset = new System.Drawing.Point(7, 0);
+            this.txtCariPlaystation.TextChanged += new System.EventHandler(this.txtCariPlaystation_TextChanged);
+            // 
+            // PlayStation
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1200, 800);
             this.Controls.Add(this.guna2CustomGradientPanel1);
-            this.Enabled = false;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "MetodePembayaran";
-            this.Text = "Produk";
-            this.Load += new System.EventHandler(this.Produk_Load);
-            this.EnabledChanged += new System.EventHandler(this.Produk_EnabledChanged);
+            this.Name = "PlayStation";
+            this.Text = "PlayStation";
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             this.p_Filter.ResumeLayout(false);
             this.p_Filter.PerformLayout();
             this.Gpnl_Data.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_MetodePembayaran)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPlayStation)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
-        private Guna.UI2.WinForms.Guna2TextBox txt_Search;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel p_Filter;
-        private Label label13;
-        private Guna.UI2.WinForms.Guna2ComboBox cb_SortColumn;
-        private Guna.UI2.WinForms.Guna2Button btn_Filter;
-        private System.Windows.Forms.Timer timer_filter;
-        private Guna.UI2.WinForms.Guna2Button btn_clearF;
-        private Guna.UI2.WinForms.Guna2Button btn_add;
-        private Guna.UI2.WinForms.Guna2CustomGradientPanel Gpnl_Data;
-        private Guna.UI2.WinForms.Guna2DataGridView dgv_MetodePembayaran;
-        private Label label1;
-        private Guna.UI2.WinForms.Guna2ComboBox cb_SortOrder;
-        private Label label2;
+        private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2ComboBox cb_SortStatus;
+        private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2ComboBox cb_SortOrder;
+        private Guna.UI2.WinForms.Guna2Button btn_clearF;
+        private System.Windows.Forms.Label label13;
+        private Guna.UI2.WinForms.Guna2ComboBox cb_SortColumn;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel Gpnl_Data;
+        private Guna.UI2.WinForms.Guna2DataGridView dgvPlayStation;
+        private Guna.UI2.WinForms.Guna2Button btnTambahData;
+        private Guna.UI2.WinForms.Guna2TextBox txtCariPlaystation;
     }
 }
