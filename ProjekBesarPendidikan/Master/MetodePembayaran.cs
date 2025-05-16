@@ -17,12 +17,12 @@ namespace ProjekBesarPendidikan{
         private Notification toastNotification;
         private string Connection = "Server=127.0.0.4,9210;Initial Catalog=Db_RentalPlayStation;TrustServerCertificate=true;user id=Pendidikan;password=123";
         private DashboardAdmin admin;
-
-
-        public MetodePembayaran(DashboardAdmin dashboardAdmin) {
-            admin = dashboardAdmin;
+        private String nameKry;
+        public MetodePembayaran(DashboardAdmin dashboardAdmin,String nameKry) {
             InitializeComponent();
+            admin = dashboardAdmin;
             dgv_MetodePembayaran.CellClick += dgv_MetodePembayaran_CellClick;
+            this.Name = nameKry;
         }
 
         private void Produk_EnabledChanged(object sender, EventArgs e) {
@@ -73,10 +73,6 @@ namespace ProjekBesarPendidikan{
 
         }
 
-        private void autoId() {
-        }
-
-
         private void ShowFormInPanel(Form form) {
             admin.pnl_filForm.Controls.Clear();
             admin.pnl_filForm.Tag = null;
@@ -110,6 +106,19 @@ namespace ProjekBesarPendidikan{
                         // Add buttons only if they don't exist
                         bool editExists = dgv_MetodePembayaran.Columns.Cast<DataGridViewColumn>().Any(c => c.Name == "Edit");
                         bool deleteExists = dgv_MetodePembayaran.Columns.Cast<DataGridViewColumn>().Any(c => c.Name == "Delete");
+                        dgv_MetodePembayaran.Columns["No"].HeaderText = "No";
+                        dgv_MetodePembayaran.Columns["No"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                        dgv_MetodePembayaran.Columns["mpb_id"].HeaderText = "ID";
+                        dgv_MetodePembayaran.Columns["mpb_id"].Visible = false;
+                        dgv_MetodePembayaran.Columns["mpb_nama"].HeaderText = "Nama";
+                        dgv_MetodePembayaran.Columns["mpb_deskripsi"].HeaderText = "Deskripsi";
+                        dgv_MetodePembayaran.Columns["mpb_status"].HeaderText = "Status";
+                        dgv_MetodePembayaran.Columns["mpb_created_by"].HeaderText = "Dibuat Oleh";
+                        dgv_MetodePembayaran.Columns["mpb_created_date"].HeaderText = "Tanggal Dibuat";
+                        dgv_MetodePembayaran.Columns["mpb_modif_by"].HeaderText = "Diubah Oleh";
+                        dgv_MetodePembayaran.Columns["mpb_modif_by"].Visible = false;
+                        dgv_MetodePembayaran.Columns["mpb_modif_date"].HeaderText = "Tanggal Diubah";
+                        dgv_MetodePembayaran.Columns["mpb_modif_date"].Visible = false;
 
                         if (!editExists) {
                             DataGridViewButtonColumn editButton = new DataGridViewButtonColumn();
@@ -165,7 +174,7 @@ namespace ProjekBesarPendidikan{
                     int id = Convert.ToInt32(dgv_MetodePembayaran.Rows[e.RowIndex].Cells["mpb_id"].Value);
                     string nama = dgv_MetodePembayaran.Rows[e.RowIndex].Cells["mpb_nama"].Value.ToString();
                     string desc = dgv_MetodePembayaran.Rows[e.RowIndex].Cells["mpb_deskripsi"].Value.ToString();
-                    ShowFormInPanel(new MetodePembayaranUpdate(admin,id,nama,desc));
+                    ShowFormInPanel(new MetodePembayaranUpdate(admin,id,nama,desc,nameKry));
 
                 }
 
@@ -182,22 +191,24 @@ namespace ProjekBesarPendidikan{
                 }
             }
         }
-
-
-
-        private void filter() {
-
-        }
-        private bool isUpdatePosition = false;
-
-      
         private void btn_ExcData_Click(object sender, EventArgs e) {
 
         }
-        public void clear(bool reset = false) {
-            autoId();
-            isUpdatePosition = false;
-            if (reset)LoadData();
+        public void clear() {
+            if (cb_SortStatus.Items.Count > 0)
+                cb_SortStatus.SelectedIndex = 0;
+            else
+                cb_SortStatus.SelectedItem = null;
+
+            if (cb_SortColumn.Items.Count > 0)
+                cb_SortColumn.SelectedIndex = 0;
+            else
+                cb_SortColumn.SelectedItem = null;
+
+            if (cb_SortOrder.Items.Count > 0)
+                cb_SortOrder.SelectedIndex = 0;
+            else
+                cb_SortOrder.SelectedItem = null;
         }
 
         private void btn_Filter_Click(object sender, EventArgs e) {
@@ -229,11 +240,9 @@ namespace ProjekBesarPendidikan{
         }
 
         private void txt_Search_Enter(object sender, EventArgs e) {
-            filter();
         }
 
         private void btn_clear_Click(object sender, EventArgs e) {
-            cb_SortColumn.Text = null;
         }
 
         private void txt_Name_KeyPress(object sender, KeyPressEventArgs e) {
@@ -255,7 +264,6 @@ namespace ProjekBesarPendidikan{
         }
 
         private void txt_Search_IconRightClick(object sender, EventArgs e) {
-            filter();
         }
         private void txt_KeyPressNomor(object sender, KeyPressEventArgs e) {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar)) {
@@ -265,12 +273,11 @@ namespace ProjekBesarPendidikan{
 
         private void txt_Search_KeyPress(object sender, KeyPressEventArgs e) {
             if (e.KeyChar == (char)Keys.Enter) {
-                filter();
             }
         }
 
         private void btn_add_Click(object sender, EventArgs e) {
-            ShowFormInPanel(new MetodePembayaranCreate(admin));
+            ShowFormInPanel(new MetodePembayaranCreate(admin,nameKry));
         }
 
         private void cb_SortStatus_SelectedIndexChanged(object sender, EventArgs e) {
@@ -284,6 +291,7 @@ namespace ProjekBesarPendidikan{
         private void cb_SortOrder_SelectedIndexChanged(object sender, EventArgs e) {
             ApplyFilters();
         }
+
         private void ApplyFilters() {
             string search = txt_Search.Text;
 

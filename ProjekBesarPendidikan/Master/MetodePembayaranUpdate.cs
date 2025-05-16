@@ -17,16 +17,18 @@ namespace ProjekBesarPendidikan.Master {
             InitializeComponent();
         }
         int id;
-        public MetodePembayaranUpdate(DashboardAdmin dashboardAdmin,int id,string name, string desc) {
+        String nameKry;
+        public MetodePembayaranUpdate(DashboardAdmin dashboardAdmin,int id,string name, string desc,String nameKry) {
             this.admin = dashboardAdmin;
             this.id = id;
             InitializeComponent();
             txt_nama.Text = name;
             txt_deskripsi.Text = desc;
+            this.nameKry = nameKry;
         }
 
         private void btn_back_Click(object sender, EventArgs e) {
-            MetodePembayaran form = new MetodePembayaran(admin);
+            MetodePembayaran form = new MetodePembayaran(admin, nameKry);
             admin.pnl_filForm.Controls.Clear();
             admin.pnl_filForm.Tag = null;
             form.TopLevel = false;
@@ -40,7 +42,7 @@ namespace ProjekBesarPendidikan.Master {
         private void btn_save_Click(object sender, EventArgs e) {
             string nama = txt_nama.Text.Trim();
             string deskripsi = txt_deskripsi.Text.Trim();
-            string createdBy = "Admin"; // atau bisa ambil dari login session
+            string createdBy = nameKry.ToString(); 
 
             // Validasi input
             if (string.IsNullOrWhiteSpace(nama)) {

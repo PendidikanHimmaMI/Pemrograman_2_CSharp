@@ -17,9 +17,17 @@ using System.Windows.Forms;
 
 namespace ProjekBesarPendidikan { 
     public partial class DashboardAdmin : Form {
-     
         public DashboardAdmin() {
             InitializeComponent();
+        }
+        Login login;
+        int idKry;
+        String nameKry;
+        public DashboardAdmin(Login login,int id,String name) {
+            InitializeComponent();
+            this.login = login;
+            this.idKry = id;
+            this.nameKry = name;
         }
 
         private void ShowFormInPanel(Form form, Guna2Button guna2Button) {
@@ -58,6 +66,18 @@ namespace ProjekBesarPendidikan {
         private void btn_Beranda_Click(object sender, EventArgs e) {
         }
 
+        private void btn_JenisPS_Click(object sender, EventArgs e) {
+
+        }
+
+        private void btn_PS_Click(object sender, EventArgs e) {
+
+        }
+
+        private void btn_MetodePembayaran_Click(object sender, EventArgs e) {
+            ShowFormInPanel(new MetodePembayaran(this,nameKry), (Guna2Button)sender);
+        }
+
         private void btn_Logout_Click(object sender, EventArgs e) {
 
         }
@@ -71,5 +91,6 @@ namespace ProjekBesarPendidikan {
         {
             ShowFormInPanel(new PlayStation(this), (Guna2Button)sender);
         }
+
     }
 }

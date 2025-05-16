@@ -13,17 +13,19 @@ namespace ProjekBesarPendidikan.Master {
     public partial class MetodePembayaranCreate : Form {
         private string Connection = "Server=127.0.0.4,9210;Initial Catalog=Db_RentalPlayStation;TrustServerCertificate=true;user id=Pendidikan;password=123";
         private DashboardAdmin admin;
+        private String nameKry;
         public MetodePembayaranCreate() {
             InitializeComponent();
         }
 
-        public MetodePembayaranCreate(DashboardAdmin dashboardAdmin) {
-            this.admin = dashboardAdmin;
+        public MetodePembayaranCreate(DashboardAdmin dashboardAdmin,String nameKry) {
             InitializeComponent();
+            this.admin = dashboardAdmin;
+            this.nameKry = nameKry;
         }
 
         private void btn_back_Click(object sender, EventArgs e) {
-            MetodePembayaran form = new MetodePembayaran(admin);
+            MetodePembayaran form = new MetodePembayaran(admin, nameKry);
             admin.pnl_filForm.Controls.Clear();
             admin.pnl_filForm.Tag = null;
             form.TopLevel = false;
@@ -37,7 +39,7 @@ namespace ProjekBesarPendidikan.Master {
         private void btn_save_Click(object sender, EventArgs e) {
             string nama = txt_nama.Text.Trim();
             string deskripsi = txt_deskripsi.Text.Trim();
-            string createdBy = "Admin"; // atau bisa ambil dari login session
+            string createdBy = nameKry.ToString(); 
 
             // Validasi input
             if (string.IsNullOrWhiteSpace(nama)) {
