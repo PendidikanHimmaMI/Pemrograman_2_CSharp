@@ -61,9 +61,28 @@ namespace ProjekBesarPendidikan.Master
                 deleteButton.UseColumnTextForButtonValue = true;
                 dgvPlayStation.Columns.Add(deleteButton);
             }
-                dgvPlayStation.Refresh();
+            dgvPlayStation.CellFormatting += DgvPlayStation_CellFormatting;
+
+            dgvPlayStation.Refresh();
             connect.Close();
         }
+
+        private void DgvPlayStation_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (dgvPlayStation.Columns[e.ColumnIndex].Name == "Delete")
+            {
+                string status = dgvPlayStation.Rows[e.RowIndex].Cells["pst_status"].Value?.ToString();
+                if (status != null && status.ToLower() == "aktif")
+                {
+                    e.Value = "Delete"; // Show button
+                }
+                else
+                {
+                    e.Value = "restore"; // Hide button text (looks like disabled)
+                }
+            }
+        }
+
 
         private void showDgv(String search)
         {

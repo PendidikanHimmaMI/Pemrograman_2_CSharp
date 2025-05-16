@@ -70,9 +70,6 @@ namespace ProjekBesarPendidikan {
 
         }
 
-        private void btn_PS_Click(object sender, EventArgs e) {
-
-        }
 
         private void btn_MetodePembayaran_Click(object sender, EventArgs e) {
             ShowFormInPanel(new MetodePembayaran(this,nameKry), (Guna2Button)sender);
@@ -80,11 +77,6 @@ namespace ProjekBesarPendidikan {
 
         private void btn_Logout_Click(object sender, EventArgs e) {
 
-        }
-
-        private void btn_MetodePembayaran_Click(object sender, EventArgs e)
-        {
-            ShowFormInPanel(new MetodePembayaran(this), (Guna2Button)sender);
         }
 
         private void btn_PS_Click(object sender, EventArgs e)

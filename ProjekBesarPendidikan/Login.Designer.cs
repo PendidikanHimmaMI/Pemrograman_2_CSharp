@@ -210,7 +210,6 @@
             // guna2PictureBox2
             // 
             this.guna2PictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2PictureBox2.Image = global::ProjekBesarPendidikan.Properties.Resources.a2ffb4a3657a6d6981688d69c8265832096f20b4;
             this.guna2PictureBox2.ImageRotate = 0F;
             this.guna2PictureBox2.Location = new System.Drawing.Point(126, 183);
             this.guna2PictureBox2.Name = "guna2PictureBox2";

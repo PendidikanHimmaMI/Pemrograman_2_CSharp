@@ -231,7 +231,7 @@
             this.lb_Welcome.Location = new System.Drawing.Point(21, 11);
             this.lb_Welcome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_Welcome.Name = "lb_Welcome";
-            this.lb_Welcome.Size = new System.Drawing.Size(146, 36);
+            this.lb_Welcome.Size = new System.Drawing.Size(121, 29);
             this.lb_Welcome.TabIndex = 1;
             this.lb_Welcome.Text = "Welcome,";
             // 
@@ -243,7 +243,7 @@
             this.L_Name.Location = new System.Drawing.Point(181, 11);
             this.L_Name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.L_Name.Name = "L_Name";
-            this.L_Name.Size = new System.Drawing.Size(151, 36);
+            this.L_Name.Size = new System.Drawing.Size(120, 29);
             this.L_Name.TabIndex = 2;
             this.L_Name.Text = "Admin123";
             this.L_Name.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
