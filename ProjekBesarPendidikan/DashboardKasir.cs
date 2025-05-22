@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using ProjekBesarPendidikan.Master;
+using ProjekBesarPendidikan.Transaksi;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -6,6 +9,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI;
 using System.Windows.Forms;
 
 namespace ProjekBesarPendidikan
@@ -20,6 +24,23 @@ namespace ProjekBesarPendidikan
         private void DashboardKasir_Load(object sender, EventArgs e)
         {
             
+        }
+
+        private void ShowFormInPanel(Form form)
+        {
+            // Hapus form lama dari panel
+            if (pnlContent.Controls.Count > 0)
+            {
+                System.Windows.Forms.Control oldForm = pnlContent.Controls[0];
+                oldForm.Dispose();
+                pnlContent.Controls.Clear();
+            }
+
+            // Tambahkan form baru
+            form.TopLevel = false;
+            form.Dock = DockStyle.Fill;
+            pnlContent.Controls.Add(form);
+            form.Show();
         }
 
         private void btnBeranda_Click(object sender, EventArgs e)
@@ -54,6 +75,23 @@ namespace ProjekBesarPendidikan
             btnLogOut.Image = Image.FromFile(@"..\..\Icon\Logout.png");
 
             lblMenu.Text = "Daftar PlayStation";
+
+            // Hapus form lama dari panel
+            //if (pnlContent.Controls.Count > 0)
+            //{
+            //    System.Windows.Forms.Control oldForm = pnlContent.Controls[0];
+            //    oldForm.Dispose();
+            //    pnlContent.Controls.Clear();
+            //}
+
+            // Tambahkan form baru
+            //PlayStation playStationForm = new PlayStation(this);
+            //playStationForm.TopLevel = false;
+            //playStationForm.Dock = DockStyle.Fill;
+            //pnlContent.Controls.Add(playStationForm);
+            //playStationForm.Show();
+
+            ShowFormInPanel(new PeminjamanPlayStation());
         }
 
         private void btnLogOut_Click(object sender, EventArgs e)

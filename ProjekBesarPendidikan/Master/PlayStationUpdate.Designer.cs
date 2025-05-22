@@ -52,7 +52,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(169, 313);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(173, 28);
+            this.label2.Size = new System.Drawing.Size(213, 35);
             this.label2.TabIndex = 12;
             this.label2.Text = "Merk Playstation";
             // 
@@ -91,7 +91,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(171, 517);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(171, 28);
+            this.label1.Size = new System.Drawing.Size(209, 35);
             this.label1.TabIndex = 10;
             this.label1.Text = "Jenis Playstation";
             // 
@@ -123,7 +123,6 @@
             this.cbJenisPlaystation.Location = new System.Drawing.Point(175, 564);
             this.cbJenisPlaystation.Name = "cbJenisPlaystation";
             this.cbJenisPlaystation.Size = new System.Drawing.Size(558, 36);
-            this.cbJenisPlaystation.Sorted = true;
             this.cbJenisPlaystation.TabIndex = 9;
             // 
             // guna2Shapes2
@@ -217,7 +216,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(883, 310);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(148, 28);
+            this.label4.Size = new System.Drawing.Size(185, 35);
             this.label4.TabIndex = 16;
             this.label4.Text = "Serial Number";
             // 
@@ -256,7 +255,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(881, 510);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(150, 28);
+            this.label3.Size = new System.Drawing.Size(186, 35);
             this.label3.TabIndex = 14;
             this.label3.Text = "Harga per Jam";
             // 
@@ -296,6 +295,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PlayStationUpdate";
             this.Text = "PlayStationUpdate";
+            this.Load += new System.EventHandler(this.PlayStationUpdate_Load);
             this.pnlInsertData.ResumeLayout(false);
             this.pnlInsertData.PerformLayout();
             this.ResumeLayout(false);

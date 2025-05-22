@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PlayStation));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.txtCariPlaystation = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnTambahData = new Guna.UI2.WinForms.Guna2Button();
             this.p_Filter = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.cb_SortStatus = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -43,8 +45,6 @@
             this.cb_SortColumn = new Guna.UI2.WinForms.Guna2ComboBox();
             this.Gpnl_Data = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.dgvPlayStation = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.btnTambahData = new Guna.UI2.WinForms.Guna2Button();
-            this.txtCariPlaystation = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.p_Filter.SuspendLayout();
             this.Gpnl_Data.SuspendLayout();
@@ -70,6 +70,57 @@
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1180, 678);
             this.guna2CustomGradientPanel1.TabIndex = 2;
+            // 
+            // txtCariPlaystation
+            // 
+            this.txtCariPlaystation.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCariPlaystation.BackColor = System.Drawing.Color.Transparent;
+            this.txtCariPlaystation.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
+            this.txtCariPlaystation.BorderRadius = 19;
+            this.txtCariPlaystation.BorderThickness = 2;
+            this.txtCariPlaystation.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCariPlaystation.DefaultText = "";
+            this.txtCariPlaystation.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCariPlaystation.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCariPlaystation.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCariPlaystation.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCariPlaystation.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCariPlaystation.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.txtCariPlaystation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
+            this.txtCariPlaystation.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCariPlaystation.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtCariPlaystation.IconLeft")));
+            this.txtCariPlaystation.IconLeftOffset = new System.Drawing.Point(10, 0);
+            this.txtCariPlaystation.Location = new System.Drawing.Point(274, 41);
+            this.txtCariPlaystation.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
+            this.txtCariPlaystation.Name = "txtCariPlaystation";
+            this.txtCariPlaystation.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
+            this.txtCariPlaystation.PlaceholderText = "Cari...";
+            this.txtCariPlaystation.SelectedText = "";
+            this.txtCariPlaystation.Size = new System.Drawing.Size(596, 51);
+            this.txtCariPlaystation.TabIndex = 11;
+            this.txtCariPlaystation.Tag = "";
+            this.txtCariPlaystation.TextOffset = new System.Drawing.Point(7, 0);
+            this.txtCariPlaystation.TextChanged += new System.EventHandler(this.txtCariPlaystation_TextChanged);
+            // 
+            // btnTambahData
+            // 
+            this.btnTambahData.BackColor = System.Drawing.Color.Transparent;
+            this.btnTambahData.BorderColor = System.Drawing.Color.Transparent;
+            this.btnTambahData.BorderRadius = 20;
+            this.btnTambahData.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnTambahData.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnTambahData.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnTambahData.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnTambahData.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
+            this.btnTambahData.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.btnTambahData.ForeColor = System.Drawing.Color.White;
+            this.btnTambahData.Location = new System.Drawing.Point(22, 41);
+            this.btnTambahData.Name = "btnTambahData";
+            this.btnTambahData.Size = new System.Drawing.Size(230, 51);
+            this.btnTambahData.TabIndex = 10;
+            this.btnTambahData.Text = "Tambah Data";
+            this.btnTambahData.Click += new System.EventHandler(this.btnTambahData_Click);
             // 
             // p_Filter
             // 
@@ -215,29 +266,29 @@
             // 
             this.dgvPlayStation.AllowUserToAddRows = false;
             this.dgvPlayStation.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgvPlayStation.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dgvPlayStation.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvPlayStation.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPlayStation.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPlayStation.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvPlayStation.ColumnHeadersHeight = 20;
             this.dgvPlayStation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvPlayStation.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvPlayStation.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvPlayStation.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvPlayStation.Location = new System.Drawing.Point(48, 35);
             this.dgvPlayStation.Name = "dgvPlayStation";
@@ -268,56 +319,7 @@
             this.dgvPlayStation.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvPlayStation.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgvPlayStation.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPlayStation_CellClick);
-            // 
-            // btnTambahData
-            // 
-            this.btnTambahData.BackColor = System.Drawing.Color.Transparent;
-            this.btnTambahData.BorderColor = System.Drawing.Color.Transparent;
-            this.btnTambahData.BorderRadius = 20;
-            this.btnTambahData.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnTambahData.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnTambahData.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnTambahData.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnTambahData.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
-            this.btnTambahData.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.btnTambahData.ForeColor = System.Drawing.Color.White;
-            this.btnTambahData.Location = new System.Drawing.Point(22, 41);
-            this.btnTambahData.Name = "btnTambahData";
-            this.btnTambahData.Size = new System.Drawing.Size(230, 51);
-            this.btnTambahData.TabIndex = 10;
-            this.btnTambahData.Text = "Tambah Data";
-            this.btnTambahData.Click += new System.EventHandler(this.btnTambahData_Click);
-            // 
-            // txtCariPlaystation
-            // 
-            this.txtCariPlaystation.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCariPlaystation.BackColor = System.Drawing.Color.Transparent;
-            this.txtCariPlaystation.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
-            this.txtCariPlaystation.BorderRadius = 19;
-            this.txtCariPlaystation.BorderThickness = 2;
-            this.txtCariPlaystation.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCariPlaystation.DefaultText = "";
-            this.txtCariPlaystation.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtCariPlaystation.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtCariPlaystation.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCariPlaystation.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCariPlaystation.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCariPlaystation.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.txtCariPlaystation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
-            this.txtCariPlaystation.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCariPlaystation.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtCariPlaystation.IconLeft")));
-            this.txtCariPlaystation.IconLeftOffset = new System.Drawing.Point(10, 0);
-            this.txtCariPlaystation.Location = new System.Drawing.Point(274, 41);
-            this.txtCariPlaystation.Name = "txtCariPlaystation";
-            this.txtCariPlaystation.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
-            this.txtCariPlaystation.PlaceholderText = "Cari...";
-            this.txtCariPlaystation.SelectedText = "";
-            this.txtCariPlaystation.Size = new System.Drawing.Size(596, 51);
-            this.txtCariPlaystation.TabIndex = 11;
-            this.txtCariPlaystation.Tag = "";
-            this.txtCariPlaystation.TextOffset = new System.Drawing.Point(7, 0);
-            this.txtCariPlaystation.TextChanged += new System.EventHandler(this.txtCariPlaystation_TextChanged);
+            this.dgvPlayStation.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.DgvPlayStation_CellFormatting);
             // 
             // PlayStation
             // 

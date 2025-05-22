@@ -251,6 +251,12 @@
     <Compile Include="Transaksi\PeminjamanPlayStation.Designer.cs">
       <DependentUpon>PeminjamanPlayStation.cs</DependentUpon>
     </Compile>
+    <Compile Include="Transaksi\ShowAvailablePlayStation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Transaksi\ShowAvailablePlayStation.Designer.cs">
+      <DependentUpon>ShowAvailablePlayStation.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="DashboardAdmin.resx">
       <DependentUpon>DashboardAdmin.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -295,6 +301,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Transaksi\PeminjamanPlayStation.resx">
       <DependentUpon>PeminjamanPlayStation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaksi\ShowAvailablePlayStation.resx">
+      <DependentUpon>ShowAvailablePlayStation.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

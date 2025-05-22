@@ -237,3 +237,4 @@ E:\Org\Himma\Project PlayStation\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\
 E:\Org\Himma\Project PlayStation\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Master.PlayStationUpdate.resources
 E:\Org\Himma\Project PlayStation\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.DashboardKasir.resources
 E:\Org\Himma\Project PlayStation\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Transaksi.PeminjamanPlayStation.resources
+E:\Org\Himma\Project PlayStation\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Transaksi.ShowAvailablePlayStation.resources

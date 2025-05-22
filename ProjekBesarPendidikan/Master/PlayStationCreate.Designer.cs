@@ -264,7 +264,6 @@
             this.cbJenisPlaystation.Location = new System.Drawing.Point(157, 594);
             this.cbJenisPlaystation.Name = "cbJenisPlaystation";
             this.cbJenisPlaystation.Size = new System.Drawing.Size(558, 36);
-            this.cbJenisPlaystation.Sorted = true;
             this.cbJenisPlaystation.TabIndex = 9;
             // 
             // guna2Shapes2

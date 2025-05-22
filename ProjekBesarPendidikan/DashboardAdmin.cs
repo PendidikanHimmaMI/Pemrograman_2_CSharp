@@ -81,7 +81,7 @@ namespace ProjekBesarPendidikan {
 
         private void btn_PS_Click(object sender, EventArgs e)
         {
-            ShowFormInPanel(new PlayStation(this), (Guna2Button)sender);
+            ShowFormInPanel(new PlayStation(this, nameKry), (Guna2Button)sender);
         }
 
     }

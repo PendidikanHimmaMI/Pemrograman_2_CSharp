@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,14 +16,28 @@ namespace ProjekBesarPendidikan.Transaksi
         public PeminjamanPlayStation()
         {
             InitializeComponent();
-            tes();
+            showData();
         }
-       public void tes()
+        public void showData()
         {
-            for (int i = 0; i < 5; i++)
+            int jumlahBaris;
+            using (SqlConnection connection = new SqlConnection("Data Source=127.0.0.4,9210;Initial Catalog=DB_RentalPlaystation;User ID=Pendidikan;Password=123;"))
             {
-                Button button = new Button();
-                flowLayoutPanel1.Controls.Add(button);
+                connection.Open();
+
+                using (SqlCommand cmd = new SqlCommand("rps_getListPlayStation", connection))
+                {
+                    SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
+
+                    jumlahBaris = dt.Rows.Count;
+                }
+            }
+            for (int i = 0; i < jumlahBaris; i++)
+            {
+                ShowAvailablePlayStation dataShape = new ShowAvailablePlayStation(i);
+                flowLayoutPanel1.Controls.Add(dataShape);
             }
         }
     }
