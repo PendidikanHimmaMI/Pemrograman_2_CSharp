@@ -24,6 +24,8 @@ namespace ProjekBesarPendidikan{
             admin = dashboardAdmin;
             dgv_MetodePembayaran.CellClick += dgv_MetodePembayaran_CellClick;
             this.Name = nameKry;
+            this.MouseDown += Global_MouseDown;
+            RegisterMouseClickHandlers(this);
         }
 
         private void Produk_EnabledChanged(object sender, EventArgs e) {
@@ -229,9 +231,6 @@ namespace ProjekBesarPendidikan{
                 }
             }
         }
-        private void btn_ExcData_Click(object sender, EventArgs e) {
-
-        }
         public void clear() {
             if (cb_SortStatus.Items.Count > 0)
                 cb_SortStatus.SelectedIndex = 0;
@@ -275,9 +274,6 @@ namespace ProjekBesarPendidikan{
                 }
             }
 
-        }
-
-        private void txt_Search_Enter(object sender, EventArgs e) {
         }
 
         private void btn_clear_Click(object sender, EventArgs e) {
@@ -351,5 +347,41 @@ namespace ProjekBesarPendidikan{
         private void txt_Search_TextChanged(object sender, EventArgs e) {
             ApplyFilters();
         }
+        private void Form1_MouseDown(object sender, MouseEventArgs e) {
+            // Check if the click is outside the panel
+            if (!p_Filter.Bounds.Contains(e.Location)) {
+                if (p_filterExpand) {
+                    timer_filter.Start();
+                }
+            }
+            MessageBox.Show("Clicked outside the panel!");
+        }
+        private void RegisterMouseClickHandlers(Control parent) {
+            foreach (Control ctrl in parent.Controls) {
+                if (ctrl != p_Filter) {
+                    ctrl.MouseDown += Global_MouseDown;
+                }
+
+                // Recursively register for nested controls
+                if (ctrl.HasChildren) {
+                    RegisterMouseClickHandlers(ctrl);
+                }
+            }
+        }
+
+
+        private void Global_MouseDown(object sender, MouseEventArgs e) {
+            // Convert to form coordinates
+            Point clickPoint = this.PointToClient(Cursor.Position);
+
+            if (!p_Filter.Bounds.Contains(clickPoint)) {
+                if (!p_Filter.Bounds.Contains(e.Location)) {
+                    if (p_filterExpand) {
+                        timer_filter.Start();
+                    }
+                }
+            }
+        }
+
     }
 }

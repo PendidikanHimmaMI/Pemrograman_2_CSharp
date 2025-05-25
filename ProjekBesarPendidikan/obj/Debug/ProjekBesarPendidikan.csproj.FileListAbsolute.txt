@@ -238,3 +238,9 @@ E:\Org\Himma\Project PlayStation\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\
 E:\Org\Himma\Project PlayStation\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.DashboardKasir.resources
 E:\Org\Himma\Project PlayStation\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Transaksi.PeminjamanPlayStation.resources
 E:\Org\Himma\Project PlayStation\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Transaksi.ShowAvailablePlayStation.resources
+D:\virya\Sem 4\Himma\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.DashboardKasir.resources
+D:\virya\Sem 4\Himma\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Master.PlayStation.resources
+D:\virya\Sem 4\Himma\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Master.PlayStationCreate.resources
+D:\virya\Sem 4\Himma\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Master.PlayStationUpdate.resources
+D:\virya\Sem 4\Himma\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Transaksi.PeminjamanPlayStation.resources
+D:\virya\Sem 4\Himma\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Transaksi.ShowAvailablePlayStation.resources
