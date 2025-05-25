@@ -1,5 +1,6 @@
 ﻿using CustomMessageBox;
 using Guna.UI2.WinForms;
+using ProjekBesarPendidikan.Master;
 using System;
 using System.CodeDom;
 using System.Collections.Generic;
@@ -69,9 +70,6 @@ namespace ProjekBesarPendidikan {
 
         }
 
-        private void btn_PS_Click(object sender, EventArgs e) {
-
-        }
 
         private void btn_MetodePembayaran_Click(object sender, EventArgs e) {
             ShowFormInPanel(new MetodePembayaran(this,nameKry), (Guna2Button)sender);
@@ -79,6 +77,11 @@ namespace ProjekBesarPendidikan {
 
         private void btn_Logout_Click(object sender, EventArgs e) {
 
+        }
+
+        private void btn_PS_Click(object sender, EventArgs e)
+        {
+            ShowFormInPanel(new PlayStation(this, nameKry), (Guna2Button)sender);
         }
 
     }

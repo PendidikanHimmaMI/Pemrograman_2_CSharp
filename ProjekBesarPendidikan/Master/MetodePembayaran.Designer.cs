@@ -154,7 +154,7 @@ namespace ProjekBesarPendidikan {
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(29, 13);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(150, 20);
+            this.label2.Size = new System.Drawing.Size(180, 25);
             this.label2.TabIndex = 7;
             this.label2.Text = "Sorting By Status";
             // 
@@ -184,7 +184,7 @@ namespace ProjekBesarPendidikan {
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(29, 161);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 20);
+            this.label1.Size = new System.Drawing.Size(129, 25);
             this.label1.TabIndex = 5;
             this.label1.Text = "Sorting start";
             // 
@@ -232,7 +232,7 @@ namespace ProjekBesarPendidikan {
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(28, 87);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(157, 20);
+            this.label13.Size = new System.Drawing.Size(192, 25);
             this.label13.TabIndex = 2;
             this.label13.Text = "Sorting By Column";
             // 
@@ -328,6 +328,7 @@ namespace ProjekBesarPendidikan {
             this.dgv_MetodePembayaran.Name = "dgv_MetodePembayaran";
             this.dgv_MetodePembayaran.ReadOnly = true;
             this.dgv_MetodePembayaran.RowHeadersVisible = false;
+            this.dgv_MetodePembayaran.RowHeadersWidth = 51;
             this.dgv_MetodePembayaran.Size = new System.Drawing.Size(1106, 515);
             this.dgv_MetodePembayaran.TabIndex = 0;
             this.dgv_MetodePembayaran.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -351,6 +352,7 @@ namespace ProjekBesarPendidikan {
             this.dgv_MetodePembayaran.ThemeStyle.RowsStyle.Height = 22;
             this.dgv_MetodePembayaran.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_MetodePembayaran.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgv_MetodePembayaran.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_MetodePembayaran_CellClick);
             // 
             // timer_filter
             // 

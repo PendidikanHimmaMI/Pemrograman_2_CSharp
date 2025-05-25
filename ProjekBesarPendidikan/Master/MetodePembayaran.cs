@@ -11,6 +11,7 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using ToastNotifications;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace ProjekBesarPendidikan{
     public partial class MetodePembayaran : Form {
@@ -29,8 +30,8 @@ namespace ProjekBesarPendidikan{
 
             var statusItems = new Dictionary<string, string>
             {
-                { "Aktif", "AKTIF" },
-                { "Tidak Aktif", "NONAKTIF" }
+                { "Aktif", "Aktif" },
+                { "Tidak Aktif", "Tidak Aktif" }
             };
 
             cb_SortStatus.DataSource = new BindingSource(statusItems, null);
@@ -138,6 +139,7 @@ namespace ProjekBesarPendidikan{
                             dgv_MetodePembayaran.Columns.Add(deleteButton);
                         }
 
+                        dgv_MetodePembayaran.CellFormatting += DgvMetodePembayaran_CellFormatting;
 
                     }
                 } catch (Exception ex) {
@@ -167,6 +169,24 @@ namespace ProjekBesarPendidikan{
         }
 
 
+        private void DgvMetodePembayaran_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (dgv_MetodePembayaran.Columns[e.ColumnIndex].Name == "Delete")
+            {
+                string status = dgv_MetodePembayaran.Rows[e.RowIndex].Cells["mpb_status"].Value?.ToString();
+                if (status != null && status.ToLower() == "aktif")
+                {
+                    e.Value = "Delete"; 
+                }
+                else
+                {
+                    e.Value = "restore"; 
+                }
+            }
+
+        }
+
+
         private void dgv_MetodePembayaran_CellClick(object sender, DataGridViewCellEventArgs e) {
             if (e.RowIndex >= 0) {
                 // Edit Button
@@ -174,7 +194,15 @@ namespace ProjekBesarPendidikan{
                     int id = Convert.ToInt32(dgv_MetodePembayaran.Rows[e.RowIndex].Cells["mpb_id"].Value);
                     string nama = dgv_MetodePembayaran.Rows[e.RowIndex].Cells["mpb_nama"].Value.ToString();
                     string desc = dgv_MetodePembayaran.Rows[e.RowIndex].Cells["mpb_deskripsi"].Value.ToString();
-                    ShowFormInPanel(new MetodePembayaranUpdate(admin,id,nama,desc,nameKry));
+                    string status = dgv_MetodePembayaran.Rows[e.RowIndex].Cells["mpb_status"].Value.ToString();
+                    if (status == "Aktif")
+                    {
+                        ShowFormInPanel(new MetodePembayaranUpdate(admin,id,nama,desc,nameKry));
+                    }
+                    else
+                    {
+                        DialogResult confirm = RJMessageBox.Show("You can`t edit this Metode Pembayaran, try to restore it if you want to edit this data", "Warning", MessageBoxButtons.OK);
+                    }
 
                 }
 
@@ -182,8 +210,18 @@ namespace ProjekBesarPendidikan{
                 else if (dgv_MetodePembayaran.Columns[e.ColumnIndex].Name == "Delete") {
                     string id = dgv_MetodePembayaran.Rows[e.RowIndex].Cells["mpb_id"].Value.ToString();
                     string nama = dgv_MetodePembayaran.Rows[e.RowIndex].Cells["mpb_nama"].Value.ToString();
-
-                    DialogResult confirm = RJMessageBox.Show("Are you sure want to delete "+ nama, "Warning", MessageBoxButtons.YesNo);
+                    string status = dgv_MetodePembayaran.Rows[e.RowIndex].Cells["mpb_status"].Value.ToString();
+                    string text;
+                    if(status == "Aktif")
+                    {
+                        text = "Are you sure want to delete ";
+                    }
+                    else
+                    {
+                        text = "Are you sure want to restore ";
+                    }
+                    
+                    DialogResult confirm = RJMessageBox.Show(text + nama, "Warning", MessageBoxButtons.YesNo);
                     if (confirm == DialogResult.Yes) {
                         ToggleMetodePembayaranStatus(Convert.ToInt32(dgv_MetodePembayaran.Rows[e.RowIndex].Cells["mpb_id"].Value));
                         LoadData(); // Refresh table

@@ -95,7 +95,9 @@
     <Reference Include="Microsoft.IdentityModel.Tokens, Version=7.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.IdentityModel.Tokens.7.5.0\lib\net472\Microsoft.IdentityModel.Tokens.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
@@ -172,6 +174,12 @@
     <Compile Include="DashboardAdmin.Designer.cs">
       <DependentUpon>DashboardAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="DashboardKasir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardKasir.Designer.cs">
+      <DependentUpon>DashboardKasir.cs</DependentUpon>
+    </Compile>
     <Compile Include="element\FormAnimator.cs" />
     <Compile Include="element\FormMessageBox.cs">
       <SubType>Form</SubType>
@@ -217,11 +225,44 @@
     <Compile Include="Master\MetodePembayaranUpdate.Designer.cs">
       <DependentUpon>MetodePembayaranUpdate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Master\PlayStation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\PlayStation.Designer.cs">
+      <DependentUpon>PlayStation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\PlayStationCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\PlayStationCreate.Designer.cs">
+      <DependentUpon>PlayStationCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\PlayStationUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\PlayStationUpdate.Designer.cs">
+      <DependentUpon>PlayStationUpdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Transaksi\PeminjamanPlayStation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaksi\PeminjamanPlayStation.Designer.cs">
+      <DependentUpon>PeminjamanPlayStation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaksi\ShowAvailablePlayStation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Transaksi\ShowAvailablePlayStation.Designer.cs">
+      <DependentUpon>ShowAvailablePlayStation.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="DashboardAdmin.resx">
       <DependentUpon>DashboardAdmin.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardKasir.resx">
+      <DependentUpon>DashboardKasir.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="element\FormMessageBox.resx">
       <DependentUpon>FormMessageBox.cs</DependentUpon>
@@ -244,10 +285,25 @@
     <EmbeddedResource Include="Master\MetodePembayaranUpdate.resx">
       <DependentUpon>MetodePembayaranUpdate.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Master\PlayStation.resx">
+      <DependentUpon>PlayStation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\PlayStationCreate.resx">
+      <DependentUpon>PlayStationCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\PlayStationUpdate.resx">
+      <DependentUpon>PlayStationUpdate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaksi\PeminjamanPlayStation.resx">
+      <DependentUpon>PeminjamanPlayStation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaksi\ShowAvailablePlayStation.resx">
+      <DependentUpon>ShowAvailablePlayStation.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -269,6 +325,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Icon\App Icon.png" />
+    <Content Include="Icon\Beranda - Hover.png" />
+    <Content Include="Icon\Beranda.png" />
+    <Content Include="Icon\Logout - Hover.png" />
+    <Content Include="Icon\Logout.png" />
+    <Content Include="Icon\Transaksi - Hover.png" />
+    <Content Include="Icon\Transaksi.png" />
     <Content Include="Icon\user.png" />
     <Content Include="Image\a2ffb4a3657a6d6981688d69c8265832096f20b4.png" />
   </ItemGroup>
