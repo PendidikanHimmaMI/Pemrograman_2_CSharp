@@ -77,5 +77,34 @@ namespace ProjekBesarPendidikan.Master {
             }
         }
 
+        private void guna2CustomGradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_deskripsi_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_nama_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Gpnl_Data_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

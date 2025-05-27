@@ -1,5 +1,7 @@
 ﻿using CustomMessageBox;
 using Guna.UI2.WinForms;
+using ProjekBesarPendidikan.Dashboard;
+using ProjekBesarPendidikan.MasterKaryawan;
 using System;
 using System.CodeDom;
 using System.Collections.Generic;
@@ -55,11 +57,37 @@ namespace ProjekBesarPendidikan {
         }
 
         private void btn_Beranda_Click(object sender, EventArgs e) {
-            ShowFormInPanel(new MetodePembayaran(this), (Guna2Button)sender);
+            ShowFormInPanel(new Dashboardadmin(this), (Guna2Button)sender);
         }
 
         private void btn_Logout_Click(object sender, EventArgs e) {
 
+        }
+
+        private void btn_Karyawan_Click(object sender, EventArgs e)
+        {
+            ShowFormInPanel(new karyawan1(this), (Guna2Button)sender);
+        }
+
+        private void btn_MetodePembayaran_Click(object sender, EventArgs e)
+        {
+            ShowFormInPanel(new DashboardKasir(this), (Guna2Button)sender);
+
+        }
+
+        private void flp_Menu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pnl_filForm_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btn_PS_Click(object sender, EventArgs e)
+        {
+            ShowFormInPanel(new DashboardManager(this), (Guna2Button)sender);
         }
     }
 }

@@ -54,6 +54,7 @@
             this.Gpnl_Data.Name = "Gpnl_Data";
             this.Gpnl_Data.Size = new System.Drawing.Size(1142, 215);
             this.Gpnl_Data.TabIndex = 1;
+            this.Gpnl_Data.Paint += new System.Windows.Forms.PaintEventHandler(this.Gpnl_Data_Paint);
             // 
             // label2
             // 
@@ -63,9 +64,10 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(372, 21);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 25);
+            this.label2.Size = new System.Drawing.Size(127, 29);
             this.label2.TabIndex = 3;
             this.label2.Text = "Deskripsi";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -75,9 +77,10 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(42, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 25);
+            this.label1.Size = new System.Drawing.Size(85, 29);
             this.label1.TabIndex = 2;
             this.label1.Text = "Nama";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txt_deskripsi
             // 
@@ -96,12 +99,14 @@
             this.txt_deskripsi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.txt_deskripsi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_deskripsi.Location = new System.Drawing.Point(362, 49);
+            this.txt_deskripsi.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
             this.txt_deskripsi.Multiline = true;
             this.txt_deskripsi.Name = "txt_deskripsi";
             this.txt_deskripsi.PlaceholderText = "";
             this.txt_deskripsi.SelectedText = "";
             this.txt_deskripsi.Size = new System.Drawing.Size(749, 144);
             this.txt_deskripsi.TabIndex = 1;
+            this.txt_deskripsi.TextChanged += new System.EventHandler(this.txt_deskripsi_TextChanged);
             // 
             // txt_nama
             // 
@@ -120,11 +125,13 @@
             this.txt_nama.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.txt_nama.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_nama.Location = new System.Drawing.Point(35, 49);
+            this.txt_nama.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
             this.txt_nama.Name = "txt_nama";
             this.txt_nama.PlaceholderText = "";
             this.txt_nama.SelectedText = "";
             this.txt_nama.Size = new System.Drawing.Size(305, 57);
             this.txt_nama.TabIndex = 0;
+            this.txt_nama.TextChanged += new System.EventHandler(this.txt_nama_TextChanged);
             // 
             // guna2CustomGradientPanel1
             // 
@@ -144,6 +151,7 @@
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1180, 678);
             this.guna2CustomGradientPanel1.TabIndex = 2;
+            this.guna2CustomGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2CustomGradientPanel1_Paint);
             // 
             // btn_save
             // 
