@@ -146,7 +146,6 @@
             this.btn_JenisPS.Text = "Jenis PlayStation";
             this.btn_JenisPS.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_JenisPS.CheckedChanged += new System.EventHandler(this.btn_CheckedChanged_Padding);
-            this.btn_JenisPS.Click += new System.EventHandler(this.btn_JenisPS_Click);
             // 
             // btn_Karyawan
             // 

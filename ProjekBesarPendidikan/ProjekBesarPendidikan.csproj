@@ -175,7 +175,6 @@
     <Compile Include="DashboardAdmin.Designer.cs">
       <DependentUpon>DashboardAdmin.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="Dashboard\Dashboardadmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -194,14 +193,6 @@
     <Compile Include="Dashboard\DashboardManager.Designer.cs">
       <DependentUpon>DashboardManager.cs</DependentUpon>
     </Compile>
-=======
-    <Compile Include="DashboardKasir.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DashboardKasir.Designer.cs">
-      <DependentUpon>DashboardKasir.cs</DependentUpon>
-    </Compile>
->>>>>>> Virya
     <Compile Include="element\FormAnimator.cs" />
     <Compile Include="element\FormMessageBox.cs">
       <SubType>Form</SubType>
@@ -301,7 +292,6 @@
       <DependentUpon>DashboardAdmin.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-<<<<<<< HEAD
     <EmbeddedResource Include="Dashboard\Dashboardadmin.resx">
       <DependentUpon>Dashboardadmin.cs</DependentUpon>
     </EmbeddedResource>
@@ -311,11 +301,6 @@
     <EmbeddedResource Include="Dashboard\DashboardManager.resx">
       <DependentUpon>DashboardManager.cs</DependentUpon>
     </EmbeddedResource>
-=======
-    <EmbeddedResource Include="DashboardKasir.resx">
-      <DependentUpon>DashboardKasir.cs</DependentUpon>
-    </EmbeddedResource>
->>>>>>> Virya
     <EmbeddedResource Include="element\FormMessageBox.resx">
       <DependentUpon>FormMessageBox.cs</DependentUpon>
     </EmbeddedResource>
