@@ -18,13 +18,21 @@ using System.Windows.Forms;
 
 namespace ProjekBesarPendidikan { 
     public partial class DashboardAdmin : Form {
-     
         public DashboardAdmin() {
             InitializeComponent();
         }
+        Login login;
+        int idKry;
+        String nameKry;
+        public DashboardAdmin(Login login,int id,String name) {
+            InitializeComponent();
+            this.login = login;
+            this.idKry = id;
+            this.nameKry = name;
+        }
 
         private void ShowFormInPanel(Form form, Guna2Button guna2Button) {
-            foreach (Control control in flp_Menu.Controls) {
+            foreach (Control control in MenuDash.Controls) {
                 if (control is Guna2Button button) {
                     button.Checked = false;
                 }
@@ -47,12 +55,13 @@ namespace ProjekBesarPendidikan {
         private void btn_CheckedChanged_Padding(object sender, EventArgs e) {
             Guna2Button guna2Button = (Guna2Button)sender;
             if (guna2Button.Checked) {
-                guna2Button.ShadowDecoration.Enabled = true;
-                guna2Button.ShadowDecoration.Depth = 100;
-                guna2Button.ShadowDecoration.Shadow = new Padding(0, 0, 10, 0);
-                guna2Button.ShadowDecoration.Color = Color.FromArgb(100, 204, 197);
+                guna2Button.FillColor = Color.White;
+                guna2Button.ForeColor = Color.FromArgb(2, 10, 122);
+                //guna2Button.ShadowDecoration.Enabled = true;
             } else {
-                guna2Button.ShadowDecoration.Enabled = false;
+                guna2Button.FillColor = Color.FromArgb(2, 10, 122);
+                guna2Button.ForeColor = Color.White;
+                //guna2Button.ShadowDecoration.Enabled = false;
             }
         }
 
