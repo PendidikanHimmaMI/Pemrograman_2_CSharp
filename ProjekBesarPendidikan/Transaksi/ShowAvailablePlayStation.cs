@@ -13,20 +13,21 @@ namespace ProjekBesarPendidikan.Transaksi
 {
     public partial class ShowAvailablePlayStation : UserControl
     {
-        public ShowAvailablePlayStation(int rowsCount)
+        private KeranjangPeminjaman keranjangPeminjaman;
+        public ShowAvailablePlayStation(int rowsCount, KeranjangPeminjaman keranjangPeminjaman)
         {
             InitializeComponent();
+            this.keranjangPeminjaman = keranjangPeminjaman;
             showData(rowsCount);
         }
 
         private void ShowAvailablePlayStation_Load(object sender, EventArgs e)
         {
-
         }
 
         public void showData(int i)
         {
-            using (SqlConnection connection = new SqlConnection("Data Source=127.0.0.4,9210;Initial Catalog=DB_RentalPlaystation;User ID=Pendidikan;Password=123;"))
+            using (SqlConnection connection = new SqlConnection("Server=127.0.0.4,9210;Initial Catalog=Db_RentalPlayStation;TrustServerCertificate=true;user id=Pendidikan;password=123"))
             {
                 connection.Open();
 
@@ -49,8 +50,10 @@ namespace ProjekBesarPendidikan.Transaksi
                         DataRow row = dt.Rows[i];
 
                         // Tampilkan ke label atau kontrol lainnya (sesuaikan nama label/kontrolmu)
+                        lblIdPlayStation.Text = row["pst_id"].ToString();
                         lblMerkPlayStation.Text = "- " + row["pst_merk"].ToString();
                         lblJenisPlayStation.Text = "- " + row["jps_nama"].ToString();
+                        lblMaxOrang.Text = "- Max " + row["jps_max_pemain"].ToString() + " Pemain";
                         lblHarga.Text = "- Rp" + row["pst_harga_per_jam"].ToString() + " / Jam";
                         lblNamaPlayStation.Text = row["pst_serial_number"].ToString();
                         lblNamaPlayStation.Left = (ShpData.Width - lblNamaPlayStation.Width) / 2;
@@ -60,6 +63,12 @@ namespace ProjekBesarPendidikan.Transaksi
 
                 connection.Close();
             }
+        }
+
+        private void btnTambahDatakeKeranjang_Click(object sender, EventArgs e)
+        {
+            var item = new ItemKeranjang(lblNamaPlayStation.Text, lblHarga.Text, Int32.Parse(lblIdPlayStation.Text));
+            this.keranjangPeminjaman.PanelTengah.Controls.Add(item);
         }
     }
 }

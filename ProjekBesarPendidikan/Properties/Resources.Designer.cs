@@ -103,6 +103,16 @@ namespace ProjekBesarPendidikan.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Keranjang {
+            get {
+                object obj = ResourceManager.GetObject("Keranjang", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Logout {
             get {
                 object obj = ResourceManager.GetObject("Logout", resourceCulture);
@@ -116,6 +126,26 @@ namespace ProjekBesarPendidikan.Properties {
         internal static System.Drawing.Bitmap Logout___Hover {
             get {
                 object obj = ResourceManager.GetObject("Logout - Hover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Min___Button {
+            get {
+                object obj = ResourceManager.GetObject("Min - Button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Plus___Button {
+            get {
+                object obj = ResourceManager.GetObject("Plus - Button", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

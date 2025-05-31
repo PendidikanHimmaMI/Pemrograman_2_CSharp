@@ -17,7 +17,7 @@ namespace ProjekBesarPendidikan
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DashboardKasir());
+            Application.Run(new DashboardAdmin());
         }
     }
 }

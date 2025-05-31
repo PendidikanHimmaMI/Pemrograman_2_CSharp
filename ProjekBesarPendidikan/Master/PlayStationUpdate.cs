@@ -124,7 +124,6 @@ namespace ProjekBesarPendidikan.Master
 
         private void PlayStationUpdate_Load(object sender, EventArgs e)
         {
-            cbJenisPlaystation.SelectedIndex = -1;
         }
     }
 }

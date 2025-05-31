@@ -13,15 +13,19 @@ namespace ProjekBesarPendidikan.Transaksi
 {
     public partial class PeminjamanPlayStation: Form
     {
-        public PeminjamanPlayStation()
+        private KeranjangPeminjaman keranjang;
+        public PeminjamanPlayStation(KeranjangPeminjaman keranjang)
         {
             InitializeComponent();
+            this.keranjang = keranjang;
             showData();
         }
+
+
         public void showData()
         {
             int jumlahBaris;
-            using (SqlConnection connection = new SqlConnection("Data Source=127.0.0.4,9210;Initial Catalog=DB_RentalPlaystation;User ID=Pendidikan;Password=123;"))
+            using (SqlConnection connection = new SqlConnection("Server=127.0.0.4,9210;Initial Catalog=Db_RentalPlayStation;TrustServerCertificate=true;user id=Pendidikan;password=123"))
             {
                 connection.Open();
 
@@ -34,11 +38,13 @@ namespace ProjekBesarPendidikan.Transaksi
                     jumlahBaris = dt.Rows.Count;
                 }
             }
+
             for (int i = 0; i < jumlahBaris; i++)
             {
-                ShowAvailablePlayStation dataShape = new ShowAvailablePlayStation(i);
-                flowLayoutPanel1.Controls.Add(dataShape);
+                ShowAvailablePlayStation dataShape = new ShowAvailablePlayStation(i, keranjang);
+                flData.Controls.Add(dataShape);
             }
         }
+
     }
 }

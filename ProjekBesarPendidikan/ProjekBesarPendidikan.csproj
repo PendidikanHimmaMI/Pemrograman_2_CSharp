@@ -245,6 +245,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Transaksi\ItemKeranjang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Transaksi\ItemKeranjang.Designer.cs">
+      <DependentUpon>ItemKeranjang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaksi\KeranjangPeminjaman.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Transaksi\KeranjangPeminjaman.Designer.cs">
+      <DependentUpon>KeranjangPeminjaman.cs</DependentUpon>
+    </Compile>
     <Compile Include="Transaksi\PeminjamanPlayStation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -257,6 +269,7 @@
     <Compile Include="Transaksi\ShowAvailablePlayStation.Designer.cs">
       <DependentUpon>ShowAvailablePlayStation.cs</DependentUpon>
     </Compile>
+    <Compile Include="Transaksi\TrDetailPeminjamanPlayStation.cs" />
     <EmbeddedResource Include="DashboardAdmin.resx">
       <DependentUpon>DashboardAdmin.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -299,6 +312,12 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Transaksi\ItemKeranjang.resx">
+      <DependentUpon>ItemKeranjang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaksi\KeranjangPeminjaman.resx">
+      <DependentUpon>KeranjangPeminjaman.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Transaksi\PeminjamanPlayStation.resx">
       <DependentUpon>PeminjamanPlayStation.cs</DependentUpon>
     </EmbeddedResource>
@@ -330,9 +349,12 @@
     <Content Include="Icon\Beranda.png" />
     <Content Include="Icon\Logout - Hover.png" />
     <Content Include="Icon\Logout.png" />
+    <Content Include="Icon\Min - Button.png" />
+    <Content Include="Icon\Plus - Button.png" />
     <Content Include="Icon\Transaksi - Hover.png" />
     <Content Include="Icon\Transaksi.png" />
     <Content Include="Icon\user.png" />
+    <Content Include="Icon\Keranjang.png" />
     <Content Include="Image\a2ffb4a3657a6d6981688d69c8265832096f20b4.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

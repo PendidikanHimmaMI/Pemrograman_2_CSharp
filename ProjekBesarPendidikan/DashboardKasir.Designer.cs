@@ -39,11 +39,12 @@
             this.btnBeranda = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnTransaksi = new Guna.UI2.WinForms.Guna2Button();
-            this.pnlContent = new Guna.UI2.WinForms.Guna2Panel();
             this.lblMenu = new System.Windows.Forms.Label();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Shapes2 = new Guna.UI2.WinForms.Guna2Shapes();
             this.Header = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.flContent = new System.Windows.Forms.FlowLayoutPanel();
+            this.viewKeranjang = new ProjekBesarPendidikan.Transaksi.KeranjangPeminjaman();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel5.SuspendLayout();
@@ -69,7 +70,7 @@
             // 
             // guna2PictureBox1
             // 
-            this.guna2PictureBox1.Image = global::ProjekBesarPendidikan.Properties.Resources.App_Icon;
+            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(3, 52);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
@@ -121,8 +122,8 @@
             this.btnLogOut.HoverState.FillColor = System.Drawing.Color.White;
             this.btnLogOut.HoverState.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogOut.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
-            this.btnLogOut.HoverState.Image = global::ProjekBesarPendidikan.Properties.Resources.Logout___Hover;
-            this.btnLogOut.Image = global::ProjekBesarPendidikan.Properties.Resources.Logout;
+            this.btnLogOut.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.btnLogOut.Image = ((System.Drawing.Image)(resources.GetObject("btnLogOut.Image")));
             this.btnLogOut.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnLogOut.ImageOffset = new System.Drawing.Point(25, 0);
             this.btnLogOut.Location = new System.Drawing.Point(0, 0);
@@ -153,8 +154,8 @@
             this.btnBeranda.HoverState.FillColor = System.Drawing.Color.White;
             this.btnBeranda.HoverState.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBeranda.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
-            this.btnBeranda.HoverState.Image = global::ProjekBesarPendidikan.Properties.Resources.Beranda___Hover;
-            this.btnBeranda.Image = global::ProjekBesarPendidikan.Properties.Resources.Beranda___Hover;
+            this.btnBeranda.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.btnBeranda.Image = ((System.Drawing.Image)(resources.GetObject("btnBeranda.Image")));
             this.btnBeranda.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnBeranda.ImageOffset = new System.Drawing.Point(25, 0);
             this.btnBeranda.Location = new System.Drawing.Point(0, 0);
@@ -185,8 +186,8 @@
             this.btnTransaksi.HoverState.FillColor = System.Drawing.Color.White;
             this.btnTransaksi.HoverState.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTransaksi.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
-            this.btnTransaksi.HoverState.Image = global::ProjekBesarPendidikan.Properties.Resources.Transaksi___Hover;
-            this.btnTransaksi.Image = global::ProjekBesarPendidikan.Properties.Resources.Transaksi;
+            this.btnTransaksi.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            this.btnTransaksi.Image = ((System.Drawing.Image)(resources.GetObject("btnTransaksi.Image")));
             this.btnTransaksi.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnTransaksi.ImageOffset = new System.Drawing.Point(25, 0);
             this.btnTransaksi.Location = new System.Drawing.Point(0, 0);
@@ -196,17 +197,6 @@
             this.btnTransaksi.Text = "    Transaksi";
             this.btnTransaksi.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnTransaksi.Click += new System.EventHandler(this.btnTransaksi_Click);
-            // 
-            // pnlContent
-            // 
-            this.pnlContent.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlContent.BackColor = System.Drawing.Color.White;
-            this.pnlContent.Location = new System.Drawing.Point(383, 159);
-            this.pnlContent.Name = "pnlContent";
-            this.pnlContent.Size = new System.Drawing.Size(1557, 795);
-            this.pnlContent.TabIndex = 1;
             // 
             // lblMenu
             // 
@@ -218,6 +208,34 @@
             this.lblMenu.Size = new System.Drawing.Size(266, 81);
             this.lblMenu.TabIndex = 8;
             this.lblMenu.Text = "Beranda";
+            // 
+            // guna2Shapes2
+            // 
+            this.guna2Shapes2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Shapes2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
+            this.guna2Shapes2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
+            this.guna2Shapes2.Location = new System.Drawing.Point(-437, 148);
+            this.guna2Shapes2.Name = "guna2Shapes2";
+            this.guna2Shapes2.PolygonSkip = 1;
+            this.guna2Shapes2.Rotate = 0F;
+            this.guna2Shapes2.Shape = Guna.UI2.WinForms.Enums.ShapeType.Line;
+            this.guna2Shapes2.Size = new System.Drawing.Size(2237, 17);
+            this.guna2Shapes2.TabIndex = 6;
+            this.guna2Shapes2.Text = "guna2Shapes2";
+            this.guna2Shapes2.Zoom = 80;
+            // 
+            // Header
+            // 
+            this.Header.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Header.Controls.Add(this.guna2TextBox1);
+            this.Header.Controls.Add(this.guna2Shapes2);
+            this.Header.Controls.Add(this.lblMenu);
+            this.Header.Location = new System.Drawing.Point(389, 0);
+            this.Header.Name = "Header";
+            this.Header.Size = new System.Drawing.Size(1557, 165);
+            this.Header.TabIndex = 2;
             // 
             // guna2TextBox1
             // 
@@ -248,32 +266,27 @@
             this.guna2TextBox1.Size = new System.Drawing.Size(165, 76);
             this.guna2TextBox1.TabIndex = 7;
             // 
-            // guna2Shapes2
+            // flContent
             // 
-            this.guna2Shapes2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.flContent.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Shapes2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
-            this.guna2Shapes2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
-            this.guna2Shapes2.Location = new System.Drawing.Point(-437, 148);
-            this.guna2Shapes2.Name = "guna2Shapes2";
-            this.guna2Shapes2.PolygonSkip = 1;
-            this.guna2Shapes2.Rotate = 0F;
-            this.guna2Shapes2.Shape = Guna.UI2.WinForms.Enums.ShapeType.Line;
-            this.guna2Shapes2.Size = new System.Drawing.Size(2237, 17);
-            this.guna2Shapes2.TabIndex = 6;
-            this.guna2Shapes2.Text = "guna2Shapes2";
-            this.guna2Shapes2.Zoom = 80;
+            this.flContent.BackColor = System.Drawing.Color.White;
+            this.flContent.Location = new System.Drawing.Point(389, 171);
+            this.flContent.Name = "flContent";
+            this.flContent.Size = new System.Drawing.Size(1541, 783);
+            this.flContent.TabIndex = 7;
             // 
-            // Header
+            // viewKeranjang
             // 
-            this.Header.Controls.Add(this.guna2TextBox1);
-            this.Header.Controls.Add(this.guna2Shapes2);
-            this.Header.Controls.Add(this.lblMenu);
-            this.Header.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Header.Location = new System.Drawing.Point(383, 0);
-            this.Header.Name = "Header";
-            this.Header.Size = new System.Drawing.Size(1557, 165);
-            this.Header.TabIndex = 2;
+            this.viewKeranjang.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.viewKeranjang.Location = new System.Drawing.Point(1359, -1);
+            this.viewKeranjang.Name = "viewKeranjang";
+            this.viewKeranjang.Size = new System.Drawing.Size(581, 955);
+            this.viewKeranjang.TabIndex = 8;
+            this.viewKeranjang.Visible = false;
+            this.viewKeranjang.Load += new System.EventHandler(this.viewKeranjang_Load);
             // 
             // DashboardKasir
             // 
@@ -281,9 +294,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1940, 954);
+            this.Controls.Add(this.viewKeranjang);
             this.Controls.Add(this.Header);
-            this.Controls.Add(this.pnlContent);
             this.Controls.Add(this.guna2Panel1);
+            this.Controls.Add(this.flContent);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MinimumSize = new System.Drawing.Size(1918, 763);
             this.Name = "DashboardKasir";
@@ -315,10 +329,11 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private Guna.UI2.WinForms.Guna2Panel pnlContent;
         private System.Windows.Forms.Label lblMenu;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private Guna.UI2.WinForms.Guna2Shapes guna2Shapes2;
         private Guna.UI2.WinForms.Guna2Panel Header;
+        private System.Windows.Forms.FlowLayoutPanel flContent;
+        private Transaksi.KeranjangPeminjaman viewKeranjang;
     }
 }
