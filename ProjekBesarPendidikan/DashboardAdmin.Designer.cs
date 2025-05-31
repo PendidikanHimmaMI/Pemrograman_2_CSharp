@@ -69,8 +69,6 @@
             // 
             // btn_Beranda
             // 
-            this.btn_PS.DisabledState.BorderColor = System.Drawing.Color.White;
-            this.btn_PS.DisabledState.CustomBorderColor = System.Drawing.Color.White;
             this.btn_Beranda.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_Beranda.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_Beranda.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
@@ -201,6 +199,7 @@
             this.btn_Karyawan.Text = "Karyawan";
             this.btn_Karyawan.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Karyawan.CheckedChanged += new System.EventHandler(this.btn_CheckedChanged_Padding);
+            this.btn_Karyawan.Click += new System.EventHandler(this.btn_Karyawan_Click);
             // 
             // btn_MetodePembayaran
             // 
