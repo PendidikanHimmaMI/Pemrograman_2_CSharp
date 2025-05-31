@@ -1,6 +1,6 @@
 ﻿namespace ProjekBesarPendidikan.Dashboard
 {
-    partial class DashboardKasir
+    partial class DashboardKasir1
     {
         /// <summary>
         /// Required designer variable.
@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashboardKasir));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend9 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title9 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend10 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title10 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashboardKasir1));
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.guna2Shapes1 = new Guna.UI2.WinForms.Guna2Shapes();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -62,7 +62,7 @@
             this.guna2Shapes1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Shapes1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.guna2Shapes1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
-            this.guna2Shapes1.Location = new System.Drawing.Point(570, 197);
+            this.guna2Shapes1.Location = new System.Drawing.Point(570, 113);
             this.guna2Shapes1.Name = "guna2Shapes1";
             this.guna2Shapes1.PolygonSkip = 1;
             this.guna2Shapes1.Rotate = 0F;
@@ -79,7 +79,7 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.label1.Font = new System.Drawing.Font("Segoe UI Black", 16.2F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(663, 244);
+            this.label1.Location = new System.Drawing.Point(663, 160);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(256, 38);
             this.label1.TabIndex = 20;
@@ -90,7 +90,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(1008, 304);
+            this.pictureBox1.Location = new System.Drawing.Point(1008, 220);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 60);
             this.pictureBox1.TabIndex = 23;
@@ -101,7 +101,7 @@
             this.guna2Shapes2.BackColor = System.Drawing.Color.Transparent;
             this.guna2Shapes2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.guna2Shapes2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
-            this.guna2Shapes2.Location = new System.Drawing.Point(-24, 197);
+            this.guna2Shapes2.Location = new System.Drawing.Point(-24, 113);
             this.guna2Shapes2.Name = "guna2Shapes2";
             this.guna2Shapes2.PolygonSkip = 1;
             this.guna2Shapes2.Rotate = 0F;
@@ -118,7 +118,7 @@
             this.txtPlaystation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.txtPlaystation.Font = new System.Drawing.Font("Segoe UI Black", 16.2F, System.Drawing.FontStyle.Bold);
             this.txtPlaystation.ForeColor = System.Drawing.Color.White;
-            this.txtPlaystation.Location = new System.Drawing.Point(64, 244);
+            this.txtPlaystation.Location = new System.Drawing.Point(64, 160);
             this.txtPlaystation.Name = "txtPlaystation";
             this.txtPlaystation.Size = new System.Drawing.Size(264, 38);
             this.txtPlaystation.TabIndex = 25;
@@ -129,7 +129,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.InitialImage")));
-            this.pictureBox2.Location = new System.Drawing.Point(447, 310);
+            this.pictureBox2.Location = new System.Drawing.Point(447, 226);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(59, 56);
             this.pictureBox2.TabIndex = 26;
@@ -141,7 +141,7 @@
             this.TotalPenyewaan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.TotalPenyewaan.Font = new System.Drawing.Font("Segoe UI Black", 24F, System.Drawing.FontStyle.Bold);
             this.TotalPenyewaan.ForeColor = System.Drawing.Color.White;
-            this.TotalPenyewaan.Location = new System.Drawing.Point(680, 304);
+            this.TotalPenyewaan.Location = new System.Drawing.Point(680, 220);
             this.TotalPenyewaan.Name = "TotalPenyewaan";
             this.TotalPenyewaan.Size = new System.Drawing.Size(34, 54);
             this.TotalPenyewaan.TabIndex = 29;
@@ -153,7 +153,7 @@
             this.TotalPendapatan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.TotalPendapatan.Font = new System.Drawing.Font("Segoe UI Black", 24F, System.Drawing.FontStyle.Bold);
             this.TotalPendapatan.ForeColor = System.Drawing.Color.White;
-            this.TotalPendapatan.Location = new System.Drawing.Point(75, 304);
+            this.TotalPendapatan.Location = new System.Drawing.Point(75, 220);
             this.TotalPendapatan.Name = "TotalPendapatan";
             this.TotalPendapatan.Size = new System.Drawing.Size(34, 54);
             this.TotalPendapatan.TabIndex = 30;
@@ -182,7 +182,7 @@
             "Oktober",
             "November",
             "Desember"});
-            this.cbBulan.Location = new System.Drawing.Point(71, 114);
+            this.cbBulan.Location = new System.Drawing.Point(71, 30);
             this.cbBulan.Name = "cbBulan";
             this.cbBulan.Size = new System.Drawing.Size(140, 36);
             this.cbBulan.TabIndex = 31;
@@ -192,7 +192,7 @@
             // 
             this.lbBulan.AutoSize = true;
             this.lbBulan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbBulan.Location = new System.Drawing.Point(81, 122);
+            this.lbBulan.Location = new System.Drawing.Point(81, 38);
             this.lbBulan.Name = "lbBulan";
             this.lbBulan.Size = new System.Drawing.Size(56, 22);
             this.lbBulan.TabIndex = 32;
@@ -203,7 +203,7 @@
             // 
             this.lbTahun.AutoSize = true;
             this.lbTahun.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTahun.Location = new System.Drawing.Point(241, 122);
+            this.lbTahun.Location = new System.Drawing.Point(241, 38);
             this.lbTahun.Name = "lbTahun";
             this.lbTahun.Size = new System.Drawing.Size(62, 22);
             this.lbTahun.TabIndex = 34;
@@ -220,7 +220,7 @@
             this.cbTahun.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbTahun.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbTahun.ItemHeight = 30;
-            this.cbTahun.Location = new System.Drawing.Point(231, 114);
+            this.cbTahun.Location = new System.Drawing.Point(231, 30);
             this.cbTahun.Name = "cbTahun";
             this.cbTahun.Size = new System.Drawing.Size(140, 36);
             this.cbTahun.TabIndex = 33;
@@ -228,11 +228,11 @@
             // 
             // ListPenyewaanPerbulan
             // 
-            chartArea9.Name = "ChartArea1";
-            this.ListPenyewaanPerbulan.ChartAreas.Add(chartArea9);
-            legend9.Name = "Legend1";
-            this.ListPenyewaanPerbulan.Legends.Add(legend9);
-            this.ListPenyewaanPerbulan.Location = new System.Drawing.Point(670, 430);
+            chartArea1.Name = "ChartArea1";
+            this.ListPenyewaanPerbulan.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.ListPenyewaanPerbulan.Legends.Add(legend1);
+            this.ListPenyewaanPerbulan.Location = new System.Drawing.Point(670, 346);
             this.ListPenyewaanPerbulan.Name = "ListPenyewaanPerbulan";
             this.ListPenyewaanPerbulan.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
             this.ListPenyewaanPerbulan.PaletteCustomColors = new System.Drawing.Color[] {
@@ -241,27 +241,27 @@
         System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(121)))), ((int)(((byte)(255))))),
         System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(174)))), ((int)(((byte)(76))))),
         System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(127)))), ((int)(((byte)(241)))))};
-            series9.ChartArea = "ChartArea1";
-            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series9.Legend = "Legend1";
-            series9.Name = "Series1";
-            this.ListPenyewaanPerbulan.Series.Add(series9);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.ListPenyewaanPerbulan.Series.Add(series1);
             this.ListPenyewaanPerbulan.Size = new System.Drawing.Size(516, 336);
             this.ListPenyewaanPerbulan.TabIndex = 52;
             this.ListPenyewaanPerbulan.Tag = "";
-            title9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title9.Name = "Title1";
-            title9.Text = "Unit: Status Penyewaan Perbulan";
-            this.ListPenyewaanPerbulan.Titles.Add(title9);
+            title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title1.Name = "Title1";
+            title1.Text = "Unit: Status Penyewaan Perbulan";
+            this.ListPenyewaanPerbulan.Titles.Add(title1);
             this.ListPenyewaanPerbulan.Click += new System.EventHandler(this.ListPenyewaanPerbulan_Click);
             // 
             // Top5PS
             // 
-            chartArea10.Name = "ChartArea1";
-            this.Top5PS.ChartAreas.Add(chartArea10);
-            legend10.Name = "Legend1";
-            this.Top5PS.Legends.Add(legend10);
-            this.Top5PS.Location = new System.Drawing.Point(12, 430);
+            chartArea2.Name = "ChartArea1";
+            this.Top5PS.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.Top5PS.Legends.Add(legend2);
+            this.Top5PS.Location = new System.Drawing.Point(12, 346);
             this.Top5PS.Name = "Top5PS";
             this.Top5PS.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
             this.Top5PS.PaletteCustomColors = new System.Drawing.Color[] {
@@ -270,21 +270,21 @@
         System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(121)))), ((int)(((byte)(255))))),
         System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(174)))), ((int)(((byte)(76))))),
         System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(127)))), ((int)(((byte)(241)))))};
-            series10.ChartArea = "ChartArea1";
-            series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series10.Legend = "Legend1";
-            series10.Name = "Series1";
-            this.Top5PS.Series.Add(series10);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.Top5PS.Series.Add(series2);
             this.Top5PS.Size = new System.Drawing.Size(516, 336);
             this.Top5PS.TabIndex = 53;
             this.Top5PS.Tag = "Top 5 Playstation yang paling sering dipakai";
             this.Top5PS.Text = "Top 5 Playstation yang paling sering dipakai";
-            title10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title10.Name = "Title1";
-            title10.Text = "Unit: Top 5 Playstation yang paling sering dipakai";
-            this.Top5PS.Titles.Add(title10);
+            title2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title2.Name = "Title1";
+            title2.Text = "Unit: Top 5 Playstation yang paling sering dipakai";
+            this.Top5PS.Titles.Add(title2);
             // 
-            // DashboardKasir
+            // DashboardKasir1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
@@ -304,7 +304,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2Shapes1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "DashboardKasir";
+            this.Name = "DashboardKasir1";
             this.Text = "DashboardKasir";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

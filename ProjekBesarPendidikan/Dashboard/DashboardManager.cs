@@ -138,9 +138,9 @@ namespace ProjekBesarPendidikan.Dashboard
             //untuk menampilkan persentase
             if (series.ChartType == SeriesChartType.Pie)
             {
-                series.Label = "#PERCENT";                // Menampilkan persentase
-                series["PieLabelStyle"] = "Outside";      // Label di luar lingkaran
-                series["PieLineColor"] = "Black";         // Warna garis penunjuk ke label
+                series.Label = "#VALX - #PERCENT";        // Menampilkan nama (VALX) dan persentase
+                series["PieLabelStyle"] = "Inside";       // Label di dalam pie chart
+                series["PieLineColor"] = "Black";         // (opsional, tetap jika ingin garis)
             }
 
 

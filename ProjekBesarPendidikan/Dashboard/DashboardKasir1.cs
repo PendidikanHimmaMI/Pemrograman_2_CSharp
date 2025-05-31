@@ -14,17 +14,16 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace ProjekBesarPendidikan.Dashboard
 {
-    public partial class DashboardKasir : Form
+    public partial class DashboardKasir1 : Form
     {
         private Notification toastNotification;
         private string Connection = "Server=127.0.0.4,9210;Initial Catalog=Db_RentalPlayStation;TrustServerCertificate=true;user id=Pendidikan;password=123";
-        private DashboardAdmin admin;
         private int bulan, tahun;
 
 
-        public DashboardKasir(DashboardAdmin dashboardAdmin)
+        public DashboardKasir1()
         {
-            admin = dashboardAdmin;
+            //admin = dashboardAdmin;
             InitializeComponent();
             // Ambil tahun saat ini
             int tahunSekarang = DateTime.Now.Year;
@@ -109,6 +108,14 @@ namespace ProjekBesarPendidikan.Dashboard
                 series.Points.AddXY(nama, jumlah); // Menambahkan data ke chart
             }
 
+            //untuk menampilkan persentase
+            if (series.ChartType == SeriesChartType.Pie)
+            {
+                series.Label = "#VALX - #PERCENT";        // Menampilkan nama (VALX) dan persentase
+                series["PieLabelStyle"] = "Inside";       // Label di dalam pie chart
+                series["PieLineColor"] = "Black";         // (opsional, tetap jika ingin garis)
+
+            }
 
             //melakukan pemilihan antara pie
             if (jenis.Equals("Top5")){

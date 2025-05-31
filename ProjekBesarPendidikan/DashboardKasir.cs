@@ -1,4 +1,5 @@
 ﻿using Guna.UI2.WinForms;
+using ProjekBesarPendidikan.Dashboard;
 using ProjekBesarPendidikan.Master;
 using ProjekBesarPendidikan.Transaksi;
 using System;
@@ -23,7 +24,7 @@ namespace ProjekBesarPendidikan
 
         private void DashboardKasir_Load(object sender, EventArgs e)
         {
-            
+            ShowFormInPanel(new DashboardKasir1());
         }
 
         private void ShowFormInPanel(Form form)
