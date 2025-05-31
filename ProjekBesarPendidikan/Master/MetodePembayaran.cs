@@ -116,6 +116,7 @@ namespace ProjekBesarPendidikan{
                         dgv_MetodePembayaran.Columns["mpb_nama"].HeaderText = "Nama";
                         dgv_MetodePembayaran.Columns["mpb_deskripsi"].HeaderText = "Deskripsi";
                         dgv_MetodePembayaran.Columns["mpb_status"].HeaderText = "Status";
+                        dgv_MetodePembayaran.Columns["mpb_status"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
                         dgv_MetodePembayaran.Columns["mpb_created_by"].HeaderText = "Dibuat Oleh";
                         dgv_MetodePembayaran.Columns["mpb_created_date"].HeaderText = "Tanggal Dibuat";
                         dgv_MetodePembayaran.Columns["mpb_modif_by"].HeaderText = "Diubah Oleh";

@@ -84,9 +84,8 @@ namespace ProjekBesarPendidikan
             ShowFormInPanel(new Dashboard.DashboardKasir1(), (Guna2Button)sender);
         }
 
-        private void btn_JenisPS_Click(object sender, EventArgs e)
-        {
-
+        private void btn_JenisPS_Click(object sender, EventArgs e) {
+            ShowFormInPanel(new JenisPlayStation(this, nameKry ), (Guna2Button)sender);
         }
 
 
