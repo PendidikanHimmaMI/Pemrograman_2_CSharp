@@ -359,3 +359,17 @@ E:\Org\Himma\Project PlayStation\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\
 E:\Org\Himma\Project PlayStation\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Transaksi.KeranjangPeminjaman.resources
 E:\Org\Himma\Project PlayStation\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Transaksi.ItemKeranjang.resources
 >>>>>>> branch-fathi
+D:\virya\Sem 4\Himma\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.DashboardKasir.resources
+D:\virya\Sem 4\Himma\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Dashboard.Dashboardadmin.resources
+D:\virya\Sem 4\Himma\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Dashboard.DashboardKasir1.resources
+D:\virya\Sem 4\Himma\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Dashboard.DashboardManager.resources
+D:\virya\Sem 4\Himma\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.MasterKaryawan.karyawan1.resources
+D:\virya\Sem 4\Himma\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.MasterKaryawan.KaryawanCreate.resources
+D:\virya\Sem 4\Himma\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.MasterKaryawan.KaryawanUpdate.resources
+D:\virya\Sem 4\Himma\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Master.PlayStation.resources
+D:\virya\Sem 4\Himma\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Master.PlayStationCreate.resources
+D:\virya\Sem 4\Himma\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Master.PlayStationUpdate.resources
+D:\virya\Sem 4\Himma\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Transaksi.ItemKeranjang.resources
+D:\virya\Sem 4\Himma\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Transaksi.KeranjangPeminjaman.resources
+D:\virya\Sem 4\Himma\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Transaksi.PeminjamanPlayStation.resources
+D:\virya\Sem 4\Himma\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Transaksi.ShowAvailablePlayStation.resources

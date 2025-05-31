@@ -22,6 +22,7 @@ namespace ProjekBesarPendidikan
         public DashboardAdmin()
         {
             InitializeComponent();
+            ShowFormInPanel(new Dashboard.Dashboardadmin(), this.btn_Beranda);
         }
         Login login;
         int idKry;
@@ -32,6 +33,7 @@ namespace ProjekBesarPendidikan
             this.login = login;
             this.idKry = id;
             this.nameKry = name;
+            ShowFormInPanel(new Dashboard.Dashboardadmin(), this.btn_Beranda);
         }
 
         private void ShowFormInPanel(Form form, Guna2Button guna2Button)
@@ -78,7 +80,7 @@ namespace ProjekBesarPendidikan
 
         private void btn_Beranda_Click(object sender, EventArgs e)
         {
-
+            ShowFormInPanel(new Dashboard.DashboardKasir1(), this.btn_Beranda);
         }
 
         private void btn_JenisPS_Click(object sender, EventArgs e)
@@ -94,7 +96,8 @@ namespace ProjekBesarPendidikan
 
         private void btn_Logout_Click(object sender, EventArgs e)
         {
-
+            login.Show();
+            this.Close();
         }
 
         private void btn_PS_Click(object sender, EventArgs e)

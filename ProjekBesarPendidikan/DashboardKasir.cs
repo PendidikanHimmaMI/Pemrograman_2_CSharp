@@ -25,9 +25,18 @@ namespace ProjekBesarPendidikan
 
         private void DashboardKasir_Load(object sender, EventArgs e)
         {
-            ShowFormInPanel(new DashboardKasir1());
+            ShowFormInPanel(new Dashboard.DashboardKasir1());
         }
-
+        Login login;
+        int idKry;
+        String nameKry;
+        public DashboardKasir(Login login, int id, String name) {
+            InitializeComponent();
+            this.login = login;
+            this.idKry = id;
+            this.nameKry = name;
+            ShowFormInPanel(new Dashboard.DashboardKasir1());
+        }
         private void ShowFormInPanel(Form form)
         {
             // Hapus form lama dari panel
@@ -117,6 +126,8 @@ namespace ProjekBesarPendidikan
             btnTransaksi.Image = Image.FromFile(@"..\..\Icon\Transaksi.png");
 
             viewKeranjang.Visible = false;
+            login.Show();
+            this.Close();
         }
 
         private void viewKeranjang_Load(object sender, EventArgs e)

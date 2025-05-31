@@ -16,12 +16,9 @@ namespace ProjekBesarPendidikan.Dashboard
     {
         private Notification toastNotification;
         private string Connection = "Server=127.0.0.4,9210;Initial Catalog=Db_RentalPlayStation;TrustServerCertificate=true;user id=Pendidikan;password=123";
-        private DashboardAdmin admin;
-       
 
-        public Dashboardadmin(DashboardAdmin dashboardAdmin)
+        public Dashboardadmin()
         {
-            admin = dashboardAdmin;
             InitializeComponent();
             label();
         }

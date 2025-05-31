@@ -70,7 +70,7 @@ namespace ProjekBesarPendidikan
         public void IntoDashboard(string ROLE, int id, string Name) {
             notification = new Notification("Info", "Login Successfully");
             switch (ROLE) {
-                default:
+                case "Admin":
                     DashboardAdmin admin = new DashboardAdmin(this, id, Name);
                     notification.Show();
                     admin.Show();
@@ -78,9 +78,17 @@ namespace ProjekBesarPendidikan
                     Thread.Sleep(5);
                     admin.Enabled = true;
                     break;
-                //default:
-                //    notification = new Notification("Info", "Permision Invalid");
-                //    break;
+                case "Kasir":
+                    DashboardKasir kasir = new DashboardKasir(this, id, Name);
+                    notification.Show();
+                    kasir.Show();
+                    this.Hide();
+                    Thread.Sleep(5);
+                    kasir.Enabled = true;
+                    break;
+                default:
+                    notification = new Notification("Info", "Permision Invalid");
+                    break;
             }
         }
     }
