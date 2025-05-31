@@ -1,5 +1,5 @@
 ﻿using Guna.UI2.WinForms;
-using ProjekBesarPendidikan.Dashboard;
+using Microsoft.Data.SqlClient;
 using ProjekBesarPendidikan.Master;
 using ProjekBesarPendidikan.Transaksi;
 using System;
@@ -20,6 +20,7 @@ namespace ProjekBesarPendidikan
         public DashboardKasir()
         {
             InitializeComponent();
+            viewKeranjang.Visible = false;
         }
 
         private void DashboardKasir_Load(object sender, EventArgs e)
@@ -30,17 +31,20 @@ namespace ProjekBesarPendidikan
         private void ShowFormInPanel(Form form)
         {
             // Hapus form lama dari panel
-            if (pnlContent.Controls.Count > 0)
+            if (flContent.Controls.Count > 0)
             {
-                System.Windows.Forms.Control oldForm = pnlContent.Controls[0];
+                System.Windows.Forms.Control oldForm = flContent.Controls[0];
                 oldForm.Dispose();
-                pnlContent.Controls.Clear();
+                flContent.Controls.Clear();
             }
 
             // Tambahkan form baru
             form.TopLevel = false;
-            form.Dock = DockStyle.Fill;
-            pnlContent.Controls.Add(form);
+            form.Anchor = AnchorStyles.Top;
+            form.Anchor = AnchorStyles.Bottom;
+            form.Anchor = AnchorStyles.Left;
+            form.Anchor = AnchorStyles.Right;
+            flContent.Controls.Add(form);
             form.Show();
         }
 
@@ -59,6 +63,7 @@ namespace ProjekBesarPendidikan
             btnLogOut.Image = Image.FromFile(@"..\..\Icon\Logout.png");
 
             lblMenu.Text = "Beranda";
+            viewKeranjang.Visible = false;
         }
 
         private void btnTransaksi_Click(object sender, EventArgs e)
@@ -92,7 +97,9 @@ namespace ProjekBesarPendidikan
             //pnlContent.Controls.Add(playStationForm);
             //playStationForm.Show();
 
-            ShowFormInPanel(new PeminjamanPlayStation());
+            ShowFormInPanel(new PeminjamanPlayStation(viewKeranjang));
+            viewKeranjang.BringToFront();
+            viewKeranjang.Visible = true;
         }
 
         private void btnLogOut_Click(object sender, EventArgs e)
@@ -108,6 +115,13 @@ namespace ProjekBesarPendidikan
             btnTransaksi.FillColor = Color.FromArgb(2, 10, 122);
             btnTransaksi.ForeColor = Color.White;
             btnTransaksi.Image = Image.FromFile(@"..\..\Icon\Transaksi.png");
+
+            viewKeranjang.Visible = false;
+        }
+
+        private void viewKeranjang_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

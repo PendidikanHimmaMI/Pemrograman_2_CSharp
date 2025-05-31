@@ -84,6 +84,8 @@ namespace ProjekBesarPendidikan.Master
             dgvPlayStation.Columns["pst_modif_by"].Visible = false;
             dgvPlayStation.Columns["pst_modif_date"].HeaderText = "Tanggal Diubah";
             dgvPlayStation.Columns["pst_modif_date"].Visible = false;
+            dgvPlayStation.Columns["jps_max_pemain"].HeaderText = "Max Pemain";
+            dgvPlayStation.Columns["jps_max_pemain"].Visible = false;
 
             bool editExists = dgvPlayStation.Columns.Cast<DataGridViewColumn>().Any(c => c.Name == "Edit");
             bool deleteExists = dgvPlayStation.Columns.Cast<DataGridViewColumn>().Any(c => c.Name == "Delete");
