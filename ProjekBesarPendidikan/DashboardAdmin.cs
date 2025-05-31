@@ -67,7 +67,7 @@ namespace ProjekBesarPendidikan {
         }
 
         private void btn_JenisPS_Click(object sender, EventArgs e) {
-
+            ShowFormInPanel(new JenisPlayStation(this, nameKry ), (Guna2Button)sender);
         }
 
 

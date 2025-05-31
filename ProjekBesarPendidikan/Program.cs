@@ -18,6 +18,10 @@ namespace ProjekBesarPendidikan
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new DashboardAdmin());
+            DashboardAdmin dashboardAdmin=null;
+            String wulan;
+            wulan = "wulan";
+            //Application.Run(new JenisPlayStation(dashboardAdmin,wulan));
         }
     }
 }

@@ -207,6 +207,24 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Master\JenisPlayStation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\JenisPlayStation.Designer.cs">
+      <DependentUpon>JenisPlayStation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\JenisPlayStationCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\JenisPlayStationCreate.Designer.cs">
+      <DependentUpon>JenisPlayStationCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\JenisPlayStationUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\JenisPlayStationUpdate.Designer.cs">
+      <DependentUpon>JenisPlayStationUpdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Master\MetodePembayaran.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -269,6 +287,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\JenisPlayStation.resx">
+      <DependentUpon>JenisPlayStation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\JenisPlayStationCreate.resx">
+      <DependentUpon>JenisPlayStationCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\JenisPlayStationUpdate.resx">
+      <DependentUpon>JenisPlayStationUpdate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Master\MetodePembayaran.resx">
       <DependentUpon>MetodePembayaran.cs</DependentUpon>

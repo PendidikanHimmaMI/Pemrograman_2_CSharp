@@ -237,3 +237,227 @@ E:\Org\Himma\Project PlayStation\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\
 E:\Org\Himma\Project PlayStation\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Master.PlayStationUpdate.resources
 E:\Org\Himma\Project PlayStation\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.DashboardKasir.resources
 E:\Org\Himma\Project PlayStation\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Transaksi.PeminjamanPlayStation.resources
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\ProjekBesarPendidikan.exe.config
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\ProjekBesarPendidikan.exe
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\ProjekBesarPendidikan.pdb
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Azure.Core.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Azure.Identity.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Guna.UI2.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.Bcl.Cryptography.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.Data.SqlClient.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.Extensions.Options.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.Extensions.Primitives.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.Identity.Client.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.IdentityModel.Logging.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.IdentityModel.Protocols.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Buffers.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.ClientModel.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.IO.FileSystem.AccessControl.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Memory.Data.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Memory.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Numerics.Vectors.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Security.AccessControl.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Security.Cryptography.Pkcs.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Security.Cryptography.ProtectedData.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Security.Principal.Windows.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Text.Encodings.Web.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Text.Json.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.ValueTuple.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Azure.Core.xml
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Azure.Identity.xml
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.Bcl.Cryptography.xml
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.Data.SqlClient.xml
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.Extensions.Options.xml
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.Extensions.Primitives.xml
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.Identity.Client.xml
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.Identity.Client.Extensions.Msal.xml
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.IdentityModel.Abstractions.xml
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.IdentityModel.Logging.xml
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.IdentityModel.Protocols.xml
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Buffers.xml
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.ClientModel.xml
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.IO.FileSystem.AccessControl.xml
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Memory.xml
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Memory.Data.xml
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Numerics.Vectors.xml
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Security.AccessControl.xml
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Security.Cryptography.Pkcs.xml
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Security.Cryptography.ProtectedData.xml
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Security.Principal.Windows.xml
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Text.Encodings.Web.xml
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Text.Json.xml
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.ValueTuple.xml
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\cs\Microsoft.Data.SqlClient.resources.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\de\Microsoft.Data.SqlClient.resources.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\es\Microsoft.Data.SqlClient.resources.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\fr\Microsoft.Data.SqlClient.resources.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\it\Microsoft.Data.SqlClient.resources.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\ja\Microsoft.Data.SqlClient.resources.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\ko\Microsoft.Data.SqlClient.resources.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\pl\Microsoft.Data.SqlClient.resources.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\pt-BR\Microsoft.Data.SqlClient.resources.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\ru\Microsoft.Data.SqlClient.resources.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\tr\Microsoft.Data.SqlClient.resources.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.csproj.AssemblyReference.cache
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.DashboardAdmin.resources
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.DashboardKasir.resources
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\CustomMessageBox.Private.FormMessageBox.resources
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ToastNotifications.Notification.resources
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\WarungMadura.Resources.Element.NotificationMessage.resources
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Login.resources
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.MetodePembayaran.resources
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Master.MetodePembayaranCreate.resources
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Master.MetodePembayaranUpdate.resources
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Master.PlayStation.resources
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Master.PlayStationCreate.resources
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Master.PlayStationUpdate.resources
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Properties.Resources.resources
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Transaksi.PeminjamanPlayStation.resources
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.csproj.GenerateResource.cache
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.csproj.CoreCompileInputs.cache
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBe.6DF7497F.Up2Date
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.exe
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.pdb
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.JenisPlayStation.resources
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Master.JenisPlayStationCreate.resources
+D:\KEGIATAN KULIAH\HIMMA - PENDIDIKAN\PROJEK BESAR PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Master.JenisPlayStationUpdate.resources
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\ProjekBesarPendidikan.exe
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Guna.UI2.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\ProjekBesarPendidikan.exe.config
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Azure.Core.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Azure.Identity.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.Bcl.Cryptography.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.Data.SqlClient.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.Extensions.Options.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.Extensions.Primitives.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.Identity.Client.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.IdentityModel.Logging.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.IdentityModel.Protocols.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Buffers.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.ClientModel.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.IO.FileSystem.AccessControl.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Memory.Data.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Memory.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Numerics.Vectors.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Security.AccessControl.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Security.Cryptography.Pkcs.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Security.Cryptography.ProtectedData.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Security.Principal.Windows.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Text.Encodings.Web.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Text.Json.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.ValueTuple.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Azure.Core.xml
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Azure.Identity.xml
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.Bcl.Cryptography.xml
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.Data.SqlClient.xml
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.Extensions.Options.xml
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.Extensions.Primitives.xml
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.Identity.Client.xml
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.Identity.Client.Extensions.Msal.xml
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.IdentityModel.Abstractions.xml
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.IdentityModel.Logging.xml
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.IdentityModel.Protocols.xml
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Buffers.xml
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.ClientModel.xml
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.IO.FileSystem.AccessControl.xml
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Memory.xml
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Memory.Data.xml
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Numerics.Vectors.xml
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Security.AccessControl.xml
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Security.Cryptography.Pkcs.xml
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Security.Cryptography.ProtectedData.xml
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Security.Principal.Windows.xml
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Text.Encodings.Web.xml
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Text.Json.xml
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\System.ValueTuple.xml
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\cs\Microsoft.Data.SqlClient.resources.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\de\Microsoft.Data.SqlClient.resources.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\es\Microsoft.Data.SqlClient.resources.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\fr\Microsoft.Data.SqlClient.resources.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\it\Microsoft.Data.SqlClient.resources.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\ja\Microsoft.Data.SqlClient.resources.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\ko\Microsoft.Data.SqlClient.resources.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\pl\Microsoft.Data.SqlClient.resources.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\pt-BR\Microsoft.Data.SqlClient.resources.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\ru\Microsoft.Data.SqlClient.resources.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\tr\Microsoft.Data.SqlClient.resources.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.csproj.AssemblyReference.cache
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.DashboardAdmin.resources
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.DashboardKasir.resources
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\CustomMessageBox.Private.FormMessageBox.resources
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ToastNotifications.Notification.resources
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\WarungMadura.Resources.Element.NotificationMessage.resources
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Login.resources
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.JenisPlayStation.resources
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Master.JenisPlayStationCreate.resources
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Master.JenisPlayStationUpdate.resources
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.MetodePembayaran.resources
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Master.MetodePembayaranCreate.resources
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Master.MetodePembayaranUpdate.resources
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Master.PlayStation.resources
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Master.PlayStationCreate.resources
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Master.PlayStationUpdate.resources
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Properties.Resources.resources
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Transaksi.PeminjamanPlayStation.resources
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.csproj.GenerateResource.cache
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.csproj.CoreCompileInputs.cache
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBe.6DF7497F.Up2Date
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.exe
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.pdb
+D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\ProjekBesarPendidikan.pdb
