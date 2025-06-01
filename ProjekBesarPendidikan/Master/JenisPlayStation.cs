@@ -99,11 +99,11 @@ namespace ProjekBesarPendidikan
                         
 
 
-                        string editPath = @"D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\Icon\edit.png";
-                        Image editIcon = Image.FromFile(editPath);
+                        //string editPath = @"D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\Icon\edit.png";
+                        //Image editIcon = Image.FromFile(editPath);
 
-                        string deletePath = @"D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\Icon\delete.png";
-                        Image deleteIcon = Image.FromFile(deletePath);
+                        //string deletePath = @"D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\Icon\delete.png";
+                        //Image deleteIcon = Image.FromFile(deletePath);
 
                         if (!editExists)
                         {
@@ -111,7 +111,7 @@ namespace ProjekBesarPendidikan
                             editColumn.Name = "Edit";
                             editColumn.HeaderText = "Aksi";
                             editColumn.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-                            editColumn.Image = editIcon;
+                            //editColumn.Image = editIcon;
                             dgv_JenisPlayStation.Columns.Add(editColumn);
                         }
 
@@ -120,7 +120,7 @@ namespace ProjekBesarPendidikan
                             DataGridViewImageColumn deleteColumn = new DataGridViewImageColumn();
                             deleteColumn.Name = "Delete";
                             deleteColumn.HeaderText = "";
-                            deleteColumn.Image = deleteIcon;
+                            //deleteColumn.Image = deleteIcon;
                             dgv_JenisPlayStation.Columns.Add(deleteColumn);
                         }
                         dgv_JenisPlayStation.Columns["Edit"].Width = 25;
