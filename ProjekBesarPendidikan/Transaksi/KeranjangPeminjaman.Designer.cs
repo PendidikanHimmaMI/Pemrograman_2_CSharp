@@ -214,6 +214,8 @@
             this.txtTunai.SelectedText = "";
             this.txtTunai.Size = new System.Drawing.Size(415, 45);
             this.txtTunai.TabIndex = 32;
+            this.txtTunai.TextChanged += new System.EventHandler(this.txtTunai_TextChanged);
+            this.txtTunai.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTunai_KeyPress);
             // 
             // label3
             // 

@@ -140,6 +140,7 @@
             this.btnMin.Size = new System.Drawing.Size(47, 28);
             this.btnMin.TabIndex = 11;
             this.btnMin.Text = "---";
+            this.btnMin.Click += new System.EventHandler(this.btnMin_Click);
             // 
             // label3
             // 

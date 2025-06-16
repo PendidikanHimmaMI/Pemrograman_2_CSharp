@@ -25,14 +25,51 @@ namespace ProjekBesarPendidikan.Master
             admin = dashboardAdmin;
             this.nameKry = nameKry;
             showDgv();
+            initComboBoxFilters();
+            RefreshFilteredData();
         }
 
-        //public PlayStation(DashboardKasir dashboardKasir)
-        //{
-        //    kasir = dashboardKasir;
-        //    InitializeComponent();
-        //    showDgv();
-        //}
+        private void initComboBoxFilters()
+        {
+            // Status ComboBox
+            var statusItems = new Dictionary<string, string>
+    {
+        { "Aktif", "Aktif" },
+        { "Tidak Aktif", "Tidak Aktif" }
+    };
+            cbSortStatus.DataSource = new BindingSource(statusItems, null);
+            cbSortStatus.DisplayMember = "Key";
+            cbSortStatus.ValueMember = "Value";
+            cbSortStatus.SelectedIndex = 0;
+
+            // Sort Column ComboBox
+            var sortColumnItems = new Dictionary<string, string>
+    {
+        { "ID", "pst_id" },
+        { "Merk", "pst_merk" },
+        { "Serial Number", "pst_serial_number" },
+        { "Status", "pst_status" },
+        { "Dibuat Oleh", "pst_created_by" },
+        { "Tanggal Dibuat", "pst_created_date" },
+        { "Diubah Oleh", "pst_modif_by" },
+        { "Tanggal Diubah", "pst_modif_date" }
+    };
+            cbSortColumn.DataSource = new BindingSource(sortColumnItems, null);
+            cbSortColumn.DisplayMember = "Key";
+            cbSortColumn.ValueMember = "Value";
+            cbSortColumn.SelectedIndex = 0;
+
+            // Sort Order ComboBox
+            var sortOrderItems = new Dictionary<string, string>
+    {
+        { "Naik (A-Z)", "ASC" },
+        { "Turun (Z-A)", "DESC" }
+    };
+            cbSortOrder.DataSource = new BindingSource(sortOrderItems, null);
+            cbSortOrder.DisplayMember = "Key";
+            cbSortOrder.ValueMember = "Value";
+            cbSortOrder.SelectedIndex = 0;
+        }
 
         private void showDgv()
         {
@@ -117,16 +154,16 @@ namespace ProjekBesarPendidikan.Master
 
         private void DgvPlayStation_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
-            if (dgvPlayStation.Columns[e.ColumnIndex].Name == "Delete")
+            if (dgvPlayStation.Columns[e.ColumnIndex].Name == "Edit")
             {
                 string status = dgvPlayStation.Rows[e.RowIndex].Cells["pst_status"].Value?.ToString();
                 if (status != null && status.ToLower() == "aktif")
                 {
-                    e.Value = "Delete"; // Show button
+                    e.Value = "Edit"; // Show button
                 }
                 else
                 {
-                    e.Value = "restore"; // Hide button text (looks like disabled)
+                    e.Value = "Restore"; // Hide button text (looks like disabled)
                 }
             }
 
@@ -140,10 +177,9 @@ namespace ProjekBesarPendidikan.Master
             }
         }
 
-
-        private void showDgv(String search)
+        private void showDgv(String search, String sortStatus, String sortColumn, String sortOrder)
         {
-             SqlCommand cmd;
+            SqlCommand cmd;
             SqlDataAdapter da;
             DataTable dt;
             SqlDataReader rd;
@@ -151,58 +187,134 @@ namespace ProjekBesarPendidikan.Master
             string connectionString = "Data Source=127.0.0.4,9210;Initial Catalog=DB_RentalPlaystation;User ID=Pendidikan;Password=123;";
             SqlConnection connect = new SqlConnection(connectionString);
             connect.Open();
-            //cmd = new SqlCommand("EXEC dbo.rps_getListPlayStation @search = null, @status = null, @jps_id = null, @sortColumn = 'pst_id', @sortOrder = 'ASC'", connect);
+
             cmd = new SqlCommand("dbo.rps_getListPlayStation", connect);
             cmd.CommandType = CommandType.StoredProcedure;
 
-            cmd.Parameters.AddWithValue("@search", search);
-            cmd.Parameters.AddWithValue("@status", null);
-            cmd.Parameters.AddWithValue("@jps_id", null);
-            cmd.Parameters.AddWithValue("@sortColumn", "pst_id");
-            cmd.Parameters.AddWithValue("@sortOrder", "ASC");
+            // Parameter HARUS ditambahkan sebelum Fill()
+            cmd.Parameters.AddWithValue("@search", search ?? (object)DBNull.Value);
+            cmd.Parameters.AddWithValue("@status", sortStatus ?? (object)DBNull.Value);
+            cmd.Parameters.AddWithValue("@jps_id", DBNull.Value);
+            cmd.Parameters.AddWithValue("@sortColumn", sortColumn ?? "pst_id");
+            cmd.Parameters.AddWithValue("@sortOrder", sortOrder ?? "ASC");
 
             da = new SqlDataAdapter(cmd);
             dt = new DataTable();
             da.Fill(dt);
             dgvPlayStation.DataSource = dt;
-            
+
+            dgvPlayStation.Columns["No"].HeaderText = "No";
+            dgvPlayStation.Columns["No"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvPlayStation.Columns["No"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvPlayStation.Columns["pst_id"].HeaderText = "ID";
+            dgvPlayStation.Columns["pst_id"].Visible = false;
+            dgvPlayStation.Columns["jps_id"].HeaderText = "ID Jenis";
+            dgvPlayStation.Columns["jps_id"].Visible = false;
+            dgvPlayStation.Columns["pst_merk"].HeaderText = "Nama";
+            dgvPlayStation.Columns["pst_Merk"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvPlayStation.Columns["pst_serial_number"].HeaderText = "No. Serial";
+            dgvPlayStation.Columns["pst_serial_number"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvPlayStation.Columns["jps_nama"].HeaderText = "Jenis";
+            dgvPlayStation.Columns["jps_nama"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvPlayStation.Columns["pst_harga_per_jam"].HeaderText = "Harga";
+            dgvPlayStation.Columns["pst_harga_per_jam"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvPlayStation.Columns["pst_harga_per_jam"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            dgvPlayStation.Columns["pst_status"].HeaderText = "Status";
+            dgvPlayStation.Columns["pst_status"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvPlayStation.Columns["pst_status"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvPlayStation.Columns["pst_created_date"].HeaderText = "Tanggal Dibuat";
+            dgvPlayStation.Columns["pst_created_date"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvPlayStation.Columns["pst_created_by"].HeaderText = "Dibuat Oleh";
+            dgvPlayStation.Columns["pst_created_by"].Visible = false;
+            dgvPlayStation.Columns["pst_modif_by"].HeaderText = "Diubah Oleh";
+            dgvPlayStation.Columns["pst_modif_by"].Visible = false;
+            dgvPlayStation.Columns["pst_modif_date"].HeaderText = "Tanggal Diubah";
+            dgvPlayStation.Columns["pst_modif_date"].Visible = false;
+            dgvPlayStation.Columns["jps_max_pemain"].HeaderText = "Max Pemain";
+            dgvPlayStation.Columns["jps_max_pemain"].Visible = false;
+
+            bool editExists = dgvPlayStation.Columns.Cast<DataGridViewColumn>().Any(c => c.Name == "Edit");
+            bool deleteExists = dgvPlayStation.Columns.Cast<DataGridViewColumn>().Any(c => c.Name == "Delete");
+
+            if (!editExists)
+            {
+                DataGridViewButtonColumn editButton = new DataGridViewButtonColumn();
+                editButton.Name = "Edit";
+                editButton.HeaderText = "";
+                editButton.Text = "Edit";
+                editButton.UseColumnTextForButtonValue = true;
+                dgvPlayStation.Columns.Add(editButton);
+            }
+
+            if (!deleteExists)
+            {
+                DataGridViewButtonColumn deleteButton = new DataGridViewButtonColumn();
+                deleteButton.Name = "Delete";
+                deleteButton.HeaderText = "";
+                deleteButton.Text = "Delete";
+                deleteButton.UseColumnTextForButtonValue = true;
+                dgvPlayStation.Columns.Add(deleteButton);
+            }
+
+            dgvPlayStation.CellFormatting += DgvPlayStation_CellFormatting;
             dgvPlayStation.Refresh();
             connect.Close();
         }
 
+
         private void dgvPlayStation_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0)
+            string columnName = dgvPlayStation.Columns[e.ColumnIndex].Name;
+            string status = dgvPlayStation.Rows[e.RowIndex].Cells["pst_status"].Value?.ToString()?.ToLower();
+
+            // Tombol Edit & Restore (satu kolom: "Edit")
+            if (columnName == "Edit")
             {
-                // Edit Button
-                if (dgvPlayStation.Columns[e.ColumnIndex].Name == "Edit")
+                if (status == "aktif")
                 {
+                    // Edit data
                     int id = Convert.ToInt32(dgvPlayStation.Rows[e.RowIndex].Cells["pst_id"].Value);
                     int jps_id = Convert.ToInt32(dgvPlayStation.Rows[e.RowIndex].Cells["jps_id"].Value);
                     string merk = dgvPlayStation.Rows[e.RowIndex].Cells["pst_merk"].Value.ToString();
                     string serialNumber = dgvPlayStation.Rows[e.RowIndex].Cells["pst_serial_number"].Value.ToString();
                     Decimal hargaPerJam = Convert.ToDecimal(dgvPlayStation.Rows[e.RowIndex].Cells["pst_harga_per_jam"].Value.ToString());
                     ShowFormInPanel(new PlayStationUpdate(admin, id, jps_id, merk, serialNumber, hargaPerJam));
-
                 }
-
-                //Delete Button
-                else if (dgvPlayStation.Columns[e.ColumnIndex].Name == "Delete")
+                else
                 {
+                    // Restore data
                     string id = dgvPlayStation.Rows[e.RowIndex].Cells["pst_id"].Value.ToString();
                     string nama = dgvPlayStation.Rows[e.RowIndex].Cells["pst_merk"].Value.ToString();
 
-                    DialogResult confirm = RJMessageBox.Show("Are you sure want to delete " + nama, "Warning", MessageBoxButtons.YesNo);
+                    DialogResult confirm = RJMessageBox.Show("Are you sure want to restore " + nama, "Validation", MessageBoxButtons.YesNo);
                     if (confirm == DialogResult.Yes)
                     {
-                        setPlayStationStatus(Convert.ToInt32(dgvPlayStation.Rows[e.RowIndex].Cells["pst_id"].Value));
-                        showDgv(); // Refresh table
+                        setPlayStationStatus(Convert.ToInt32(id), status);
+                        showDgv();
                     }
+                }
+            }
+
+            // Tombol Delete (berbeda kolom)
+            else if (columnName == "Delete")
+            {
+                if (status != "aktif")
+                {
+                    return;
+                }
+                string id = dgvPlayStation.Rows[e.RowIndex].Cells["pst_id"].Value.ToString();
+                string nama = dgvPlayStation.Rows[e.RowIndex].Cells["pst_merk"].Value.ToString();
+
+                DialogResult confirm = RJMessageBox.Show("Are you sure want to delete " + nama, "Warning", MessageBoxButtons.YesNo);
+                if (confirm == DialogResult.Yes)
+                {
+                    setPlayStationStatus(Convert.ToInt32(id), status);
+                    showDgv();
                 }
             }
         }
 
-        private void setPlayStationStatus(int id)
+        private void setPlayStationStatus(int id, String status)
         {
             try
             {
@@ -221,11 +333,18 @@ namespace ProjekBesarPendidikan.Master
                     }
                 }
 
-                MessageBox.Show("Data berhasil dihapus!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (status == "aktif")
+                {
+                    MessageBox.Show("Data berhasil dihapus!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Data berhasil diubah!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
             catch (SqlException ex)
             {
-                MessageBox.Show(ex.ToString(), "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -248,10 +367,114 @@ namespace ProjekBesarPendidikan.Master
 
         private void txtCariPlaystation_TextChanged(object sender, EventArgs e)
         {
-            showDgv(txtCariPlaystation.Text);
+            RefreshFilteredData();
+        }
+        
+
+        bool p_filterExpand = false;
+        private void timer_filter_Tick(object sender, EventArgs e)
+        {
+            if (!p_filterExpand)
+            {
+                if (p_filter.Height < 285)
+                {
+                    p_filter.Height += 12;
+                    p_filter.ShadowDecoration.Enabled = true;
+                }
+                else
+                {
+                    p_filter.Height = 285;
+                    timer_filter.Stop();
+                    p_filterExpand = true;
+                }
+            }
+            else
+            {
+                if (p_filter.Height > 12)
+                {
+                    p_filter.Height -= 12;
+                }
+                else
+                {
+                    p_filter.Height = 12;
+                    p_filter.ShadowDecoration.Enabled = false;
+                    timer_filter.Stop();
+                }
+            }
         }
 
+        private void btn_Filter_Click(object sender, EventArgs e)
+        {
+            p_filterExpand = !p_filterExpand;
+            timer_filter.Start();
+        }
 
+        private void cbSortStatus_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            RefreshFilteredData();
+        }
 
+        private void cbSortColumn_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            RefreshFilteredData();
+        }
+
+        private void cbSortOrder_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            RefreshFilteredData();
+        }
+
+        private void RefreshFilteredData()
+        {
+            string search = txtCariPlaystation.Text.Trim();
+            if (cbSortStatus.SelectedItem == null || cbSortColumn.SelectedItem == null || cbSortOrder.SelectedItem == null)
+                return;
+
+            string sortStatus = ((KeyValuePair<string, string>)cbSortStatus.SelectedItem).Value;
+            string sortColumn = ((KeyValuePair<string, string>)cbSortColumn.SelectedItem).Value;
+            string sortOrder = ((KeyValuePair<string, string>)cbSortOrder.SelectedItem).Value;
+            showDgv(search, sortStatus, sortColumn, sortOrder);
+        }
+
+        private void btn_clear_Click(object sender, EventArgs e)
+        {
+            clear();
+        }
+
+        public void clear()
+        {
+            if (cbSortStatus.Items.Count > 0)
+                cbSortStatus.SelectedIndex = 0;
+            else
+                cbSortStatus.SelectedItem = null;
+
+            if (cbSortColumn.Items.Count > 0)
+                cbSortColumn.SelectedIndex = 0;
+            else
+                cbSortColumn.SelectedItem = null;
+
+            if (cbSortOrder.Items.Count > 0)
+                cbSortOrder.SelectedIndex = 0;
+            else
+                cbSortOrder.SelectedItem = null;
+        }
+
+        private void dgvPlayStation_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
+        {
+            if (e.RowIndex < 0)
+                return;
+
+            if (dgvPlayStation.Columns[e.ColumnIndex].Name == "Delete")
+            {
+                string status = dgvPlayStation.Rows[e.RowIndex].Cells["pst_status"].Value?.ToString()?.ToLower();
+
+                if (status != "aktif")
+                {
+                    // Kosongkan tampilan tombol Edit
+                    e.PaintBackground(e.CellBounds, true);
+                    e.Handled = true;
+                }
+            }
+        }
     }
 }

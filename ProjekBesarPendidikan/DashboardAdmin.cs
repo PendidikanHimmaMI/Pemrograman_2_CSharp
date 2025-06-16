@@ -81,7 +81,7 @@ namespace ProjekBesarPendidikan
 
         private void btn_Beranda_Click(object sender, EventArgs e)
         {
-            ShowFormInPanel(new Dashboard.DashboardKasir1(), (Guna2Button)sender);
+            ShowFormInPanel(new Dashboard.Dashboardadmin(), (Guna2Button)sender);
         }
 
         private void btn_JenisPS_Click(object sender, EventArgs e) {

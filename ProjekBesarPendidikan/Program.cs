@@ -1,4 +1,5 @@
-﻿using ProjekBesarPendidikan.Transaksi;
+﻿using ProjekBesarPendidikan.MasterKaryawan;
+using ProjekBesarPendidikan.Transaksi;
 using System;
 using System.Collections.Generic;
 using System.Linq;

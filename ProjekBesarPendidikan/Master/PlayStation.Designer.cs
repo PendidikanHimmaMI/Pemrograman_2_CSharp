@@ -28,27 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PlayStation));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.txtCariPlaystation = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnTambahData = new Guna.UI2.WinForms.Guna2Button();
-            this.p_Filter = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.cb_SortStatus = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cb_SortOrder = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.btn_clearF = new Guna.UI2.WinForms.Guna2Button();
-            this.label13 = new System.Windows.Forms.Label();
-            this.cb_SortColumn = new Guna.UI2.WinForms.Guna2ComboBox();
             this.Gpnl_Data = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.dgvPlayStation = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.p_filter = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.cbSortStatus = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.cbSortOrder = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.btn_clear = new Guna.UI2.WinForms.Guna2Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cbSortColumn = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.btn_Filter = new Guna.UI2.WinForms.Guna2Button();
+            this.timer_filter = new System.Windows.Forms.Timer(this.components);
             this.guna2CustomGradientPanel1.SuspendLayout();
-            this.p_Filter.SuspendLayout();
             this.Gpnl_Data.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPlayStation)).BeginInit();
+            this.p_filter.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2CustomGradientPanel1
@@ -60,9 +63,10 @@
             this.guna2CustomGradientPanel1.BackColor = System.Drawing.Color.White;
             this.guna2CustomGradientPanel1.BorderRadius = 10;
             this.guna2CustomGradientPanel1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.guna2CustomGradientPanel1.Controls.Add(this.p_filter);
             this.guna2CustomGradientPanel1.Controls.Add(this.txtCariPlaystation);
+            this.guna2CustomGradientPanel1.Controls.Add(this.btn_Filter);
             this.guna2CustomGradientPanel1.Controls.Add(this.btnTambahData);
-            this.guna2CustomGradientPanel1.Controls.Add(this.p_Filter);
             this.guna2CustomGradientPanel1.Controls.Add(this.Gpnl_Data);
             this.guna2CustomGradientPanel1.CustomizableEdges.BottomLeft = false;
             this.guna2CustomGradientPanel1.CustomizableEdges.BottomRight = false;
@@ -122,129 +126,6 @@
             this.btnTambahData.Text = "Tambah Data";
             this.btnTambahData.Click += new System.EventHandler(this.btnTambahData_Click);
             // 
-            // p_Filter
-            // 
-            this.p_Filter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.p_Filter.Controls.Add(this.label2);
-            this.p_Filter.Controls.Add(this.cb_SortStatus);
-            this.p_Filter.Controls.Add(this.label1);
-            this.p_Filter.Controls.Add(this.cb_SortOrder);
-            this.p_Filter.Controls.Add(this.btn_clearF);
-            this.p_Filter.Controls.Add(this.label13);
-            this.p_Filter.Controls.Add(this.cb_SortColumn);
-            this.p_Filter.Location = new System.Drawing.Point(933, 89);
-            this.p_Filter.MaximumSize = new System.Drawing.Size(212, 285);
-            this.p_Filter.MinimumSize = new System.Drawing.Size(212, 12);
-            this.p_Filter.Name = "p_Filter";
-            this.p_Filter.ShadowDecoration.Depth = 15;
-            this.p_Filter.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(7);
-            this.p_Filter.Size = new System.Drawing.Size(212, 12);
-            this.p_Filter.TabIndex = 9;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(29, 13);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(180, 25);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Sorting By Status";
-            // 
-            // cb_SortStatus
-            // 
-            this.cb_SortStatus.BackColor = System.Drawing.Color.White;
-            this.cb_SortStatus.BorderColor = System.Drawing.Color.White;
-            this.cb_SortStatus.BorderRadius = 6;
-            this.cb_SortStatus.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cb_SortStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cb_SortStatus.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
-            this.cb_SortStatus.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cb_SortStatus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cb_SortStatus.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.cb_SortStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cb_SortStatus.ItemHeight = 30;
-            this.cb_SortStatus.Location = new System.Drawing.Point(29, 42);
-            this.cb_SortStatus.Name = "cb_SortStatus";
-            this.cb_SortStatus.Size = new System.Drawing.Size(158, 36);
-            this.cb_SortStatus.TabIndex = 6;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(29, 161);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 25);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Sorting start";
-            // 
-            // cb_SortOrder
-            // 
-            this.cb_SortOrder.BackColor = System.Drawing.Color.White;
-            this.cb_SortOrder.BorderColor = System.Drawing.Color.White;
-            this.cb_SortOrder.BorderRadius = 6;
-            this.cb_SortOrder.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cb_SortOrder.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cb_SortOrder.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
-            this.cb_SortOrder.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cb_SortOrder.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cb_SortOrder.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.cb_SortOrder.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cb_SortOrder.ItemHeight = 30;
-            this.cb_SortOrder.Location = new System.Drawing.Point(29, 190);
-            this.cb_SortOrder.Name = "cb_SortOrder";
-            this.cb_SortOrder.Size = new System.Drawing.Size(158, 36);
-            this.cb_SortOrder.TabIndex = 4;
-            // 
-            // btn_clearF
-            // 
-            this.btn_clearF.BackColor = System.Drawing.Color.White;
-            this.btn_clearF.BorderRadius = 6;
-            this.btn_clearF.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_clearF.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_clearF.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_clearF.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_clearF.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
-            this.btn_clearF.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_clearF.ForeColor = System.Drawing.Color.White;
-            this.btn_clearF.Location = new System.Drawing.Point(28, 237);
-            this.btn_clearF.Name = "btn_clearF";
-            this.btn_clearF.Size = new System.Drawing.Size(158, 33);
-            this.btn_clearF.TabIndex = 3;
-            this.btn_clearF.Text = "Clear";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.White;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(28, 87);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(192, 25);
-            this.label13.TabIndex = 2;
-            this.label13.Text = "Sorting By Column";
-            // 
-            // cb_SortColumn
-            // 
-            this.cb_SortColumn.BackColor = System.Drawing.Color.White;
-            this.cb_SortColumn.BorderColor = System.Drawing.Color.White;
-            this.cb_SortColumn.BorderRadius = 6;
-            this.cb_SortColumn.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cb_SortColumn.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cb_SortColumn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
-            this.cb_SortColumn.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cb_SortColumn.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cb_SortColumn.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.cb_SortColumn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cb_SortColumn.ItemHeight = 30;
-            this.cb_SortColumn.Location = new System.Drawing.Point(28, 116);
-            this.cb_SortColumn.Name = "cb_SortColumn";
-            this.cb_SortColumn.Size = new System.Drawing.Size(158, 36);
-            this.cb_SortColumn.TabIndex = 0;
-            // 
             // Gpnl_Data
             // 
             this.Gpnl_Data.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -266,29 +147,29 @@
             // 
             this.dgvPlayStation.AllowUserToAddRows = false;
             this.dgvPlayStation.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.dgvPlayStation.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgvPlayStation.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvPlayStation.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPlayStation.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPlayStation.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvPlayStation.ColumnHeadersHeight = 20;
             this.dgvPlayStation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvPlayStation.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvPlayStation.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvPlayStation.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvPlayStation.Location = new System.Drawing.Point(48, 35);
             this.dgvPlayStation.Name = "dgvPlayStation";
@@ -320,6 +201,162 @@
             this.dgvPlayStation.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgvPlayStation.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPlayStation_CellClick);
             this.dgvPlayStation.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.DgvPlayStation_CellFormatting);
+            this.dgvPlayStation.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvPlayStation_CellPainting);
+            // 
+            // p_filter
+            // 
+            this.p_filter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.p_filter.Controls.Add(this.label3);
+            this.p_filter.Controls.Add(this.cbSortStatus);
+            this.p_filter.Controls.Add(this.label4);
+            this.p_filter.Controls.Add(this.cbSortOrder);
+            this.p_filter.Controls.Add(this.btn_clear);
+            this.p_filter.Controls.Add(this.label5);
+            this.p_filter.Controls.Add(this.cbSortColumn);
+            this.p_filter.Location = new System.Drawing.Point(877, 93);
+            this.p_filter.MaximumSize = new System.Drawing.Size(250, 285);
+            this.p_filter.MinimumSize = new System.Drawing.Size(212, 12);
+            this.p_filter.Name = "p_filter";
+            this.p_filter.ShadowDecoration.Depth = 15;
+            this.p_filter.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(7);
+            this.p_filter.Size = new System.Drawing.Size(250, 12);
+            this.p_filter.TabIndex = 11;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(29, 13);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(180, 25);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Sorting By Status";
+            // 
+            // cbSortStatus
+            // 
+            this.cbSortStatus.BackColor = System.Drawing.Color.White;
+            this.cbSortStatus.BorderColor = System.Drawing.Color.White;
+            this.cbSortStatus.BorderRadius = 6;
+            this.cbSortStatus.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbSortStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbSortStatus.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
+            this.cbSortStatus.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbSortStatus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbSortStatus.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.cbSortStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbSortStatus.ItemHeight = 30;
+            this.cbSortStatus.Location = new System.Drawing.Point(29, 42);
+            this.cbSortStatus.Name = "cbSortStatus";
+            this.cbSortStatus.Size = new System.Drawing.Size(180, 36);
+            this.cbSortStatus.TabIndex = 6;
+            this.cbSortStatus.SelectedIndexChanged += new System.EventHandler(this.cbSortStatus_SelectedIndexChanged);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.White;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(29, 161);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(129, 25);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Sorting start";
+            // 
+            // cbSortOrder
+            // 
+            this.cbSortOrder.BackColor = System.Drawing.Color.White;
+            this.cbSortOrder.BorderColor = System.Drawing.Color.White;
+            this.cbSortOrder.BorderRadius = 6;
+            this.cbSortOrder.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbSortOrder.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbSortOrder.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
+            this.cbSortOrder.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbSortOrder.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbSortOrder.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.cbSortOrder.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbSortOrder.ItemHeight = 30;
+            this.cbSortOrder.Location = new System.Drawing.Point(29, 190);
+            this.cbSortOrder.Name = "cbSortOrder";
+            this.cbSortOrder.Size = new System.Drawing.Size(180, 36);
+            this.cbSortOrder.TabIndex = 4;
+            this.cbSortOrder.SelectedIndexChanged += new System.EventHandler(this.cbSortOrder_SelectedIndexChanged);
+            // 
+            // btn_clear
+            // 
+            this.btn_clear.BackColor = System.Drawing.Color.White;
+            this.btn_clear.BorderRadius = 6;
+            this.btn_clear.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_clear.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_clear.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_clear.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_clear.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
+            this.btn_clear.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_clear.ForeColor = System.Drawing.Color.White;
+            this.btn_clear.Location = new System.Drawing.Point(42, 236);
+            this.btn_clear.Name = "btn_clear";
+            this.btn_clear.Size = new System.Drawing.Size(158, 33);
+            this.btn_clear.TabIndex = 3;
+            this.btn_clear.Text = "Clear";
+            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.White;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(28, 87);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(192, 25);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Sorting By Column";
+            // 
+            // cbSortColumn
+            // 
+            this.cbSortColumn.BackColor = System.Drawing.Color.White;
+            this.cbSortColumn.BorderColor = System.Drawing.Color.White;
+            this.cbSortColumn.BorderRadius = 6;
+            this.cbSortColumn.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbSortColumn.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbSortColumn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
+            this.cbSortColumn.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbSortColumn.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbSortColumn.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.cbSortColumn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbSortColumn.ItemHeight = 30;
+            this.cbSortColumn.Location = new System.Drawing.Point(28, 116);
+            this.cbSortColumn.Name = "cbSortColumn";
+            this.cbSortColumn.Size = new System.Drawing.Size(181, 36);
+            this.cbSortColumn.TabIndex = 0;
+            this.cbSortColumn.SelectedIndexChanged += new System.EventHandler(this.cbSortColumn_SelectedIndexChanged);
+            // 
+            // btn_Filter
+            // 
+            this.btn_Filter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Filter.BackColor = System.Drawing.Color.White;
+            this.btn_Filter.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
+            this.btn_Filter.BorderRadius = 15;
+            this.btn_Filter.BorderThickness = 4;
+            this.btn_Filter.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Filter.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Filter.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Filter.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Filter.FillColor = System.Drawing.Color.White;
+            this.btn_Filter.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
+            this.btn_Filter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
+            this.btn_Filter.ImageOffset = new System.Drawing.Point(-4, 0);
+            this.btn_Filter.Location = new System.Drawing.Point(902, 41);
+            this.btn_Filter.Name = "btn_Filter";
+            this.btn_Filter.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
+            this.btn_Filter.Size = new System.Drawing.Size(208, 46);
+            this.btn_Filter.TabIndex = 10;
+            this.btn_Filter.Text = "Sort && Filter";
+            this.btn_Filter.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Filter.Click += new System.EventHandler(this.btn_Filter_Click);
+            // 
+            // timer_filter
+            // 
+            this.timer_filter.Tick += new System.EventHandler(this.timer_filter_Tick);
             // 
             // PlayStation
             // 
@@ -332,10 +369,10 @@
             this.Name = "PlayStation";
             this.Text = "PlayStation";
             this.guna2CustomGradientPanel1.ResumeLayout(false);
-            this.p_Filter.ResumeLayout(false);
-            this.p_Filter.PerformLayout();
             this.Gpnl_Data.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPlayStation)).EndInit();
+            this.p_filter.ResumeLayout(false);
+            this.p_filter.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -343,17 +380,19 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
-        private Guna.UI2.WinForms.Guna2CustomGradientPanel p_Filter;
-        private System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2ComboBox cb_SortStatus;
-        private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2ComboBox cb_SortOrder;
-        private Guna.UI2.WinForms.Guna2Button btn_clearF;
-        private System.Windows.Forms.Label label13;
-        private Guna.UI2.WinForms.Guna2ComboBox cb_SortColumn;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel Gpnl_Data;
         private Guna.UI2.WinForms.Guna2DataGridView dgvPlayStation;
         private Guna.UI2.WinForms.Guna2Button btnTambahData;
         private Guna.UI2.WinForms.Guna2TextBox txtCariPlaystation;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel p_filter;
+        private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2ComboBox cbSortStatus;
+        private System.Windows.Forms.Label label4;
+        private Guna.UI2.WinForms.Guna2ComboBox cbSortOrder;
+        private Guna.UI2.WinForms.Guna2Button btn_clear;
+        private System.Windows.Forms.Label label5;
+        private Guna.UI2.WinForms.Guna2ComboBox cbSortColumn;
+        private Guna.UI2.WinForms.Guna2Button btn_Filter;
+        private System.Windows.Forms.Timer timer_filter;
     }
 }

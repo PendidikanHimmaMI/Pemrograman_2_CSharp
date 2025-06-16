@@ -73,6 +73,8 @@ namespace ProjekBesarPendidikan
 
             lblMenu.Text = "Beranda";
             viewKeranjang.Visible = false;
+
+            ShowFormInPanel(new Dashboard.DashboardKasir1());
         }
 
         private void btnTransaksi_Click(object sender, EventArgs e)
@@ -126,8 +128,10 @@ namespace ProjekBesarPendidikan
             btnTransaksi.Image = Image.FromFile(@"..\..\Icon\Transaksi.png");
 
             viewKeranjang.Visible = false;
+            this.Hide(); // Sembunyikan form saat ini
+            Login login = new Login();
+            login.FormClosed += (s, args) => this.Close(); // Jika Login ditutup, form saat ini ikut ditutup
             login.Show();
-            this.Close();
         }
 
         private void viewKeranjang_Load(object sender, EventArgs e)

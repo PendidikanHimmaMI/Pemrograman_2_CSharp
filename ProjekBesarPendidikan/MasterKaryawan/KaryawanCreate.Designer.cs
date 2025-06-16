@@ -386,7 +386,7 @@
             this.guna2CustomGradientPanel1.Controls.Add(this.Gpnl_Data);
             this.guna2CustomGradientPanel1.CustomizableEdges.BottomLeft = false;
             this.guna2CustomGradientPanel1.CustomizableEdges.BottomRight = false;
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(10, 61);
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(7, 100);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1180, 678);
             this.guna2CustomGradientPanel1.TabIndex = 4;
