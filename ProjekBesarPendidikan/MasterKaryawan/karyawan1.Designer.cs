@@ -88,7 +88,7 @@
             this.btn_add.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_add.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.btn_add.ImageOffset = new System.Drawing.Point(-4, 0);
-            this.btn_add.Location = new System.Drawing.Point(22, 38);
+            this.btn_add.Location = new System.Drawing.Point(22, 48);
             this.btn_add.Name = "btn_add";
             this.btn_add.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.btn_add.Size = new System.Drawing.Size(180, 46);
@@ -106,7 +106,7 @@
             this.p_Filter.Controls.Add(this.btn_clearF);
             this.p_Filter.Controls.Add(this.label13);
             this.p_Filter.Controls.Add(this.cb_SortColumn);
-            this.p_Filter.Location = new System.Drawing.Point(933, 89);
+            this.p_Filter.Location = new System.Drawing.Point(933, 99);
             this.p_Filter.MaximumSize = new System.Drawing.Size(212, 285);
             this.p_Filter.MinimumSize = new System.Drawing.Size(212, 12);
             this.p_Filter.Name = "p_Filter";
@@ -114,6 +114,7 @@
             this.p_Filter.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(7);
             this.p_Filter.Size = new System.Drawing.Size(212, 12);
             this.p_Filter.TabIndex = 9;
+            this.p_Filter.Paint += new System.Windows.Forms.PaintEventHandler(this.p_Filter_Paint);
             // 
             // label2
             // 
@@ -143,6 +144,8 @@
             this.cb_SortStatus.Name = "cb_SortStatus";
             this.cb_SortStatus.Size = new System.Drawing.Size(158, 36);
             this.cb_SortStatus.TabIndex = 6;
+            this.cb_SortStatus.SelectedIndexChanged += new System.EventHandler(this.cb_SortStatus_SelectedIndexChanged_2);
+            this.cb_SortStatus.MouseClick += new System.Windows.Forms.MouseEventHandler(this.cb_SortStatus_MouseClick);
             // 
             // label1
             // 
@@ -172,6 +175,7 @@
             this.cb_SortOrder.Name = "cb_SortOrder";
             this.cb_SortOrder.Size = new System.Drawing.Size(158, 36);
             this.cb_SortOrder.TabIndex = 4;
+            this.cb_SortOrder.SelectedIndexChanged += new System.EventHandler(this.cb_SortOrder_SelectedIndexChanged_2);
             // 
             // btn_clearF
             // 
@@ -189,6 +193,7 @@
             this.btn_clearF.Size = new System.Drawing.Size(158, 33);
             this.btn_clearF.TabIndex = 3;
             this.btn_clearF.Text = "Clear";
+            this.btn_clearF.Click += new System.EventHandler(this.btn_clearF_Click);
             // 
             // label13
             // 
@@ -218,6 +223,7 @@
             this.cb_SortColumn.Name = "cb_SortColumn";
             this.cb_SortColumn.Size = new System.Drawing.Size(158, 36);
             this.cb_SortColumn.TabIndex = 0;
+            this.cb_SortColumn.SelectedIndexChanged += new System.EventHandler(this.cb_SortColumn_SelectedIndexChanged_2);
             // 
             // btn_Filter
             // 
@@ -231,16 +237,17 @@
             this.btn_Filter.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_Filter.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_Filter.FillColor = System.Drawing.Color.White;
-            this.btn_Filter.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Filter.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.btn_Filter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.btn_Filter.ImageOffset = new System.Drawing.Point(-4, 0);
-            this.btn_Filter.Location = new System.Drawing.Point(948, 38);
+            this.btn_Filter.Location = new System.Drawing.Point(948, 48);
             this.btn_Filter.Name = "btn_Filter";
             this.btn_Filter.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.btn_Filter.Size = new System.Drawing.Size(197, 46);
             this.btn_Filter.TabIndex = 8;
             this.btn_Filter.Text = "Sort & Filter";
             this.btn_Filter.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Filter.Click += new System.EventHandler(this.btn_Filter_Click_1);
             // 
             // Gpnl_Data
             // 
@@ -338,7 +345,7 @@
             this.txt_Search.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_Search.IconRightOffset = new System.Drawing.Point(10, 0);
             this.txt_Search.IconRightSize = new System.Drawing.Size(30, 30);
-            this.txt_Search.Location = new System.Drawing.Point(210, 38);
+            this.txt_Search.Location = new System.Drawing.Point(210, 48);
             this.txt_Search.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txt_Search.Name = "txt_Search";
             this.txt_Search.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
@@ -352,6 +359,7 @@
             // timer_filter
             // 
             this.timer_filter.Interval = 1;
+            this.timer_filter.Tick += new System.EventHandler(this.timer_filter_Tick_1);
             // 
             // karyawan1
             // 

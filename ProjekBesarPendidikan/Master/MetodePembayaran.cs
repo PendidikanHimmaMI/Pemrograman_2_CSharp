@@ -278,6 +278,7 @@ namespace ProjekBesarPendidikan{
         }
 
         private void btn_clear_Click(object sender, EventArgs e) {
+            clear();
         }
 
         private void txt_Name_KeyPress(object sender, KeyPressEventArgs e) {
@@ -384,5 +385,9 @@ namespace ProjekBesarPendidikan{
             }
         }
 
+        private void p_Filter_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

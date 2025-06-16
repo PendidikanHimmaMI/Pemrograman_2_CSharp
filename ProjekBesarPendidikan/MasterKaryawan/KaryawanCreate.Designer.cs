@@ -317,7 +317,7 @@
             this.btn_save.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.btn_save.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
             this.btn_save.ForeColor = System.Drawing.Color.White;
-            this.btn_save.Location = new System.Drawing.Point(980, 593);
+            this.btn_save.Location = new System.Drawing.Point(959, 608);
             this.btn_save.Name = "btn_save";
             this.btn_save.Size = new System.Drawing.Size(180, 45);
             this.btn_save.TabIndex = 3;
@@ -335,7 +335,7 @@
             this.btn_back.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(188)))), ((int)(((byte)(222)))));
             this.btn_back.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
             this.btn_back.ForeColor = System.Drawing.Color.White;
-            this.btn_back.Location = new System.Drawing.Point(736, 593);
+            this.btn_back.Location = new System.Drawing.Point(727, 608);
             this.btn_back.Name = "btn_back";
             this.btn_back.Size = new System.Drawing.Size(180, 45);
             this.btn_back.TabIndex = 2;
@@ -367,7 +367,7 @@
             this.Gpnl_Data.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.Gpnl_Data.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.Gpnl_Data.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
-            this.Gpnl_Data.Location = new System.Drawing.Point(18, 17);
+            this.Gpnl_Data.Location = new System.Drawing.Point(18, 60);
             this.Gpnl_Data.Name = "Gpnl_Data";
             this.Gpnl_Data.Size = new System.Drawing.Size(1142, 532);
             this.Gpnl_Data.TabIndex = 1;

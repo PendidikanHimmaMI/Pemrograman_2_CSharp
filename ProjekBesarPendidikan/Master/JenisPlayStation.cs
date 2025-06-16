@@ -23,8 +23,95 @@ namespace ProjekBesarPendidikan
             admin = dashboardAdmin;
             dgv_JenisPlayStation.CellClick += dgv_JenisPlayStation_CellClick;
             this.Name = nameKry;
+            var statusItems = new Dictionary<string, string>
+            {
+                { "Aktif", "Aktif" },
+                { "Tidak Aktif", "Tidak Aktif" }
+            };
+
+            cb_SortStatus.DataSource = new BindingSource(statusItems, null);
+            cb_SortStatus.DisplayMember = "Key";
+            cb_SortStatus.ValueMember = "Value";
+            cb_SortStatus.SelectedIndex = 0;
+
+            // Sort Column ComboBox using Dictionary as DataSource
+            var sortColumnItems = new Dictionary<string, string>
+            {
+                { "ID", "jps_id" },
+                { "Nama", "jps_nama" },
+                { "Deskripsi", "jps_deskripsi" },
+                { "Status", "jps_status" },
+                { "Dibuat Oleh", "jps_created_by" },
+                { "Tanggal Dibuat", "jps_created_date" },
+                { "Diubah Oleh", "jps_modif_by" },
+                { "Tanggal Diubah", "jps_modif_date" }
+            };
+
+            cb_SortColumn.DataSource = new BindingSource(sortColumnItems, null);
+            cb_SortColumn.DisplayMember = "Key";
+            cb_SortColumn.ValueMember = "Value";
+            cb_SortColumn.SelectedIndex = 0;
+
+            // Sort Order ComboBox using Dictionary as DataSource
+            var sortOrderItems = new Dictionary<string, string>
+            {
+                { "Naik (A-Z)", "ASC" },
+                { "Turun (Z-A)", "DESC" }
+            };
+
+            cb_SortOrder.DataSource = new BindingSource(sortOrderItems, null);
+            cb_SortOrder.DisplayMember = "Key";
+            cb_SortOrder.ValueMember = "Value";
+            cb_SortOrder.SelectedIndex = 0;
             LoadData();
         }
+
+        private void Produk_EnabledChanged(object sender, EventArgs e)
+        {
+
+            var statusItems = new Dictionary<string, string>
+            {
+                { "Aktif", "Aktif" },
+                { "Tidak Aktif", "Tidak Aktif" }
+            };
+
+            cb_SortStatus.DataSource = new BindingSource(statusItems, null);
+            cb_SortStatus.DisplayMember = "Key";
+            cb_SortStatus.ValueMember = "Value";
+            cb_SortStatus.SelectedIndex = 0;
+
+            // Sort Column ComboBox using Dictionary as DataSource
+            var sortColumnItems = new Dictionary<string, string>
+            {
+                { "ID", "jps_id" },
+                { "Nama", "jps_nama" },
+                { "Deskripsi", "jps_deskripsi" },
+                { "Status", "jps_status" },
+                { "Dibuat Oleh", "jps_created_by" },
+                { "Tanggal Dibuat", "jps_created_date" },
+                { "Diubah Oleh", "jps_modif_by" },
+                { "Tanggal Diubah", "jps_modif_date" }
+            };
+
+            cb_SortColumn.DataSource = new BindingSource(sortColumnItems, null);
+            cb_SortColumn.DisplayMember = "Key";
+            cb_SortColumn.ValueMember = "Value";
+            cb_SortColumn.SelectedIndex = 0;
+
+            // Sort Order ComboBox using Dictionary as DataSource
+            var sortOrderItems = new Dictionary<string, string>
+            {
+                { "Naik (A-Z)", "ASC" },
+                { "Turun (Z-A)", "DESC" }
+            };
+
+            cb_SortOrder.DataSource = new BindingSource(sortOrderItems, null);
+            cb_SortOrder.DisplayMember = "Key";
+            cb_SortOrder.ValueMember = "Value";
+            cb_SortOrder.SelectedIndex = 0;
+            LoadData();
+        }
+
         private void Produk_Load(object sender, EventArgs e)
         {
 
@@ -82,12 +169,13 @@ namespace ProjekBesarPendidikan
                         dgv_JenisPlayStation.Columns["jps_tahun_rilis"].HeaderText = "Tahun Rilis";
                         dgv_JenisPlayStation.Columns["jps_tahun_rilis"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
-
                         dgv_JenisPlayStation.Columns["jps_max_pemain"].HeaderText = "Max Pemain";
-                        dgv_JenisPlayStation.Columns["jps_max_pemain"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+                        dgv_JenisPlayStation.Columns["jps_max_pemain"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
                         dgv_JenisPlayStation.Columns["jps_deskripsi"].HeaderText = "Deskripsi";
                         dgv_JenisPlayStation.Columns["jps_status"].HeaderText = "Status";
+                        dgv_JenisPlayStation.Columns["jps_status"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
                         dgv_JenisPlayStation.Columns["jps_created_by"].HeaderText = "Dibuat Oleh";
                         dgv_JenisPlayStation.Columns["jps_created_by"].Visible = false;
                         dgv_JenisPlayStation.Columns["jps_created_date"].HeaderText = "Tanggal Dibuat";
@@ -96,14 +184,14 @@ namespace ProjekBesarPendidikan
                         dgv_JenisPlayStation.Columns["jps_modif_by"].Visible = false;
                         dgv_JenisPlayStation.Columns["jps_modif_date"].HeaderText = "Tanggal Diubah";
                         dgv_JenisPlayStation.Columns["jps_modif_date"].Visible = false;
-                        
 
 
-                        //string editPath = @"D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\Icon\edit.png";
-                        //Image editIcon = Image.FromFile(editPath);
 
-                        //string deletePath = @"D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\Icon\delete.png";
-                        //Image deleteIcon = Image.FromFile(deletePath);
+                        string editPath = @"D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\Icon\edit.png";
+                        Image editIcon = Image.FromFile(editPath);
+
+                        string deletePath = @"D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\Icon\delete.png";
+                        Image deleteIcon = Image.FromFile(deletePath);
 
                         if (!editExists)
                         {
@@ -111,7 +199,7 @@ namespace ProjekBesarPendidikan
                             editColumn.Name = "Edit";
                             editColumn.HeaderText = "Aksi";
                             editColumn.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-                            //editColumn.Image = editIcon;
+                            editColumn.Image = editIcon;
                             dgv_JenisPlayStation.Columns.Add(editColumn);
                         }
 
@@ -120,7 +208,7 @@ namespace ProjekBesarPendidikan
                             DataGridViewImageColumn deleteColumn = new DataGridViewImageColumn();
                             deleteColumn.Name = "Delete";
                             deleteColumn.HeaderText = "";
-                            //deleteColumn.Image = deleteIcon;
+                            deleteColumn.Image = deleteIcon;
                             dgv_JenisPlayStation.Columns.Add(deleteColumn);
                         }
                         dgv_JenisPlayStation.Columns["Edit"].Width = 25;
@@ -130,8 +218,6 @@ namespace ProjekBesarPendidikan
 
                         ((DataGridViewImageColumn)dgv_JenisPlayStation.Columns["Edit"]).ImageLayout = DataGridViewImageCellLayout.Zoom;
                         ((DataGridViewImageColumn)dgv_JenisPlayStation.Columns["Delete"]).ImageLayout = DataGridViewImageCellLayout.Zoom;
-
-
 
 
                     }
@@ -192,8 +278,7 @@ namespace ProjekBesarPendidikan
                     {
                         DialogResult confirm = RJMessageBox.Show("You can`t edit this Jenis Play Station, try to restore it if you want to edit this data", "Warning", MessageBoxButtons.OK);
                     }
-                    //formBaru.Show();
-                    this.Hide();
+                    //this.Hide();
                 }
 
                 else if (dgv_JenisPlayStation.Columns[e.ColumnIndex].Name == "Delete")
@@ -201,7 +286,7 @@ namespace ProjekBesarPendidikan
                     string id = dgv_JenisPlayStation.Rows[e.RowIndex].Cells["jps_id"].Value.ToString();
                     string nama = dgv_JenisPlayStation.Rows[e.RowIndex].Cells["jps_nama"].Value.ToString();
 
-                    DialogResult confirm = RJMessageBox.Show("Are you sure want to delete " + nama, "Warning", MessageBoxButtons.YesNo);
+                    DialogResult confirm = RJMessageBox.Show("Are you sure want to restore " + nama, "Warning", MessageBoxButtons.YesNo);
                     if (confirm == DialogResult.Yes)
                     {
                         ToggleJenisPlayStationStatus(Convert.ToInt32(dgv_JenisPlayStation.Rows[e.RowIndex].Cells["jps_id"].Value));
@@ -230,41 +315,8 @@ namespace ProjekBesarPendidikan
 
         private void btn_Filter_Click(object sender, EventArgs e)
         {
+            p_filterExpand = !p_filterExpand;
             timer_filter.Start();
-        }
-
-        bool p_filterExpand = false;
-        private void timer_filter_Tick(object sender, EventArgs e)
-        {
-            if (!p_filterExpand)
-            {
-                if (p_Filter.Height < 285)
-                {
-                    p_Filter.Height += 12;
-                    p_Filter.ShadowDecoration.Enabled = true;
-                }
-                else
-                {
-                    p_Filter.Height = 285;
-                    timer_filter.Stop();
-                    p_filterExpand = true;
-                }
-            }
-            else
-            {
-                if (p_Filter.Height > 12)
-                {
-                    p_Filter.Height -= 12;
-                }
-                else
-                {
-                    p_Filter.Height = 12;
-                    p_Filter.ShadowDecoration.Enabled = false;
-                    timer_filter.Stop();
-                    p_filterExpand = false;
-                }
-            }
-
         }
 
         private void btn_clear_Click(object sender, EventArgs e)
@@ -317,8 +369,6 @@ namespace ProjekBesarPendidikan
         {
             ShowFormInPanel(new JenisPlayStationCreate(admin, nameKry));
 
-            //JenisPlayStationCreate formBaru = new JenisPlayStationCreate(admin, nameKry);
-            //formBaru.Show();
             this.Hide();
         }
 
@@ -361,7 +411,117 @@ namespace ProjekBesarPendidikan
             ApplyFilters();
         }
 
+        private void Global_MouseDown(object sender, MouseEventArgs e)
+        {
+            // Convert to form coordinates
+            Point clickPoint = this.PointToClient(Cursor.Position);
+
+            if (!p_Filter.Bounds.Contains(clickPoint))
+            {
+                if (!p_Filter.Bounds.Contains(e.Location))
+                {
+                    if (p_filterExpand)
+                    {
+                        timer_filter.Start();
+                    }
+                }
+            }
+        }
+
         private void p_Filter_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        public void loadData()
+        {
+            if (cb_SortColumn.SelectedValue != null && cb_SortOrder.SelectedValue != null)
+            {
+                // Ambil nilai Value dengan cara aman
+                var selectedSortColumn = ((KeyValuePair<string, string>)cb_SortColumn.SelectedItem).Value;
+                var selectedSortOrder = ((KeyValuePair<string, string>)cb_SortOrder.SelectedItem).Value;
+
+                LoadData( txt_Search.Text.Trim(), cb_SortStatus.SelectedValue.ToString(), selectedSortColumn, selectedSortOrder);
+
+            }
+        }
+
+        bool p_filterExpand = false;
+        private void timer_filter_Tick(object sender, EventArgs e)
+        {
+            if (!p_filterExpand)
+            {
+                if (p_Filter.Height < 285)
+                {
+                    p_Filter.Height += 12;
+                    p_Filter.ShadowDecoration.Enabled = true;
+                }
+                else
+                {
+                    p_Filter.Height = 285;
+                    timer_filter.Stop();
+                    p_filterExpand = true;
+                }
+            }
+            else
+            {
+                if (p_Filter.Height > 12)
+                {
+                    p_Filter.Height -= 12;
+                }
+                else
+                {
+                    p_Filter.Height = 12;
+                    p_Filter.ShadowDecoration.Enabled = false;
+                    timer_filter.Stop();
+                }
+            }
+
+
+        }
+
+        private void cb_SortStatus_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            loadData();
+
+        }
+
+        private void cb_SortColumn_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            loadData();
+
+        }
+
+        private void cb_SortOrder_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            loadData();
+
+        }
+
+        private void btn_clearF_Click(object sender, EventArgs e)
+        {
+            clear();
+
+        }
+
+        private void RegisterMouseClickHandlers(Control parent)
+        {
+            foreach (Control ctrl in parent.Controls)
+            {
+                if (ctrl != p_Filter)
+                {
+                    ctrl.MouseDown += Global_MouseDown;
+                }
+
+                // Recursively register for nested controls
+                if (ctrl.HasChildren)
+                {
+                    RegisterMouseClickHandlers(ctrl);
+                }
+            }
+        }
+
+        private void btn_Filter_MouseClick(object sender, MouseEventArgs e)
         {
 
         }

@@ -61,41 +61,6 @@ namespace ProjekBesarPendidikan.Master
             string createdBy = "Shofi";
 
 
-
-
-            if (string.IsNullOrWhiteSpace(txt_nama.Text))
-            {
-                kesalahan += "Nama tidak boleh kosong";
-            }
-
-            if (string.IsNullOrWhiteSpace(txt_deskripsi.Text))
-            {
-                kesalahan += "Deskripsi tidak boleh kosong";
-            }
-
-            if (string.IsNullOrWhiteSpace(txt_tahun_rilis.Text))
-            {
-                kesalahan += "Tahun Rilis tidak boleh kosong";
-            }
-
-            if (string.IsNullOrWhiteSpace(txt_max_pemain.Text))
-            {
-                kesalahan += "Max Pemain tidak boleh kosong";
-            }
-
-            if (string.IsNullOrWhiteSpace(createdBy))
-            {
-                MessageBox.Show("Created By tidak boleh kosong.", "Validasi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            if (kesalahan != "")
-            {
-                MessageBox.Show(kesalahan, "Validasi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-
             try
             {
                 using (SqlConnection conn = new SqlConnection(Connection))
@@ -140,6 +105,26 @@ namespace ProjekBesarPendidikan.Master
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2CustomGradientPanel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
