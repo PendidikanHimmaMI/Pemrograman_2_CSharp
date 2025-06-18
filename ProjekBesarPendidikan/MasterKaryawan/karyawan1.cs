@@ -160,47 +160,68 @@ namespace ProjekBesarPendidikan.MasterKaryawan
             {
                 status = "Aktif";
             }
-                if (status.Equals("Aktif"))
+            string editPath = @"D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\Icon\edit.png";
+            Image editIcon = Image.FromFile(editPath);
+
+            string deletePath = @"D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\Icon\delete.png";
+            Image deleteIcon = Image.FromFile(deletePath);
+
+            string restorePath = @"D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\Icon\restore.png";
+            Image restoreIcon = Image.FromFile(restorePath);
+            if (status.Equals("Aktif"))
             {
                 // Tambahkan kolom tombol Edit dan Delete jika belum ada
                 if (!dgv_Karyawan.Columns.Contains("Edit"))
                 {
-                    DataGridViewButtonColumn editButton = new DataGridViewButtonColumn
+                    DataGridViewImageColumn editColumn = new DataGridViewImageColumn();
                     {
-                        Name = "Edit",
-                        HeaderText = "",
-                        Text = "Edit",
-                        UseColumnTextForButtonValue = true
-                    };
-                    dgv_Karyawan.Columns.Add(editButton);
+
+                        editColumn.Name = "Edit";
+                        editColumn.HeaderText = "";
+                        editColumn.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                        editColumn.Image = editIcon;
+                        dgv_Karyawan.Columns.Add(editColumn);
+                    }
                 }
 
                 if (!dgv_Karyawan.Columns.Contains("Delete"))
                 {
-                    DataGridViewButtonColumn deleteButton = new DataGridViewButtonColumn
-                    {
-                        Name = "Delete",
-                        HeaderText = "",
-                        Text = "Delete",
-                        UseColumnTextForButtonValue = true
-                    };
-                    dgv_Karyawan.Columns.Add(deleteButton);
+                    DataGridViewImageColumn deleteColumn = new DataGridViewImageColumn();
+                    deleteColumn.Name = "Delete";
+                    deleteColumn.HeaderText = "";
+                    deleteColumn.Image = deleteIcon;
+                    dgv_Karyawan.Columns.Add(deleteColumn);
                 }
-            }else
+                dgv_Karyawan.Columns["Edit"].Width = 25;
+                dgv_Karyawan.Columns["Delete"].Width = 40;
+
+                dgv_Karyawan.RowTemplate.Height = 40;
+
+                ((DataGridViewImageColumn)dgv_Karyawan.Columns["Edit"]).ImageLayout = DataGridViewImageCellLayout.Zoom;
+                ((DataGridViewImageColumn)dgv_Karyawan.Columns["Delete"]).ImageLayout = DataGridViewImageCellLayout.Zoom;
+            }
+            else
             {
                
-                if (!dgv_Karyawan.Columns.Contains("Delete"))
+                if (!dgv_Karyawan.Columns.Contains("Restore"))
                 {
-                    DataGridViewButtonColumn deleteButton = new DataGridViewButtonColumn
+                    DataGridViewImageColumn restoreColumn = new DataGridViewImageColumn();
                     {
-                        Name = "Restore",
-                        HeaderText = "",
-                        Text = "Restore",
-                        UseColumnTextForButtonValue = true
-                    };
-                    dgv_Karyawan.Columns.Add(deleteButton);
+                        restoreColumn.Name = "Restore";
+                        restoreColumn.HeaderText = "";
+                        restoreColumn.Image = restoreIcon;
+                        dgv_Karyawan.Columns.Add(restoreColumn);
+                    }
+                    
                 }
+                dgv_Karyawan.Columns["Restore"].Width = 40;
+
+                dgv_Karyawan.RowTemplate.Height = 40;
+
+                ((DataGridViewImageColumn)dgv_Karyawan.Columns["Restore"]).ImageLayout = DataGridViewImageCellLayout.Zoom;
+
             }
+
         }
 
 
@@ -253,7 +274,7 @@ namespace ProjekBesarPendidikan.MasterKaryawan
                     }
                 }
 
-                // Delete Button
+                // Restore Button
                 else if (dgv_Karyawan.Columns[e.ColumnIndex].Name == "Restore")
                 {
                     int id = Convert.ToInt32(dgv_Karyawan.Rows[e.RowIndex].Cells["kry_id"].Value);

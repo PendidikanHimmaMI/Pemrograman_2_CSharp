@@ -1,4 +1,5 @@
 ﻿using CustomMessageBox;
+using Microsoft.IdentityModel.Tokens;
 using ProjekBesarPendidikan.Master;
 using System;
 using System.Collections.Generic;
@@ -135,6 +136,14 @@ namespace ProjekBesarPendidikan
             {
                 try
                 {
+                    // Hapus kolom tombol jika sudah ada
+                    if (dgv_JenisPlayStation.Columns.Contains("Edit"))
+                        dgv_JenisPlayStation.Columns.Remove("Edit");
+                    if (dgv_JenisPlayStation.Columns.Contains("Delete"))
+                        dgv_JenisPlayStation.Columns.Remove("Delete");
+                    if (dgv_JenisPlayStation.Columns.Contains("Restore"))
+                        dgv_JenisPlayStation.Columns.Remove("Restore");
+
                     conn.Open();
                     using (SqlCommand cmd = new SqlCommand("rps_getListJenisPlayStation", conn))
                     {
@@ -174,7 +183,7 @@ namespace ProjekBesarPendidikan
 
                         dgv_JenisPlayStation.Columns["jps_deskripsi"].HeaderText = "Deskripsi";
                         dgv_JenisPlayStation.Columns["jps_status"].HeaderText = "Status";
-                        dgv_JenisPlayStation.Columns["jps_status"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                        dgv_JenisPlayStation.Columns["jps_status"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
 
                         dgv_JenisPlayStation.Columns["jps_created_by"].HeaderText = "Dibuat Oleh";
                         dgv_JenisPlayStation.Columns["jps_created_by"].Visible = false;
@@ -193,33 +202,61 @@ namespace ProjekBesarPendidikan
                         string deletePath = @"D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\Icon\delete.png";
                         Image deleteIcon = Image.FromFile(deletePath);
 
-                        if (!editExists)
+                        string restorePath = @"D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\Icon\restore.png";
+                        Image restoreIcon = Image.FromFile(restorePath);
+
+                        if (status.IsNullOrEmpty())
                         {
-                            DataGridViewImageColumn editColumn = new DataGridViewImageColumn();
-                            editColumn.Name = "Edit";
-                            editColumn.HeaderText = "Aksi";
-                            editColumn.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-                            editColumn.Image = editIcon;
-                            dgv_JenisPlayStation.Columns.Add(editColumn);
+                            status = "Aktif";
                         }
 
-                        if (!deleteExists)
+                        if (status.Equals("Aktif"))
                         {
-                            DataGridViewImageColumn deleteColumn = new DataGridViewImageColumn();
-                            deleteColumn.Name = "Delete";
-                            deleteColumn.HeaderText = "";
-                            deleteColumn.Image = deleteIcon;
-                            dgv_JenisPlayStation.Columns.Add(deleteColumn);
+                            if (!editExists)
+                            {
+                                DataGridViewImageColumn editColumn = new DataGridViewImageColumn();
+                                editColumn.Name = "Edit";
+                                editColumn.HeaderText = "Aksi";
+                                editColumn.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                                editColumn.Image = editIcon;
+                                dgv_JenisPlayStation.Columns.Add(editColumn);
+                            }
+
+                            if (!deleteExists)
+                            {
+                                DataGridViewImageColumn deleteColumn = new DataGridViewImageColumn();
+                                deleteColumn.Name = "Delete";
+                                deleteColumn.HeaderText = "";
+                                deleteColumn.Image = deleteIcon;
+                                dgv_JenisPlayStation.Columns.Add(deleteColumn);
+                            }
+                            dgv_JenisPlayStation.Columns["Edit"].Width = 25;
+                            dgv_JenisPlayStation.Columns["Delete"].Width = 40;
+
+                            dgv_JenisPlayStation.RowTemplate.Height = 40;
+
+                            ((DataGridViewImageColumn)dgv_JenisPlayStation.Columns["Edit"]).ImageLayout = DataGridViewImageCellLayout.Zoom;
+                            ((DataGridViewImageColumn)dgv_JenisPlayStation.Columns["Delete"]).ImageLayout = DataGridViewImageCellLayout.Zoom;
                         }
-                        dgv_JenisPlayStation.Columns["Edit"].Width = 25;
-                        dgv_JenisPlayStation.Columns["Delete"].Width = 40;
+                        else
+                        {
+                            if (!dgv_JenisPlayStation.Columns.Contains("Restore"))
+                            {
+                                DataGridViewImageColumn restoreColumn = new DataGridViewImageColumn();
+                                {
+                                    restoreColumn.Name = "Restore";
+                                    restoreColumn.HeaderText = "";
+                                    restoreColumn.Image = restoreIcon;
+                                    dgv_JenisPlayStation.Columns.Add(restoreColumn);
+                                }
 
-                        dgv_JenisPlayStation.RowTemplate.Height = 40;
+                            }
+                            dgv_JenisPlayStation.Columns["Restore"].Width = 40;
 
-                        ((DataGridViewImageColumn)dgv_JenisPlayStation.Columns["Edit"]).ImageLayout = DataGridViewImageCellLayout.Zoom;
-                        ((DataGridViewImageColumn)dgv_JenisPlayStation.Columns["Delete"]).ImageLayout = DataGridViewImageCellLayout.Zoom;
+                            dgv_JenisPlayStation.RowTemplate.Height = 40;
 
-
+                            ((DataGridViewImageColumn)dgv_JenisPlayStation.Columns["Restore"]).ImageLayout = DataGridViewImageCellLayout.Zoom;
+                        }
                     }
                 }
                 catch (Exception ex)
@@ -282,6 +319,18 @@ namespace ProjekBesarPendidikan
                 }
 
                 else if (dgv_JenisPlayStation.Columns[e.ColumnIndex].Name == "Delete")
+                {
+                    string id = dgv_JenisPlayStation.Rows[e.RowIndex].Cells["jps_id"].Value.ToString();
+                    string nama = dgv_JenisPlayStation.Rows[e.RowIndex].Cells["jps_nama"].Value.ToString();
+
+                    DialogResult confirm = RJMessageBox.Show("Are you sure want to delete " + nama, "Warning", MessageBoxButtons.YesNo);
+                    if (confirm == DialogResult.Yes)
+                    {
+                        ToggleJenisPlayStationStatus(Convert.ToInt32(dgv_JenisPlayStation.Rows[e.RowIndex].Cells["jps_id"].Value));
+                        LoadData();
+                    }
+                }
+                else if (dgv_JenisPlayStation.Columns[e.ColumnIndex].Name == "Restore")
                 {
                     string id = dgv_JenisPlayStation.Rows[e.RowIndex].Cells["jps_id"].Value.ToString();
                     string nama = dgv_JenisPlayStation.Rows[e.RowIndex].Cells["jps_nama"].Value.ToString();

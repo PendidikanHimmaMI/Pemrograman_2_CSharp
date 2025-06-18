@@ -46,6 +46,7 @@
             this.btn_clear = new Guna.UI2.WinForms.Guna2Button();
             this.btn_save = new Guna.UI2.WinForms.Guna2Button();
             this.btn_back = new Guna.UI2.WinForms.Guna2Button();
+            this.label8 = new System.Windows.Forms.Label();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.Gpnl_Data.SuspendLayout();
             this.SuspendLayout();
@@ -59,6 +60,7 @@
             this.guna2CustomGradientPanel1.BackColor = System.Drawing.Color.White;
             this.guna2CustomGradientPanel1.BorderRadius = 10;
             this.guna2CustomGradientPanel1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.guna2CustomGradientPanel1.Controls.Add(this.label8);
             this.guna2CustomGradientPanel1.Controls.Add(this.label10);
             this.guna2CustomGradientPanel1.Controls.Add(this.label9);
             this.guna2CustomGradientPanel1.Controls.Add(this.Gpnl_Data);
@@ -95,9 +97,9 @@
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.label9.Location = new System.Drawing.Point(139, 240);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(447, 45);
+            this.label9.Size = new System.Drawing.Size(538, 45);
             this.label9.TabIndex = 17;
-            this.label9.Text = "Form Tambah PlayStation";
+            this.label9.Text = "Form Tambah Jenis PlayStation";
             this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // Gpnl_Data
@@ -178,7 +180,7 @@
             this.txt_max_pemain.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_max_pemain.FillColor = System.Drawing.Color.WhiteSmoke;
             this.txt_max_pemain.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_max_pemain.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
+            this.txt_max_pemain.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_max_pemain.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.txt_max_pemain.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_max_pemain.Location = new System.Drawing.Point(791, 108);
@@ -202,7 +204,7 @@
             this.txt_tahun_rilis.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_tahun_rilis.FillColor = System.Drawing.Color.WhiteSmoke;
             this.txt_tahun_rilis.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_tahun_rilis.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
+            this.txt_tahun_rilis.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_tahun_rilis.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.txt_tahun_rilis.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_tahun_rilis.Location = new System.Drawing.Point(145, 332);
@@ -274,7 +276,7 @@
             this.txt_deskripsi.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_deskripsi.FillColor = System.Drawing.Color.WhiteSmoke;
             this.txt_deskripsi.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_deskripsi.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
+            this.txt_deskripsi.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_deskripsi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.txt_deskripsi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_deskripsi.Location = new System.Drawing.Point(791, 332);
@@ -299,7 +301,7 @@
             this.txt_nama.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_nama.FillColor = System.Drawing.Color.WhiteSmoke;
             this.txt_nama.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_nama.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
+            this.txt_nama.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_nama.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.txt_nama.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_nama.Location = new System.Drawing.Point(145, 108);
@@ -367,6 +369,19 @@
             this.btn_back.Text = "Kembali";
             this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.White;
+            this.label8.Font = new System.Drawing.Font("Segoe UI Black", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
+            this.label8.Location = new System.Drawing.Point(48, 145);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(401, 60);
+            this.label8.TabIndex = 19;
+            this.label8.Text = "Jenis PlayStation";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
+            // 
             // JenisPlayStationCreate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -405,5 +420,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txt_deskripsi;
         private Guna.UI2.WinForms.Guna2TextBox txt_nama;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label8;
     }
 }

@@ -63,8 +63,9 @@
             this.MenuDash.Controls.Add(this.btn_Logout);
             this.MenuDash.Dock = System.Windows.Forms.DockStyle.Left;
             this.MenuDash.Location = new System.Drawing.Point(0, 0);
+            this.MenuDash.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MenuDash.Name = "MenuDash";
-            this.MenuDash.Size = new System.Drawing.Size(290, 620);
+            this.MenuDash.Size = new System.Drawing.Size(387, 763);
             this.MenuDash.TabIndex = 0;
             // 
             // btn_Beranda
@@ -79,9 +80,10 @@
             this.btn_Beranda.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.btn_Beranda.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Beranda.ImageOffset = new System.Drawing.Point(25, 0);
-            this.btn_Beranda.Location = new System.Drawing.Point(0, 166);
+            this.btn_Beranda.Location = new System.Drawing.Point(0, 204);
+            this.btn_Beranda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Beranda.Name = "btn_Beranda";
-            this.btn_Beranda.Size = new System.Drawing.Size(287, 58);
+            this.btn_Beranda.Size = new System.Drawing.Size(383, 71);
             this.btn_Beranda.TabIndex = 1;
             this.btn_Beranda.Text = "Beranda";
             this.btn_Beranda.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -102,9 +104,10 @@
             this.btn_PS.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.btn_PS.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_PS.ImageOffset = new System.Drawing.Point(25, 0);
-            this.btn_PS.Location = new System.Drawing.Point(0, 230);
+            this.btn_PS.Location = new System.Drawing.Point(0, 283);
+            this.btn_PS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_PS.Name = "btn_PS";
-            this.btn_PS.Size = new System.Drawing.Size(287, 58);
+            this.btn_PS.Size = new System.Drawing.Size(383, 71);
             this.btn_PS.TabIndex = 2;
             this.btn_PS.Text = "PlayStation";
             this.btn_PS.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -118,9 +121,10 @@
             this.guna2GradientPanel1.BorderThickness = 2;
             this.guna2GradientPanel1.Controls.Add(this.lb_Welcome);
             this.guna2GradientPanel1.Controls.Add(this.L_Name);
-            this.guna2GradientPanel1.Location = new System.Drawing.Point(7, 102);
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(9, 126);
+            this.guna2GradientPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(272, 46);
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(363, 57);
             this.guna2GradientPanel1.TabIndex = 3;
             // 
             // lb_Welcome
@@ -128,9 +132,10 @@
             this.lb_Welcome.AutoSize = true;
             this.lb_Welcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_Welcome.ForeColor = System.Drawing.Color.White;
-            this.lb_Welcome.Location = new System.Drawing.Point(16, 9);
+            this.lb_Welcome.Location = new System.Drawing.Point(21, 11);
+            this.lb_Welcome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_Welcome.Name = "lb_Welcome";
-            this.lb_Welcome.Size = new System.Drawing.Size(121, 29);
+            this.lb_Welcome.Size = new System.Drawing.Size(146, 36);
             this.lb_Welcome.TabIndex = 1;
             this.lb_Welcome.Text = "Welcome,";
             // 
@@ -139,9 +144,10 @@
             this.L_Name.AutoSize = true;
             this.L_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.L_Name.ForeColor = System.Drawing.Color.White;
-            this.L_Name.Location = new System.Drawing.Point(136, 9);
+            this.L_Name.Location = new System.Drawing.Point(181, 11);
+            this.L_Name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.L_Name.Name = "L_Name";
-            this.L_Name.Size = new System.Drawing.Size(120, 29);
+            this.L_Name.Size = new System.Drawing.Size(151, 36);
             this.L_Name.TabIndex = 2;
             this.L_Name.Text = "Admin123";
             this.L_Name.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -160,9 +166,10 @@
             this.btn_JenisPS.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.btn_JenisPS.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_JenisPS.ImageOffset = new System.Drawing.Point(25, 0);
-            this.btn_JenisPS.Location = new System.Drawing.Point(0, 294);
+            this.btn_JenisPS.Location = new System.Drawing.Point(0, 362);
+            this.btn_JenisPS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_JenisPS.Name = "btn_JenisPS";
-            this.btn_JenisPS.Size = new System.Drawing.Size(287, 58);
+            this.btn_JenisPS.Size = new System.Drawing.Size(383, 71);
             this.btn_JenisPS.TabIndex = 3;
             this.btn_JenisPS.Text = "Jenis PlayStation";
             this.btn_JenisPS.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -171,9 +178,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 9);
+            this.pictureBox1.Location = new System.Drawing.Point(16, 11);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(272, 76);
+            this.pictureBox1.Size = new System.Drawing.Size(363, 94);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -192,9 +200,10 @@
             this.btn_Karyawan.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.btn_Karyawan.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Karyawan.ImageOffset = new System.Drawing.Point(25, 0);
-            this.btn_Karyawan.Location = new System.Drawing.Point(0, 358);
+            this.btn_Karyawan.Location = new System.Drawing.Point(0, 441);
+            this.btn_Karyawan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Karyawan.Name = "btn_Karyawan";
-            this.btn_Karyawan.Size = new System.Drawing.Size(287, 58);
+            this.btn_Karyawan.Size = new System.Drawing.Size(383, 71);
             this.btn_Karyawan.TabIndex = 4;
             this.btn_Karyawan.Text = "Karyawan";
             this.btn_Karyawan.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -215,9 +224,10 @@
             this.btn_MetodePembayaran.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.btn_MetodePembayaran.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_MetodePembayaran.ImageOffset = new System.Drawing.Point(25, 0);
-            this.btn_MetodePembayaran.Location = new System.Drawing.Point(0, 422);
+            this.btn_MetodePembayaran.Location = new System.Drawing.Point(0, 519);
+            this.btn_MetodePembayaran.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_MetodePembayaran.Name = "btn_MetodePembayaran";
-            this.btn_MetodePembayaran.Size = new System.Drawing.Size(287, 58);
+            this.btn_MetodePembayaran.Size = new System.Drawing.Size(383, 71);
             this.btn_MetodePembayaran.TabIndex = 5;
             this.btn_MetodePembayaran.Text = "Metode Pembayaran";
             this.btn_MetodePembayaran.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -235,9 +245,10 @@
             this.btn_Logout.ForeColor = System.Drawing.Color.White;
             this.btn_Logout.Image = ((System.Drawing.Image)(resources.GetObject("btn_Logout.Image")));
             this.btn_Logout.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_Logout.Location = new System.Drawing.Point(0, 486);
+            this.btn_Logout.Location = new System.Drawing.Point(0, 598);
+            this.btn_Logout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Logout.Name = "btn_Logout";
-            this.btn_Logout.Size = new System.Drawing.Size(287, 58);
+            this.btn_Logout.Size = new System.Drawing.Size(383, 71);
             this.btn_Logout.TabIndex = 6;
             this.btn_Logout.Text = "Logout";
             this.btn_Logout.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -248,9 +259,10 @@
             this.pnl_filForm.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.pnl_filForm.BackColor = System.Drawing.Color.White;
             this.pnl_filForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_filForm.Location = new System.Drawing.Point(290, 0);
+            this.pnl_filForm.Location = new System.Drawing.Point(387, 0);
+            this.pnl_filForm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnl_filForm.Name = "pnl_filForm";
-            this.pnl_filForm.Size = new System.Drawing.Size(1160, 620);
+            this.pnl_filForm.Size = new System.Drawing.Size(1546, 763);
             this.pnl_filForm.TabIndex = 1;
             // 
             // panel1
@@ -260,9 +272,10 @@
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel1.Controls.Add(this.txt_ActiveUser);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(290, 0);
+            this.panel1.Location = new System.Drawing.Point(387, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1160, 106);
+            this.panel1.Size = new System.Drawing.Size(1546, 130);
             this.panel1.TabIndex = 2;
             // 
             // txt_ActiveUser
@@ -282,26 +295,27 @@
             this.txt_ActiveUser.IconLeftSize = new System.Drawing.Size(40, 40);
             this.txt_ActiveUser.IconRight = ((System.Drawing.Image)(resources.GetObject("txt_ActiveUser.IconRight")));
             this.txt_ActiveUser.IconRightSize = new System.Drawing.Size(40, 40);
-            this.txt_ActiveUser.Location = new System.Drawing.Point(1008, 24);
-            this.txt_ActiveUser.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.txt_ActiveUser.Location = new System.Drawing.Point(1329, 29);
+            this.txt_ActiveUser.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.txt_ActiveUser.Name = "txt_ActiveUser";
             this.txt_ActiveUser.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.txt_ActiveUser.PlaceholderText = "";
             this.txt_ActiveUser.ReadOnly = true;
             this.txt_ActiveUser.SelectedText = "";
-            this.txt_ActiveUser.Size = new System.Drawing.Size(124, 62);
+            this.txt_ActiveUser.Size = new System.Drawing.Size(165, 76);
             this.txt_ActiveUser.TabIndex = 3;
             // 
             // DashboardAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1450, 620);
+            this.ClientSize = new System.Drawing.Size(1933, 763);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnl_filForm);
             this.Controls.Add(this.MenuDash);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MinimumSize = new System.Drawing.Size(1438, 620);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MinimumSize = new System.Drawing.Size(1917, 763);
             this.Name = "DashboardAdmin";
             this.Text = "Dashboard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

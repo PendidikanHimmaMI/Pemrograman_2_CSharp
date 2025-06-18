@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboardadmin));
             this.sqlCommand1 = new Microsoft.Data.SqlClient.SqlCommand();
-            this.guna2Shapes5 = new Guna.UI2.WinForms.Guna2Shapes();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -48,6 +47,7 @@
             this.lbJenisPs = new System.Windows.Forms.Label();
             this.lbKaryawan = new System.Windows.Forms.Label();
             this.lbMetodePembayaran = new System.Windows.Forms.Label();
+            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -58,21 +58,6 @@
             // 
             this.sqlCommand1.CommandTimeout = 30;
             this.sqlCommand1.EnableOptimizedParameterBinding = false;
-            // 
-            // guna2Shapes5
-            // 
-            this.guna2Shapes5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Shapes5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
-            this.guna2Shapes5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
-            this.guna2Shapes5.Location = new System.Drawing.Point(-463, -54);
-            this.guna2Shapes5.Name = "guna2Shapes5";
-            this.guna2Shapes5.PolygonSkip = 1;
-            this.guna2Shapes5.Rotate = 0F;
-            this.guna2Shapes5.Shape = Guna.UI2.WinForms.Enums.ShapeType.Line;
-            this.guna2Shapes5.Size = new System.Drawing.Size(1992, 421);
-            this.guna2Shapes5.TabIndex = 13;
-            this.guna2Shapes5.Text = "guna2Shapes5";
-            this.guna2Shapes5.Zoom = 80;
             // 
             // label3
             // 
@@ -236,7 +221,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Black", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
-            this.label4.Location = new System.Drawing.Point(27, 83);
+            this.label4.Location = new System.Drawing.Point(21, 91);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(281, 81);
             this.label4.TabIndex = 26;
@@ -290,11 +275,31 @@
             this.lbMetodePembayaran.TabIndex = 30;
             this.lbMetodePembayaran.Text = " ";
             // 
+            // guna2TextBox1
+            // 
+            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox1.DefaultText = "";
+            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
+            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.Location = new System.Drawing.Point(-32, 171);
+            this.guna2TextBox1.Name = "guna2TextBox1";
+            this.guna2TextBox1.PlaceholderText = "";
+            this.guna2TextBox1.SelectedText = "";
+            this.guna2TextBox1.Size = new System.Drawing.Size(1270, 6);
+            this.guna2TextBox1.TabIndex = 31;
+            // 
             // Dashboardadmin
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1200, 800);
+            this.Controls.Add(this.guna2TextBox1);
             this.Controls.Add(this.lbMetodePembayaran);
             this.Controls.Add(this.lbKaryawan);
             this.Controls.Add(this.lbJenisPs);
@@ -312,7 +317,6 @@
             this.Controls.Add(this.guna2Shapes2);
             this.Controls.Add(this.guna2Shapes1);
             this.Controls.Add(this.guna2Shapes3);
-            this.Controls.Add(this.guna2Shapes5);
             this.Enabled = false;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Dashboardadmin";
@@ -328,7 +332,6 @@
 
         #endregion
         private Microsoft.Data.SqlClient.SqlCommand sqlCommand1;
-        private Guna.UI2.WinForms.Guna2Shapes guna2Shapes5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
@@ -346,5 +349,6 @@
         private System.Windows.Forms.Label lbJenisPs;
         private System.Windows.Forms.Label lbKaryawan;
         private System.Windows.Forms.Label lbMetodePembayaran;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
     }
 }

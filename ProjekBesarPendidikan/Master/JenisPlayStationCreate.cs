@@ -128,6 +128,11 @@ namespace ProjekBesarPendidikan.Master
         {
 
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }
