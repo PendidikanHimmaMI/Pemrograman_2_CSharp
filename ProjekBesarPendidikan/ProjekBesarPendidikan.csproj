@@ -429,10 +429,13 @@
     <None Include="Icon\App Icon.png" />
     <Content Include="Icon\Beranda - Hover.png" />
     <Content Include="Icon\Beranda.png" />
+    <Content Include="Icon\delete.png" />
+    <Content Include="Icon\edit.png" />
     <Content Include="Icon\Logout - Hover.png" />
     <Content Include="Icon\Logout.png" />
     <Content Include="Icon\Min - Button.png" />
     <Content Include="Icon\Plus - Button.png" />
+    <Content Include="Icon\restore.png" />
     <Content Include="Icon\Transaksi - Hover.png" />
     <Content Include="Icon\Transaksi.png" />
     <Content Include="Icon\user.png" />
