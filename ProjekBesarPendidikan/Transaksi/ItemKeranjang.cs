@@ -21,9 +21,13 @@ namespace ProjekBesarPendidikan.Transaksi
             get { return list; }
         }
 
-        public ItemKeranjang(String namaPlayStation, String harga, int idPlayStation)
+        private KeranjangPeminjaman keranjangParent;
+
+        public ItemKeranjang(String namaPlayStation, String harga, int idPlayStation, KeranjangPeminjaman keranjang)
         {
             InitializeComponent();
+
+            this.keranjangParent = keranjang;
 
             int start = harga.IndexOf("Rp") + 2;
             int end = harga.IndexOf(" / Jam");
@@ -71,6 +75,8 @@ namespace ProjekBesarPendidikan.Transaksi
                     dataSementara.Harga
                 ));
             }
+
+            keranjangParent?.hitungTotalHarga();
         }
 
         private void dtpJamSelesai_ValueChanged(object sender, EventArgs e)
@@ -106,6 +112,7 @@ namespace ProjekBesarPendidikan.Transaksi
             }
 
             UpdateHarga();
+            keranjangParent?.hitungTotalHarga();
         }
 
         private void dtpJamMulai_ValueChanged(object sender, EventArgs e)
@@ -141,12 +148,19 @@ namespace ProjekBesarPendidikan.Transaksi
             }
 
             UpdateHarga();
+            keranjangParent?.hitungTotalHarga();
+        }
+
+        public int IdPlayStation
+        {
+            get { return dataSementara.PlayStationId; }
         }
 
         private void btnMin_Click(object sender, EventArgs e)
         {
             this.Parent.Controls.Remove(this);
             this.Dispose();
+            keranjangParent?.hitungTotalHarga();
         }
     }
 }

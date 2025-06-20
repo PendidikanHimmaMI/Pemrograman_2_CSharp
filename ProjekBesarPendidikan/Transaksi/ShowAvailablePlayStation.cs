@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using CustomMessageBox;
 
 namespace ProjekBesarPendidikan.Transaksi
 {
@@ -114,7 +115,22 @@ namespace ProjekBesarPendidikan.Transaksi
 
         private void btnTambahDatakeKeranjang_Click(object sender, EventArgs e)
         {
-            var item = new ItemKeranjang(lblNamaPlayStation.Text, lblHarga.Text, Int32.Parse(lblIdPlayStation.Text));
+            int idPlayStation = Int32.Parse(lblIdPlayStation.Text);
+
+            foreach (Control control in keranjangPeminjaman.PanelTengah.Controls)
+            {
+                if (control is ItemKeranjang itemKeranjang)
+                {
+                    if (itemKeranjang.IdPlayStation == idPlayStation)
+                    {
+                        RJMessageBox.Show("PlayStation ini sudah ditambahkan ke keranjang!", "Validasi!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+                }
+            }
+
+
+            var item = new ItemKeranjang(lblNamaPlayStation.Text, lblHarga.Text, Int32.Parse(lblIdPlayStation.Text), keranjangPeminjaman);
             this.keranjangPeminjaman.PanelTengah.Controls.Add(item);
         }
     }

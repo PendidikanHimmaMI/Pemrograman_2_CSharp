@@ -65,7 +65,7 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(383, 954);
+            this.guna2Panel1.Size = new System.Drawing.Size(383, 610);
             this.guna2Panel1.TabIndex = 0;
             // 
             // guna2PictureBox1
@@ -83,7 +83,7 @@
             // 
             this.guna2Panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.guna2Panel5.Controls.Add(this.label1);
-            this.guna2Panel5.Location = new System.Drawing.Point(0, 837);
+            this.guna2Panel5.Location = new System.Drawing.Point(0, 767);
             this.guna2Panel5.Name = "guna2Panel5";
             this.guna2Panel5.Size = new System.Drawing.Size(383, 93);
             this.guna2Panel5.TabIndex = 5;
@@ -97,7 +97,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(79, 35);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(210, 28);
+            this.label1.Size = new System.Drawing.Size(167, 21);
             this.label1.TabIndex = 1;
             this.label1.Text = "Dibuat oleh Himma MI";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -205,7 +205,7 @@
             this.lblMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.lblMenu.Location = new System.Drawing.Point(19, 25);
             this.lblMenu.Name = "lblMenu";
-            this.lblMenu.Size = new System.Drawing.Size(266, 81);
+            this.lblMenu.Size = new System.Drawing.Size(215, 65);
             this.lblMenu.TabIndex = 8;
             this.lblMenu.Text = "Beranda";
             // 
@@ -220,7 +220,7 @@
             this.guna2Shapes2.PolygonSkip = 1;
             this.guna2Shapes2.Rotate = 0F;
             this.guna2Shapes2.Shape = Guna.UI2.WinForms.Enums.ShapeType.Line;
-            this.guna2Shapes2.Size = new System.Drawing.Size(2237, 17);
+            this.guna2Shapes2.Size = new System.Drawing.Size(1853, 17);
             this.guna2Shapes2.TabIndex = 6;
             this.guna2Shapes2.Text = "guna2Shapes2";
             this.guna2Shapes2.Zoom = 80;
@@ -234,7 +234,7 @@
             this.Header.Controls.Add(this.lblMenu);
             this.Header.Location = new System.Drawing.Point(389, 0);
             this.Header.Name = "Header";
-            this.Header.Size = new System.Drawing.Size(1557, 165);
+            this.Header.Size = new System.Drawing.Size(1173, 165);
             this.Header.TabIndex = 2;
             // 
             // guna2TextBox1
@@ -256,7 +256,7 @@
             this.guna2TextBox1.IconLeftSize = new System.Drawing.Size(40, 40);
             this.guna2TextBox1.IconRight = ((System.Drawing.Image)(resources.GetObject("guna2TextBox1.IconRight")));
             this.guna2TextBox1.IconRightSize = new System.Drawing.Size(40, 40);
-            this.guna2TextBox1.Location = new System.Drawing.Point(1376, 25);
+            this.guna2TextBox1.Location = new System.Drawing.Point(992, 25);
             this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(7);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
@@ -274,16 +274,16 @@
             this.flContent.BackColor = System.Drawing.Color.White;
             this.flContent.Location = new System.Drawing.Point(389, 171);
             this.flContent.Name = "flContent";
-            this.flContent.Size = new System.Drawing.Size(1541, 783);
+            this.flContent.Size = new System.Drawing.Size(1157, 713);
             this.flContent.TabIndex = 7;
             // 
             // viewKeranjang
             // 
             this.viewKeranjang.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.viewKeranjang.Location = new System.Drawing.Point(1359, -1);
+            this.viewKeranjang.Location = new System.Drawing.Point(975, -1);
             this.viewKeranjang.Name = "viewKeranjang";
-            this.viewKeranjang.Size = new System.Drawing.Size(581, 955);
+            this.viewKeranjang.Size = new System.Drawing.Size(581, 885);
             this.viewKeranjang.TabIndex = 8;
             this.viewKeranjang.Visible = false;
             this.viewKeranjang.Load += new System.EventHandler(this.viewKeranjang_Load);
@@ -293,13 +293,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1940, 954);
+            this.ClientSize = new System.Drawing.Size(1227, 610);
             this.Controls.Add(this.viewKeranjang);
             this.Controls.Add(this.Header);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.flContent);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MinimumSize = new System.Drawing.Size(1918, 763);
+            this.MinimumSize = new System.Drawing.Size(1534, 763);
             this.Name = "DashboardKasir";
             this.Text = "DashboardKasir";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

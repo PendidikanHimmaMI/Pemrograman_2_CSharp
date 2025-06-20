@@ -48,7 +48,7 @@ namespace ProjekBesarPendidikan.Transaksi
             }
         }
 
-        public void showData(String search, String sortOrder, String sortColumn = "pst_id")
+        public void showData(String search, String sortOrder, String sortColumn = "pst_merk")
         {
             int jumlahBaris;
             using (SqlConnection connection = new SqlConnection("Server=127.0.0.4,9210;Initial Catalog=Db_RentalPlayStation;TrustServerCertificate=true;user id=Pendidikan;password=123"))
@@ -143,7 +143,6 @@ namespace ProjekBesarPendidikan.Transaksi
         {
             var sortColumnItems = new Dictionary<string, string>
         {
-            { "ID", "pst_id" },
             { "Merk", "pst_merk" },
             { "Harga", "pst_harga_per_jam" },
         };

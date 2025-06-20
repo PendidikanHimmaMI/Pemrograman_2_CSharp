@@ -96,7 +96,7 @@
             this.lblKeranjang.ForeColor = System.Drawing.Color.White;
             this.lblKeranjang.Location = new System.Drawing.Point(126, 30);
             this.lblKeranjang.Name = "lblKeranjang";
-            this.lblKeranjang.Size = new System.Drawing.Size(319, 81);
+            this.lblKeranjang.Size = new System.Drawing.Size(258, 65);
             this.lblKeranjang.TabIndex = 9;
             this.lblKeranjang.Text = "Keranjang";
             this.lblKeranjang.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -135,7 +135,7 @@
             this.pnlBawah.Controls.Add(this.guna2Shapes1);
             this.pnlBawah.Location = new System.Drawing.Point(-1, 250);
             this.pnlBawah.Name = "pnlBawah";
-            this.pnlBawah.Size = new System.Drawing.Size(579, 674);
+            this.pnlBawah.Size = new System.Drawing.Size(579, 687);
             this.pnlBawah.TabIndex = 0;
             // 
             // btnBayar
@@ -149,7 +149,7 @@
             this.btnBayar.FillColor = System.Drawing.Color.White;
             this.btnBayar.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBayar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
-            this.btnBayar.Location = new System.Drawing.Point(170, 543);
+            this.btnBayar.Location = new System.Drawing.Point(170, 556);
             this.btnBayar.Name = "btnBayar";
             this.btnBayar.Size = new System.Drawing.Size(243, 48);
             this.btnBayar.TabIndex = 37;
@@ -171,7 +171,7 @@
             this.txtKembalian.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtKembalian.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.txtKembalian.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtKembalian.Location = new System.Drawing.Point(159, 459);
+            this.txtKembalian.Location = new System.Drawing.Point(159, 465);
             this.txtKembalian.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtKembalian.Name = "txtKembalian";
             this.txtKembalian.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -186,9 +186,9 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(12, 467);
+            this.label4.Location = new System.Drawing.Point(12, 473);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(128, 31);
+            this.label4.Size = new System.Drawing.Size(105, 25);
             this.label4.TabIndex = 33;
             this.label4.Text = "Kembalian";
             // 
@@ -206,7 +206,7 @@
             this.txtTunai.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTunai.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.txtTunai.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTunai.Location = new System.Drawing.Point(159, 391);
+            this.txtTunai.Location = new System.Drawing.Point(159, 397);
             this.txtTunai.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtTunai.Name = "txtTunai";
             this.txtTunai.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -223,9 +223,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(12, 396);
+            this.label3.Location = new System.Drawing.Point(12, 402);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 31);
+            this.label3.Size = new System.Drawing.Size(61, 25);
             this.label3.TabIndex = 31;
             this.label3.Text = "Tunai";
             // 
@@ -238,10 +238,10 @@
             this.cbMetodePembayaran.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbMetodePembayaran.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cbMetodePembayaran.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbMetodePembayaran.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbMetodePembayaran.Font = new System.Drawing.Font("Segoe UI", 13.8F);
             this.cbMetodePembayaran.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.cbMetodePembayaran.ItemHeight = 30;
-            this.cbMetodePembayaran.Location = new System.Drawing.Point(328, 318);
+            this.cbMetodePembayaran.Location = new System.Drawing.Point(328, 324);
             this.cbMetodePembayaran.Name = "cbMetodePembayaran";
             this.cbMetodePembayaran.Size = new System.Drawing.Size(246, 36);
             this.cbMetodePembayaran.TabIndex = 30;
@@ -252,9 +252,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(12, 324);
+            this.label1.Location = new System.Drawing.Point(12, 330);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(246, 31);
+            this.label1.Size = new System.Drawing.Size(206, 25);
             this.label1.TabIndex = 29;
             this.label1.Text = "Metode Pembayaran :";
             // 
@@ -272,7 +272,7 @@
             this.txtNamaPelanggan.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNamaPelanggan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.txtNamaPelanggan.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNamaPelanggan.Location = new System.Drawing.Point(18, 244);
+            this.txtNamaPelanggan.Location = new System.Drawing.Point(18, 250);
             this.txtNamaPelanggan.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtNamaPelanggan.MaxLength = 100;
             this.txtNamaPelanggan.Name = "txtNamaPelanggan";
@@ -297,7 +297,7 @@
             this.txtNoTelp.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNoTelp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.txtNoTelp.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNoTelp.Location = new System.Drawing.Point(18, 178);
+            this.txtNoTelp.Location = new System.Drawing.Point(18, 184);
             this.txtNoTelp.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtNoTelp.MaxLength = 100;
             this.txtNoTelp.Name = "txtNoTelp";
@@ -315,9 +315,9 @@
             this.lblTotalBayar.AutoSize = true;
             this.lblTotalBayar.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalBayar.ForeColor = System.Drawing.Color.White;
-            this.lblTotalBayar.Location = new System.Drawing.Point(404, 123);
+            this.lblTotalBayar.Location = new System.Drawing.Point(404, 129);
             this.lblTotalBayar.Name = "lblTotalBayar";
-            this.lblTotalBayar.Size = new System.Drawing.Size(0, 31);
+            this.lblTotalBayar.Size = new System.Drawing.Size(0, 25);
             this.lblTotalBayar.TabIndex = 26;
             // 
             // label2
@@ -326,9 +326,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(12, 123);
+            this.label2.Location = new System.Drawing.Point(12, 129);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(145, 31);
+            this.label2.Size = new System.Drawing.Size(120, 25);
             this.label2.TabIndex = 25;
             this.label2.Text = "Total Bayar :";
             // 

@@ -80,6 +80,7 @@ namespace ProjekBesarPendidikan.Transaksi
                         }
 
                         MessageBox.Show("Data berhasil ditambahkan!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        clear();
 
                         connect.Close();
                         
@@ -90,6 +91,17 @@ namespace ProjekBesarPendidikan.Transaksi
                     RJMessageBox.Show("Error : " + ex.Message, "Error Input", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
             }
+        }
+
+        public void clear()
+        {
+            pnlTengah.Controls.Clear();
+            txtNoTelp.Text = "";
+            txtNamaPelanggan.Text = "";
+            txtTunai.Text = "";
+            cbMetodePembayaran.SelectedIndex = -1;
+            ComboBoxDataShow();
+            hitungTotalHarga();
         }
 
         public Panel PanelTengah
@@ -114,6 +126,32 @@ namespace ProjekBesarPendidikan.Transaksi
         }
 
         private void txtNoTelp_MouseClick(object sender, MouseEventArgs e)
+        {
+            //if (pnlTengah.Controls.Count == 0)
+            //{
+            //    lblTotalBayar.Text = "Rp0,00";
+            //}
+            //else
+            //{
+            //    Decimal totalHarga = 0;
+
+            //    foreach (Control control in pnlTengah.Controls)
+            //    {
+            //        if (control is ItemKeranjang item)
+            //        {
+            //            List<TrDetailPeminjamanPlayStation> detail = item.DetailPeminjamanList;
+
+            //            foreach (var d in detail)
+            //            {
+            //                totalHarga += d.JumlahHarga;
+            //            }
+            //        }
+            //    }
+            //    lblTotalBayar.Text = "Rp" + totalHarga;
+            //}
+        }
+
+        public void hitungTotalHarga()
         {
             if (pnlTengah.Controls.Count == 0)
             {
