@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.Gpnl_Data = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
@@ -46,7 +47,6 @@
             this.btn_clear = new Guna.UI2.WinForms.Guna2Button();
             this.btn_save = new Guna.UI2.WinForms.Guna2Button();
             this.btn_back = new Guna.UI2.WinForms.Guna2Button();
-            this.label8 = new System.Windows.Forms.Label();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.Gpnl_Data.SuspendLayout();
             this.SuspendLayout();
@@ -69,12 +69,26 @@
             this.guna2CustomGradientPanel1.Controls.Add(this.btn_back);
             this.guna2CustomGradientPanel1.CustomizableEdges.BottomLeft = false;
             this.guna2CustomGradientPanel1.CustomizableEdges.BottomRight = false;
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(-5, 0);
-            this.guna2CustomGradientPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(-4, 0);
+            this.guna2CustomGradientPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1197, 738);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(898, 600);
             this.guna2CustomGradientPanel1.TabIndex = 3;
             this.guna2CustomGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2CustomGradientPanel1_Paint);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.White;
+            this.label8.Font = new System.Drawing.Font("Segoe UI Black", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
+            this.label8.Location = new System.Drawing.Point(36, 118);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(317, 47);
+            this.label8.TabIndex = 19;
+            this.label8.Text = "Jenis PlayStation";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label10
             // 
@@ -82,9 +96,10 @@
             this.label10.BackColor = System.Drawing.Color.White;
             this.label10.Font = new System.Drawing.Font("Broadway", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
-            this.label10.Location = new System.Drawing.Point(-49, 156);
+            this.label10.Location = new System.Drawing.Point(-37, 127);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(2602, 68);
+            this.label10.Size = new System.Drawing.Size(2099, 55);
             this.label10.TabIndex = 18;
             this.label10.Text = "_________________________________________________________________________________" +
     "__";
@@ -95,11 +110,12 @@
             this.label9.BackColor = System.Drawing.Color.White;
             this.label9.Font = new System.Drawing.Font("Segoe UI Black", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
-            this.label9.Location = new System.Drawing.Point(139, 240);
+            this.label9.Location = new System.Drawing.Point(104, 195);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(538, 45);
+            this.label9.Size = new System.Drawing.Size(483, 37);
             this.label9.TabIndex = 17;
-            this.label9.Text = "Form Tambah Jenis PlayStation";
+            this.label9.Text = "Formulir Tambah Jenis PlayStation";
             this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // Gpnl_Data
@@ -124,10 +140,10 @@
             this.Gpnl_Data.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.Gpnl_Data.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.Gpnl_Data.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
-            this.Gpnl_Data.Location = new System.Drawing.Point(116, 299);
-            this.Gpnl_Data.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Gpnl_Data.Location = new System.Drawing.Point(87, 243);
+            this.Gpnl_Data.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Gpnl_Data.Name = "Gpnl_Data";
-            this.Gpnl_Data.Size = new System.Drawing.Size(944, 244);
+            this.Gpnl_Data.Size = new System.Drawing.Size(708, 198);
             this.Gpnl_Data.TabIndex = 16;
             // 
             // label7
@@ -136,9 +152,10 @@
             this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.label7.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Firebrick;
-            this.label7.Location = new System.Drawing.Point(307, 281);
+            this.label7.Location = new System.Drawing.Point(230, 228);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(26, 35);
+            this.label7.Size = new System.Drawing.Size(21, 28);
             this.label7.TabIndex = 12;
             this.label7.Text = "*";
             this.label7.Click += new System.EventHandler(this.label7_Click);
@@ -149,9 +166,10 @@
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.label5.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Firebrick;
-            this.label5.Location = new System.Drawing.Point(969, 55);
+            this.label5.Location = new System.Drawing.Point(727, 45);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(26, 35);
+            this.label5.Size = new System.Drawing.Size(21, 28);
             this.label5.TabIndex = 11;
             this.label5.Text = "*";
             // 
@@ -161,9 +179,10 @@
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.label6.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Firebrick;
-            this.label6.Location = new System.Drawing.Point(243, 55);
+            this.label6.Location = new System.Drawing.Point(182, 45);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(26, 35);
+            this.label6.Size = new System.Drawing.Size(21, 28);
             this.label6.TabIndex = 10;
             this.label6.Text = "*";
             // 
@@ -183,12 +202,12 @@
             this.txt_max_pemain.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_max_pemain.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.txt_max_pemain.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_max_pemain.Location = new System.Drawing.Point(791, 108);
-            this.txt_max_pemain.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
+            this.txt_max_pemain.Location = new System.Drawing.Point(593, 88);
+            this.txt_max_pemain.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.txt_max_pemain.Name = "txt_max_pemain";
             this.txt_max_pemain.PlaceholderText = "Isikan Max Pemain";
             this.txt_max_pemain.SelectedText = "";
-            this.txt_max_pemain.Size = new System.Drawing.Size(407, 62);
+            this.txt_max_pemain.Size = new System.Drawing.Size(305, 50);
             this.txt_max_pemain.TabIndex = 7;
             // 
             // txt_tahun_rilis
@@ -207,12 +226,12 @@
             this.txt_tahun_rilis.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_tahun_rilis.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.txt_tahun_rilis.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_tahun_rilis.Location = new System.Drawing.Point(145, 332);
-            this.txt_tahun_rilis.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
+            this.txt_tahun_rilis.Location = new System.Drawing.Point(109, 270);
+            this.txt_tahun_rilis.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.txt_tahun_rilis.Name = "txt_tahun_rilis";
             this.txt_tahun_rilis.PlaceholderText = "Isikan Tahun Rilis";
             this.txt_tahun_rilis.SelectedText = "";
-            this.txt_tahun_rilis.Size = new System.Drawing.Size(407, 62);
+            this.txt_tahun_rilis.Size = new System.Drawing.Size(305, 50);
             this.txt_tahun_rilis.TabIndex = 6;
             // 
             // label4
@@ -221,9 +240,10 @@
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.label4.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(799, 60);
+            this.label4.Location = new System.Drawing.Point(599, 49);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(159, 35);
+            this.label4.Size = new System.Drawing.Size(128, 28);
             this.label4.TabIndex = 5;
             this.label4.Text = "Max Pemain";
             // 
@@ -233,9 +253,10 @@
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.label3.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(152, 288);
+            this.label3.Location = new System.Drawing.Point(114, 234);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(141, 35);
+            this.label3.Size = new System.Drawing.Size(115, 28);
             this.label3.TabIndex = 4;
             this.label3.Text = "Tahun Rilis";
             // 
@@ -245,9 +266,10 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.label2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(799, 288);
+            this.label2.Location = new System.Drawing.Point(599, 234);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(123, 35);
+            this.label2.Size = new System.Drawing.Size(99, 28);
             this.label2.TabIndex = 3;
             this.label2.Text = "Deskripsi";
             // 
@@ -257,9 +279,10 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(152, 60);
+            this.label1.Location = new System.Drawing.Point(114, 49);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 35);
+            this.label1.Size = new System.Drawing.Size(68, 28);
             this.label1.TabIndex = 2;
             this.label1.Text = "Nama";
             // 
@@ -279,13 +302,13 @@
             this.txt_deskripsi.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_deskripsi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.txt_deskripsi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_deskripsi.Location = new System.Drawing.Point(791, 332);
-            this.txt_deskripsi.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
+            this.txt_deskripsi.Location = new System.Drawing.Point(593, 270);
+            this.txt_deskripsi.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.txt_deskripsi.Multiline = true;
             this.txt_deskripsi.Name = "txt_deskripsi";
             this.txt_deskripsi.PlaceholderText = "Isikan Deskripsi";
             this.txt_deskripsi.SelectedText = "";
-            this.txt_deskripsi.Size = new System.Drawing.Size(407, 134);
+            this.txt_deskripsi.Size = new System.Drawing.Size(305, 109);
             this.txt_deskripsi.TabIndex = 1;
             // 
             // txt_nama
@@ -304,12 +327,12 @@
             this.txt_nama.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_nama.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.txt_nama.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_nama.Location = new System.Drawing.Point(145, 108);
-            this.txt_nama.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
+            this.txt_nama.Location = new System.Drawing.Point(109, 88);
+            this.txt_nama.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.txt_nama.Name = "txt_nama";
             this.txt_nama.PlaceholderText = "Isikan Nama Jenis PlayStation";
             this.txt_nama.SelectedText = "";
-            this.txt_nama.Size = new System.Drawing.Size(407, 62);
+            this.txt_nama.Size = new System.Drawing.Size(305, 50);
             this.txt_nama.TabIndex = 0;
             // 
             // btn_clear
@@ -323,10 +346,10 @@
             this.btn_clear.FillColor = System.Drawing.Color.Gray;
             this.btn_clear.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
             this.btn_clear.ForeColor = System.Drawing.Color.White;
-            this.btn_clear.Location = new System.Drawing.Point(552, 588);
-            this.btn_clear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_clear.Location = new System.Drawing.Point(414, 478);
+            this.btn_clear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_clear.Name = "btn_clear";
-            this.btn_clear.Size = new System.Drawing.Size(180, 54);
+            this.btn_clear.Size = new System.Drawing.Size(135, 44);
             this.btn_clear.TabIndex = 5;
             this.btn_clear.Text = "Bersihkan";
             this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
@@ -342,10 +365,10 @@
             this.btn_save.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.btn_save.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
             this.btn_save.ForeColor = System.Drawing.Color.White;
-            this.btn_save.Location = new System.Drawing.Point(779, 588);
-            this.btn_save.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_save.Location = new System.Drawing.Point(584, 478);
+            this.btn_save.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_save.Name = "btn_save";
-            this.btn_save.Size = new System.Drawing.Size(180, 54);
+            this.btn_save.Size = new System.Drawing.Size(135, 44);
             this.btn_save.TabIndex = 3;
             this.btn_save.Text = "Simpan";
             this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
@@ -361,35 +384,22 @@
             this.btn_back.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(188)))), ((int)(((byte)(222)))));
             this.btn_back.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
             this.btn_back.ForeColor = System.Drawing.Color.White;
-            this.btn_back.Location = new System.Drawing.Point(325, 588);
-            this.btn_back.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_back.Location = new System.Drawing.Point(244, 478);
+            this.btn_back.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_back.Name = "btn_back";
-            this.btn_back.Size = new System.Drawing.Size(180, 54);
+            this.btn_back.Size = new System.Drawing.Size(135, 44);
             this.btn_back.TabIndex = 2;
             this.btn_back.Text = "Kembali";
             this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.White;
-            this.label8.Font = new System.Drawing.Font("Segoe UI Black", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
-            this.label8.Location = new System.Drawing.Point(48, 145);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(401, 60);
-            this.label8.TabIndex = 19;
-            this.label8.Text = "Jenis PlayStation";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
-            // 
             // JenisPlayStationCreate
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1187, 737);
+            this.ClientSize = new System.Drawing.Size(890, 599);
             this.Controls.Add(this.guna2CustomGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "JenisPlayStationCreate";
             this.Text = "JenisPlayStationCreate";
             this.guna2CustomGradientPanel1.ResumeLayout(false);

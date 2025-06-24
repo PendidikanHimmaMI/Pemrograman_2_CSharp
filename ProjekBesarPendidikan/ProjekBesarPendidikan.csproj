@@ -41,8 +41,14 @@
     <Reference Include="Azure.Identity, Version=1.11.4.0, Culture=neutral, PublicKeyToken=92742159e12e44c8, processorArchitecture=MSIL">
       <HintPath>..\packages\Azure.Identity.1.11.4\lib\netstandard2.0\Azure.Identity.dll</HintPath>
     </Reference>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.4.0\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI2, Version=2.0.4.7, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.7\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.4, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.4\lib\net461\itextsharp.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.8.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
@@ -94,6 +100,21 @@
     </Reference>
     <Reference Include="Microsoft.IdentityModel.Tokens, Version=7.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.IdentityModel.Tokens.7.5.0\lib\net472\Microsoft.IdentityModel.Tokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
     </Reference>
     <Reference Include="System">
       <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
@@ -157,6 +178,7 @@
       <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
     </Reference>
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -199,6 +221,26 @@
     <Compile Include="Dashboard\DashboardManager.Designer.cs">
       <DependentUpon>DashboardManager.cs</DependentUpon>
     </Compile>
+    <Compile Include="Db_RentalPlayStationDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Db_RentalPlayStationDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Db_RentalPlayStationDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Db_RentalPlayStationDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Db_RentalPlayStationDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Db_RentalPlayStationDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Db_RentalPlayStationDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Db_RentalPlayStationDataSet3.xsd</DependentUpon>
+    </Compile>
     <Compile Include="element\FormAnimator.cs" />
     <Compile Include="element\FormMessageBox.cs">
       <SubType>Form</SubType>
@@ -220,6 +262,18 @@
       <DependentUpon>NotificationMessage.cs</DependentUpon>
     </Compile>
     <Compile Include="element\RJMessageBox.cs" />
+    <Compile Include="LAPORAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LAPORAN.Designer.cs">
+      <DependentUpon>LAPORAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\LaporanTrs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\LaporanTrs.Designer.cs">
+      <DependentUpon>LaporanTrs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -300,6 +354,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="Transaksi\ItemKeranjang.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -349,6 +404,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="element\NotificationMessage.resx">
       <DependentUpon>NotificationMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LAPORAN.resx">
+      <DependentUpon>LAPORAN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\LaporanTrs.resx">
+      <DependentUpon>LaporanTrs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -406,6 +467,50 @@
     <EmbeddedResource Include="Transaksi\ShowAvailablePlayStation.resx">
       <DependentUpon>ShowAvailablePlayStation.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Db_RentalPlayStationDataSet.xsc">
+      <DependentUpon>Db_RentalPlayStationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Db_RentalPlayStationDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Db_RentalPlayStationDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Db_RentalPlayStationDataSet.xss">
+      <DependentUpon>Db_RentalPlayStationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Db_RentalPlayStationDataSet1.xsc">
+      <DependentUpon>Db_RentalPlayStationDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Db_RentalPlayStationDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Db_RentalPlayStationDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Db_RentalPlayStationDataSet1.xss">
+      <DependentUpon>Db_RentalPlayStationDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Db_RentalPlayStationDataSet2.xsc">
+      <DependentUpon>Db_RentalPlayStationDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Db_RentalPlayStationDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Db_RentalPlayStationDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Db_RentalPlayStationDataSet2.xss">
+      <DependentUpon>Db_RentalPlayStationDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Db_RentalPlayStationDataSet3.xsc">
+      <DependentUpon>Db_RentalPlayStationDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Db_RentalPlayStationDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Db_RentalPlayStationDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Db_RentalPlayStationDataSet3.xss">
+      <DependentUpon>Db_RentalPlayStationDataSet3.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -426,6 +531,19 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="Icon\App Icon.png" />
     <Content Include="Icon\Beranda - Hover.png" />
     <Content Include="Icon\Beranda.png" />
@@ -439,6 +557,7 @@
     <Content Include="Icon\Keranjang.png" />
     <Content Include="Image\a2ffb4a3657a6d6981688d69c8265832096f20b4.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.6.0.2\build\net462\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.6.0.2\build\net462\Microsoft.Data.SqlClient.SNI.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

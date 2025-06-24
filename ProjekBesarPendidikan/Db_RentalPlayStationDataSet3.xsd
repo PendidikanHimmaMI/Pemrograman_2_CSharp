@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Db_RentalPlayStationDataSet3" targetNamespace="http://tempuri.org/Db_RentalPlayStationDataSet3.xsd" xmlns:mstns="http://tempuri.org/Db_RentalPlayStationDataSet3.xsd" xmlns="http://tempuri.org/Db_RentalPlayStationDataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Db_RentalPlayStationConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Db_RentalPlayStationConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ProjekBesarPendidikan.Properties.Settings.GlobalReference.Default.Db_RentalPlayStationConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vw_listTransaksiPenyewaanTableAdapter" GeneratorDataComponentClassName="vw_listTransaksiPenyewaanTableAdapter" Name="vw_listTransaksiPenyewaan" UserDataComponentName="vw_listTransaksiPenyewaanTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Db_RentalPlayStationConnectionString (Settings)" DbObjectName="Db_RentalPlayStation.dbo.vw_listTransaksiPenyewaan" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT kry_nama, mpb_nama, pps_nama_penyewa, pps_no_hp_penyewa, pps_tanggal_transaksi, pps_total_harga, total FROM dbo.vw_listTransaksiPenyewaan</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="kry_nama" DataSetColumn="kry_nama" />
+              <Mapping SourceColumn="mpb_nama" DataSetColumn="mpb_nama" />
+              <Mapping SourceColumn="pps_nama_penyewa" DataSetColumn="pps_nama_penyewa" />
+              <Mapping SourceColumn="pps_no_hp_penyewa" DataSetColumn="pps_no_hp_penyewa" />
+              <Mapping SourceColumn="pps_tanggal_transaksi" DataSetColumn="pps_tanggal_transaksi" />
+              <Mapping SourceColumn="pps_total_harga" DataSetColumn="pps_total_harga" />
+              <Mapping SourceColumn="total" DataSetColumn="total" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Db_RentalPlayStationDataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="Db_RentalPlayStationDataSet3" msprop:Generator_DataSetName="Db_RentalPlayStationDataSet3">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vw_listTransaksiPenyewaan" msprop:Generator_RowEvHandlerName="vw_listTransaksiPenyewaanRowChangeEventHandler" msprop:Generator_RowDeletedName="vw_listTransaksiPenyewaanRowDeleted" msprop:Generator_RowDeletingName="vw_listTransaksiPenyewaanRowDeleting" msprop:Generator_RowEvArgName="vw_listTransaksiPenyewaanRowChangeEvent" msprop:Generator_TablePropName="vw_listTransaksiPenyewaan" msprop:Generator_RowChangedName="vw_listTransaksiPenyewaanRowChanged" msprop:Generator_RowChangingName="vw_listTransaksiPenyewaanRowChanging" msprop:Generator_TableClassName="vw_listTransaksiPenyewaanDataTable" msprop:Generator_RowClassName="vw_listTransaksiPenyewaanRow" msprop:Generator_TableVarName="tablevw_listTransaksiPenyewaan" msprop:Generator_UserTableName="vw_listTransaksiPenyewaan">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="kry_nama" msprop:Generator_ColumnPropNameInRow="kry_nama" msprop:Generator_ColumnPropNameInTable="kry_namaColumn" msprop:Generator_ColumnVarNameInTable="columnkry_nama" msprop:Generator_UserColumnName="kry_nama" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="mpb_nama" msprop:Generator_ColumnPropNameInRow="mpb_nama" msprop:Generator_ColumnPropNameInTable="mpb_namaColumn" msprop:Generator_ColumnVarNameInTable="columnmpb_nama" msprop:Generator_UserColumnName="mpb_nama" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="pps_nama_penyewa" msprop:Generator_ColumnPropNameInRow="pps_nama_penyewa" msprop:Generator_ColumnPropNameInTable="pps_nama_penyewaColumn" msprop:Generator_ColumnVarNameInTable="columnpps_nama_penyewa" msprop:Generator_UserColumnName="pps_nama_penyewa" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="pps_no_hp_penyewa" msprop:Generator_ColumnPropNameInRow="pps_no_hp_penyewa" msprop:Generator_ColumnPropNameInTable="pps_no_hp_penyewaColumn" msprop:Generator_ColumnVarNameInTable="columnpps_no_hp_penyewa" msprop:Generator_UserColumnName="pps_no_hp_penyewa" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="pps_tanggal_transaksi" msprop:Generator_ColumnPropNameInRow="pps_tanggal_transaksi" msprop:Generator_ColumnPropNameInTable="pps_tanggal_transaksiColumn" msprop:Generator_ColumnVarNameInTable="columnpps_tanggal_transaksi" msprop:Generator_UserColumnName="pps_tanggal_transaksi" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="pps_total_harga" msprop:Generator_ColumnPropNameInRow="pps_total_harga" msprop:Generator_ColumnPropNameInTable="pps_total_hargaColumn" msprop:Generator_ColumnVarNameInTable="columnpps_total_harga" msprop:Generator_UserColumnName="pps_total_harga" type="xs:decimal" minOccurs="0" />
+              <xs:element name="total" msprop:Generator_ColumnPropNameInRow="total" msprop:Generator_ColumnPropNameInTable="totalColumn" msprop:Generator_ColumnVarNameInTable="columntotal" msprop:Generator_UserColumnName="total" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

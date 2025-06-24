@@ -91,5 +91,10 @@ namespace ProjekBesarPendidikan
                     break;
             }
         }
+
+        private void guna2PictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

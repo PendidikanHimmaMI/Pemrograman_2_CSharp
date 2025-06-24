@@ -163,7 +163,7 @@ namespace ProjekBesarPendidikan
                         bool editExists = dgv_JenisPlayStation.Columns.Cast<DataGridViewColumn>().Any(c => c.Name == "Edit");
                         bool deleteExists = dgv_JenisPlayStation.Columns.Cast<DataGridViewColumn>().Any(c => c.Name == "Delete");
                         dgv_JenisPlayStation.Columns["No"].HeaderText = "No";
-                        dgv_JenisPlayStation.Columns["No"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                        dgv_JenisPlayStation.Columns["No"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
                         dgv_JenisPlayStation.Columns["No"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
                         dgv_JenisPlayStation.Columns["jps_id"].HeaderText = "ID";
                         dgv_JenisPlayStation.Columns["jps_nama"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
@@ -176,10 +176,10 @@ namespace ProjekBesarPendidikan
                         dgv_JenisPlayStation.Columns["jps_nama"].HeaderText = "Nama";
 
                         dgv_JenisPlayStation.Columns["jps_tahun_rilis"].HeaderText = "Tahun Rilis";
-                        dgv_JenisPlayStation.Columns["jps_tahun_rilis"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                        dgv_JenisPlayStation.Columns["jps_tahun_rilis"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
 
                         dgv_JenisPlayStation.Columns["jps_max_pemain"].HeaderText = "Max Pemain";
-                        dgv_JenisPlayStation.Columns["jps_max_pemain"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                        dgv_JenisPlayStation.Columns["jps_max_pemain"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
 
                         dgv_JenisPlayStation.Columns["jps_deskripsi"].HeaderText = "Deskripsi";
                         dgv_JenisPlayStation.Columns["jps_status"].HeaderText = "Status";
@@ -194,7 +194,17 @@ namespace ProjekBesarPendidikan
                         dgv_JenisPlayStation.Columns["jps_modif_date"].HeaderText = "Tanggal Diubah";
                         dgv_JenisPlayStation.Columns["jps_modif_date"].Visible = false;
 
+                        if (dgv_JenisPlayStation.Columns.Count > 0)
+                        {
+                            dgv_JenisPlayStation.Columns[0].Width = 40;
+                           
 
+                            dgv_JenisPlayStation.Columns[0].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                            foreach (DataGridViewColumn col in dgv_JenisPlayStation.Columns)
+                            {
+                                col.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                            }
+                        }
 
                         string editPath = @"D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\Icon\edit.png";
                         Image editIcon = Image.FromFile(editPath);
@@ -252,6 +262,11 @@ namespace ProjekBesarPendidikan
 
                             }
                             dgv_JenisPlayStation.Columns["Restore"].Width = 40;
+                            dgv_JenisPlayStation.Columns["jps_nama"].Width = 90;
+                            dgv_JenisPlayStation.Columns["jps_deskripsi"].Width = 120;
+                            dgv_JenisPlayStation.Columns["jps_tahun_rilis"].Width = 60;
+                            dgv_JenisPlayStation.Columns["jps_max_pemain"].Width = 40;
+
 
                             dgv_JenisPlayStation.RowTemplate.Height = 40;
 
@@ -323,7 +338,7 @@ namespace ProjekBesarPendidikan
                     string id = dgv_JenisPlayStation.Rows[e.RowIndex].Cells["jps_id"].Value.ToString();
                     string nama = dgv_JenisPlayStation.Rows[e.RowIndex].Cells["jps_nama"].Value.ToString();
 
-                    DialogResult confirm = RJMessageBox.Show("Are you sure want to delete " + nama, "Warning", MessageBoxButtons.YesNo);
+                    DialogResult confirm = RJMessageBox.Show("Apakah kamu yakin ingin menghapus " + nama, "Peringatan", MessageBoxButtons.YesNo);
                     if (confirm == DialogResult.Yes)
                     {
                         ToggleJenisPlayStationStatus(Convert.ToInt32(dgv_JenisPlayStation.Rows[e.RowIndex].Cells["jps_id"].Value));
@@ -335,7 +350,7 @@ namespace ProjekBesarPendidikan
                     string id = dgv_JenisPlayStation.Rows[e.RowIndex].Cells["jps_id"].Value.ToString();
                     string nama = dgv_JenisPlayStation.Rows[e.RowIndex].Cells["jps_nama"].Value.ToString();
 
-                    DialogResult confirm = RJMessageBox.Show("Are you sure want to restore " + nama, "Warning", MessageBoxButtons.YesNo);
+                    DialogResult confirm = RJMessageBox.Show("Apakah kamu yakin ingin memulihkan " + nama, "Pringatan", MessageBoxButtons.YesNo);
                     if (confirm == DialogResult.Yes)
                     {
                         ToggleJenisPlayStationStatus(Convert.ToInt32(dgv_JenisPlayStation.Rows[e.RowIndex].Cells["jps_id"].Value));
@@ -571,6 +586,11 @@ namespace ProjekBesarPendidikan
         }
 
         private void btn_Filter_MouseClick(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void txt_Search_TextChanged_1(object sender, EventArgs e)
         {
 
         }

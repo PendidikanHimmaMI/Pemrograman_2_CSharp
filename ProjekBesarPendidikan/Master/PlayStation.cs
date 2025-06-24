@@ -151,13 +151,13 @@ namespace ProjekBesarPendidikan.Master
             string connectionString = "Data Source=127.0.0.4,9210;Initial Catalog=DB_RentalPlaystation;User ID=Pendidikan;Password=123;";
             SqlConnection connect = new SqlConnection(connectionString);
             connect.Open();
-            //cmd = new SqlCommand("EXEC dbo.rps_getListPlayStation @search = null, @status = null, @jps_id = null, @sortColumn = 'pst_id', @sortOrder = 'ASC'", connect);
-            cmd = new SqlCommand("dbo.rps_getListPlayStation", connect);
+            cmd = new SqlCommand("udf_getListKategori", connect);
             cmd.CommandType = CommandType.StoredProcedure;
 
             cmd.Parameters.AddWithValue("@search", search);
             cmd.Parameters.AddWithValue("@status", null);
-            cmd.Parameters.AddWithValue("@jps_id", null);
+            cmd.Parameters.AddWithValue("@barang", null);
+            cmd.Parameters.AddWithValue("@ruagan", null);
             cmd.Parameters.AddWithValue("@sortColumn", "pst_id");
             cmd.Parameters.AddWithValue("@sortOrder", "ASC");
 
@@ -251,7 +251,9 @@ namespace ProjekBesarPendidikan.Master
             showDgv(txtCariPlaystation.Text);
         }
 
+        private void cb_SortStatus_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
-
+        }
     }
 }

@@ -85,7 +85,7 @@
             this.btn_add.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_add.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_add.FillColor = System.Drawing.Color.White;
-            this.btn_add.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_add.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.btn_add.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.btn_add.ImageOffset = new System.Drawing.Point(-4, 0);
             this.btn_add.Location = new System.Drawing.Point(22, 48);
@@ -112,7 +112,7 @@
             this.p_Filter.Name = "p_Filter";
             this.p_Filter.ShadowDecoration.Depth = 15;
             this.p_Filter.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(7);
-            this.p_Filter.Size = new System.Drawing.Size(212, 12);
+            this.p_Filter.Size = new System.Drawing.Size(212, 212);
             this.p_Filter.TabIndex = 9;
             this.p_Filter.Paint += new System.Windows.Forms.PaintEventHandler(this.p_Filter_Paint);
             // 
@@ -123,7 +123,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(29, 13);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(180, 25);
+            this.label2.Size = new System.Drawing.Size(150, 20);
             this.label2.TabIndex = 7;
             this.label2.Text = "Sorting By Status";
             // 
@@ -154,7 +154,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(29, 161);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 25);
+            this.label1.Size = new System.Drawing.Size(109, 20);
             this.label1.TabIndex = 5;
             this.label1.Text = "Sorting start";
             // 
@@ -202,7 +202,7 @@
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(28, 87);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(192, 25);
+            this.label13.Size = new System.Drawing.Size(157, 20);
             this.label13.TabIndex = 2;
             this.label13.Text = "Sorting By Column";
             // 
@@ -245,7 +245,7 @@
             this.btn_Filter.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.btn_Filter.Size = new System.Drawing.Size(197, 46);
             this.btn_Filter.TabIndex = 8;
-            this.btn_Filter.Text = "Sort & Filter";
+            this.btn_Filter.Text = "Sort && Filter";
             this.btn_Filter.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Filter.Click += new System.EventHandler(this.btn_Filter_Click_1);
             // 
@@ -261,9 +261,9 @@
             this.Gpnl_Data.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.Gpnl_Data.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.Gpnl_Data.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
-            this.Gpnl_Data.Location = new System.Drawing.Point(22, 116);
+            this.Gpnl_Data.Location = new System.Drawing.Point(60, 116);
             this.Gpnl_Data.Name = "Gpnl_Data";
-            this.Gpnl_Data.Size = new System.Drawing.Size(1142, 546);
+            this.Gpnl_Data.Size = new System.Drawing.Size(1074, 546);
             this.Gpnl_Data.TabIndex = 1;
             // 
             // dgv_Karyawan
@@ -287,7 +287,7 @@
             this.dgv_Karyawan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
@@ -299,7 +299,8 @@
             this.dgv_Karyawan.ReadOnly = true;
             this.dgv_Karyawan.RowHeadersVisible = false;
             this.dgv_Karyawan.RowHeadersWidth = 51;
-            this.dgv_Karyawan.Size = new System.Drawing.Size(1106, 515);
+            this.dgv_Karyawan.RowTemplate.Height = 3;
+            this.dgv_Karyawan.Size = new System.Drawing.Size(1038, 515);
             this.dgv_Karyawan.TabIndex = 0;
             this.dgv_Karyawan.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgv_Karyawan.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -319,7 +320,7 @@
             this.dgv_Karyawan.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgv_Karyawan.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgv_Karyawan.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgv_Karyawan.ThemeStyle.RowsStyle.Height = 22;
+            this.dgv_Karyawan.ThemeStyle.RowsStyle.Height = 3;
             this.dgv_Karyawan.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_Karyawan.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgv_Karyawan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Karyawan_CellClick);

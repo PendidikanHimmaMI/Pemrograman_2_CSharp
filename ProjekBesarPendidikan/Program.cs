@@ -1,4 +1,5 @@
-﻿using ProjekBesarPendidikan.Transaksi;
+﻿using ProjekBesarPendidikan.Laporan;
+using ProjekBesarPendidikan.Transaksi;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +15,8 @@ namespace ProjekBesarPendidikan
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DashboardAdmin());
+            //Application.Run(new Login());
+            Application.Run(new LaporanTrs());
         }
     }
 }

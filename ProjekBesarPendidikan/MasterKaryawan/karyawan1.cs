@@ -162,6 +162,7 @@ namespace ProjekBesarPendidikan.MasterKaryawan
             }
             string editPath = @"D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\Icon\edit.png";
             Image editIcon = Image.FromFile(editPath);
+              
 
             string deletePath = @"D:\KEGIATAN_KULIAH\HIMMA_PENDIDIKAN\PROJEK_KECIL_PENDIDIKAN\Pemrograman_2_CSharp\ProjekBesarPendidikan\Icon\delete.png";
             Image deleteIcon = Image.FromFile(deletePath);

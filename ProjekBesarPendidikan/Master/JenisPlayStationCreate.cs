@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CustomMessageBox;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
@@ -60,6 +61,10 @@ namespace ProjekBesarPendidikan.Master
             string kesalahan = null;
             string createdBy = "Shofi";
 
+            if (String.IsNullOrWhiteSpace(txt_nama.Text) || String.IsNullOrWhiteSpace(txt_tahun_rilis.Text) || String.IsNullOrWhiteSpace(txt_max_pemain.Text) || String.IsNullOrWhiteSpace(txt_deskripsi.Text))
+            {
+                RJMessageBox.Show("Semua data wajib diisi!", "Validasi!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
 
             try
             {
@@ -118,7 +123,7 @@ namespace ProjekBesarPendidikan.Master
         {
 
         }
-
+         
         private void label7_Click(object sender, EventArgs e)
         {
 
@@ -130,7 +135,7 @@ namespace ProjekBesarPendidikan.Master
         }
 
         private void label8_Click(object sender, EventArgs e)
-        {
+        { 
 
         }
     }

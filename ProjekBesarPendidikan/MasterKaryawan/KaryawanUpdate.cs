@@ -66,36 +66,33 @@ namespace ProjekBesarPendidikan.MasterKaryawan
             // Validasi input
             if (string.IsNullOrWhiteSpace(nama))
             {
-                kesalahan += "Nama Karyawan tidak boleh kosong.";
+                kesalahan += "\nNama Karyawan tidak boleh kosong.";
             }
             if (string.IsNullOrWhiteSpace(alamat))
             {
-                kesalahan += "Alamat tidak boleh kosong. ";
+                kesalahan += "\nAlamat tidak boleh kosong. ";
             }
             if (string.IsNullOrWhiteSpace(no_hp))
             {
-                kesalahan += "No Telepon tidak boleh kosong. ";
+                kesalahan += "\nNo Telepon tidak boleh kosong. ";
             }
             if (string.IsNullOrWhiteSpace(email))
             {
-                kesalahan += "Email tidak boleh kosong. ";
+                kesalahan += "\nEmail tidak boleh kosong. ";
             }
             if (string.IsNullOrWhiteSpace(posisi))
             {
-                kesalahan += "Posisi tidak boleh kosong. ";
+                kesalahan += "\nPosisi tidak boleh kosong. ";
             }
             if (string.IsNullOrWhiteSpace(username))
             {
-                kesalahan += "Username tidak boleh kosong. ";
+                kesalahan += "\nUsername tidak boleh kosong. ";
             }
             
             if (!string.IsNullOrWhiteSpace(kesalahan))
             {
                 MessageBox.Show(kesalahan, "Validasi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-
-
-
 
             if (string.IsNullOrWhiteSpace(createdBy))
             {
@@ -137,6 +134,15 @@ namespace ProjekBesarPendidikan.MasterKaryawan
             }
         }
 
-       
+        private void btn_bersihkan_Click(object sender, EventArgs e)
+        {
+            tbAlamat.Text = "";
+            tbEmail.Text = "";
+            tbHp.Text = "";
+            tbNama.Text = "";
+            tbPassword.Text = "";
+            tbUserName.Text = "";
+            cbPosisi.SelectedItem = null;
+        }
     }
 }

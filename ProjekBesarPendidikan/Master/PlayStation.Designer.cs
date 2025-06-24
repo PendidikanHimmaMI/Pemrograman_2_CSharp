@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PlayStation));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.txtCariPlaystation = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnTambahData = new Guna.UI2.WinForms.Guna2Button();
@@ -66,9 +66,10 @@
             this.guna2CustomGradientPanel1.Controls.Add(this.Gpnl_Data);
             this.guna2CustomGradientPanel1.CustomizableEdges.BottomLeft = false;
             this.guna2CustomGradientPanel1.CustomizableEdges.BottomRight = false;
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(10, 101);
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(8, 82);
+            this.guna2CustomGradientPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1180, 678);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(885, 551);
             this.guna2CustomGradientPanel1.TabIndex = 2;
             // 
             // txtCariPlaystation
@@ -91,13 +92,13 @@
             this.txtCariPlaystation.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCariPlaystation.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtCariPlaystation.IconLeft")));
             this.txtCariPlaystation.IconLeftOffset = new System.Drawing.Point(10, 0);
-            this.txtCariPlaystation.Location = new System.Drawing.Point(274, 41);
-            this.txtCariPlaystation.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
+            this.txtCariPlaystation.Location = new System.Drawing.Point(206, 33);
+            this.txtCariPlaystation.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.txtCariPlaystation.Name = "txtCariPlaystation";
             this.txtCariPlaystation.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.txtCariPlaystation.PlaceholderText = "Cari...";
             this.txtCariPlaystation.SelectedText = "";
-            this.txtCariPlaystation.Size = new System.Drawing.Size(596, 51);
+            this.txtCariPlaystation.Size = new System.Drawing.Size(447, 41);
             this.txtCariPlaystation.TabIndex = 11;
             this.txtCariPlaystation.Tag = "";
             this.txtCariPlaystation.TextOffset = new System.Drawing.Point(7, 0);
@@ -115,9 +116,10 @@
             this.btnTambahData.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.btnTambahData.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
             this.btnTambahData.ForeColor = System.Drawing.Color.White;
-            this.btnTambahData.Location = new System.Drawing.Point(22, 41);
+            this.btnTambahData.Location = new System.Drawing.Point(16, 33);
+            this.btnTambahData.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnTambahData.Name = "btnTambahData";
-            this.btnTambahData.Size = new System.Drawing.Size(230, 51);
+            this.btnTambahData.Size = new System.Drawing.Size(172, 41);
             this.btnTambahData.TabIndex = 10;
             this.btnTambahData.Text = "Tambah Data";
             this.btnTambahData.Click += new System.EventHandler(this.btnTambahData_Click);
@@ -132,13 +134,14 @@
             this.p_Filter.Controls.Add(this.btn_clearF);
             this.p_Filter.Controls.Add(this.label13);
             this.p_Filter.Controls.Add(this.cb_SortColumn);
-            this.p_Filter.Location = new System.Drawing.Point(933, 89);
-            this.p_Filter.MaximumSize = new System.Drawing.Size(212, 285);
-            this.p_Filter.MinimumSize = new System.Drawing.Size(212, 12);
+            this.p_Filter.Location = new System.Drawing.Point(700, 72);
+            this.p_Filter.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.p_Filter.MaximumSize = new System.Drawing.Size(159, 232);
+            this.p_Filter.MinimumSize = new System.Drawing.Size(159, 10);
             this.p_Filter.Name = "p_Filter";
             this.p_Filter.ShadowDecoration.Depth = 15;
             this.p_Filter.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(7);
-            this.p_Filter.Size = new System.Drawing.Size(212, 12);
+            this.p_Filter.Size = new System.Drawing.Size(159, 232);
             this.p_Filter.TabIndex = 9;
             // 
             // label2
@@ -146,9 +149,10 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(29, 13);
+            this.label2.Location = new System.Drawing.Point(22, 11);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(180, 25);
+            this.label2.Size = new System.Drawing.Size(150, 20);
             this.label2.TabIndex = 7;
             this.label2.Text = "Sorting By Status";
             // 
@@ -165,19 +169,22 @@
             this.cb_SortStatus.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.cb_SortStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cb_SortStatus.ItemHeight = 30;
-            this.cb_SortStatus.Location = new System.Drawing.Point(29, 42);
+            this.cb_SortStatus.Location = new System.Drawing.Point(22, 34);
+            this.cb_SortStatus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cb_SortStatus.Name = "cb_SortStatus";
-            this.cb_SortStatus.Size = new System.Drawing.Size(158, 36);
+            this.cb_SortStatus.Size = new System.Drawing.Size(120, 36);
             this.cb_SortStatus.TabIndex = 6;
+            this.cb_SortStatus.SelectedIndexChanged += new System.EventHandler(this.cb_SortStatus_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(29, 161);
+            this.label1.Location = new System.Drawing.Point(22, 131);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 25);
+            this.label1.Size = new System.Drawing.Size(109, 20);
             this.label1.TabIndex = 5;
             this.label1.Text = "Sorting start";
             // 
@@ -194,9 +201,10 @@
             this.cb_SortOrder.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.cb_SortOrder.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cb_SortOrder.ItemHeight = 30;
-            this.cb_SortOrder.Location = new System.Drawing.Point(29, 190);
+            this.cb_SortOrder.Location = new System.Drawing.Point(22, 154);
+            this.cb_SortOrder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cb_SortOrder.Name = "cb_SortOrder";
-            this.cb_SortOrder.Size = new System.Drawing.Size(158, 36);
+            this.cb_SortOrder.Size = new System.Drawing.Size(120, 36);
             this.cb_SortOrder.TabIndex = 4;
             // 
             // btn_clearF
@@ -210,9 +218,10 @@
             this.btn_clearF.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.btn_clearF.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_clearF.ForeColor = System.Drawing.Color.White;
-            this.btn_clearF.Location = new System.Drawing.Point(28, 237);
+            this.btn_clearF.Location = new System.Drawing.Point(21, 193);
+            this.btn_clearF.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_clearF.Name = "btn_clearF";
-            this.btn_clearF.Size = new System.Drawing.Size(158, 33);
+            this.btn_clearF.Size = new System.Drawing.Size(118, 27);
             this.btn_clearF.TabIndex = 3;
             this.btn_clearF.Text = "Clear";
             // 
@@ -221,9 +230,10 @@
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.White;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(28, 87);
+            this.label13.Location = new System.Drawing.Point(21, 71);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(192, 25);
+            this.label13.Size = new System.Drawing.Size(157, 20);
             this.label13.TabIndex = 2;
             this.label13.Text = "Sorting By Column";
             // 
@@ -240,9 +250,10 @@
             this.cb_SortColumn.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.cb_SortColumn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cb_SortColumn.ItemHeight = 30;
-            this.cb_SortColumn.Location = new System.Drawing.Point(28, 116);
+            this.cb_SortColumn.Location = new System.Drawing.Point(21, 94);
+            this.cb_SortColumn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cb_SortColumn.Name = "cb_SortColumn";
-            this.cb_SortColumn.Size = new System.Drawing.Size(158, 36);
+            this.cb_SortColumn.Size = new System.Drawing.Size(120, 36);
             this.cb_SortColumn.TabIndex = 0;
             // 
             // Gpnl_Data
@@ -257,45 +268,47 @@
             this.Gpnl_Data.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.Gpnl_Data.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.Gpnl_Data.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
-            this.Gpnl_Data.Location = new System.Drawing.Point(22, 116);
+            this.Gpnl_Data.Location = new System.Drawing.Point(16, 94);
+            this.Gpnl_Data.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Gpnl_Data.Name = "Gpnl_Data";
-            this.Gpnl_Data.Size = new System.Drawing.Size(1142, 546);
+            this.Gpnl_Data.Size = new System.Drawing.Size(856, 444);
             this.Gpnl_Data.TabIndex = 1;
             // 
             // dgvPlayStation
             // 
             this.dgvPlayStation.AllowUserToAddRows = false;
             this.dgvPlayStation.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.dgvPlayStation.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgvPlayStation.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvPlayStation.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPlayStation.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPlayStation.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvPlayStation.ColumnHeadersHeight = 20;
             this.dgvPlayStation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvPlayStation.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvPlayStation.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvPlayStation.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvPlayStation.Location = new System.Drawing.Point(48, 35);
+            this.dgvPlayStation.Location = new System.Drawing.Point(36, 28);
+            this.dgvPlayStation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvPlayStation.Name = "dgvPlayStation";
             this.dgvPlayStation.ReadOnly = true;
             this.dgvPlayStation.RowHeadersVisible = false;
             this.dgvPlayStation.RowHeadersWidth = 51;
-            this.dgvPlayStation.Size = new System.Drawing.Size(1040, 463);
+            this.dgvPlayStation.Size = new System.Drawing.Size(780, 376);
             this.dgvPlayStation.TabIndex = 0;
             this.dgvPlayStation.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvPlayStation.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -323,12 +336,13 @@
             // 
             // PlayStation
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1200, 800);
+            this.ClientSize = new System.Drawing.Size(900, 650);
             this.Controls.Add(this.guna2CustomGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "PlayStation";
             this.Text = "PlayStation";
             this.guna2CustomGradientPanel1.ResumeLayout(false);
