@@ -11,10 +11,10 @@ using System.Windows.Forms;
 
 namespace ProjekBesarPendidikan.Transaksi
 {
-    public partial class PeminjamanPlayStation: Form
+    public partial class Report: Form
     {
         private KeranjangPeminjaman keranjang;
-        public PeminjamanPlayStation(KeranjangPeminjaman keranjang)
+        public Report(KeranjangPeminjaman keranjang)
         {
             InitializeComponent();
             this.keranjang = keranjang;

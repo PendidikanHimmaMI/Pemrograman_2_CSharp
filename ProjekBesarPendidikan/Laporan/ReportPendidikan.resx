@@ -117,23 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="txtCariPlaystation.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DAAACwwBP0AiyAAAAhRJREFUWEfFlu1twjAQhkkoauK0UkZgBEZgBEZgBP4UJQaJbFA2oBvQDdoN6AZh
-        A0agd+GIQvImtgMSj3SC9nwfPp8PD4wEydSPkq2n0oOn9MlX+szCf9PnbqCWM1n5QCgoBcivwbrEC9Oc
-        1s/F8g7iRTxQyQ4FMQklsackxuLJEQos5YTObUSq4J4AGf4ghxU5DiP960erP6ArhTdQVNCaINkgR75a
-        cZNlDWe0O0pkTjrcF2H6KSsNkCPoQOmDsYSk90K9B7Zn0k1lVTu+Sr8axqHOXUqHjoz/J+p20JUy7rhO
-        nMVyRLd+OjfAQ6RmQLITrRNkl9X8nLkvRN3ED1eLusHL29p8VgjUOzQdRdsEnbeoelEvvRcm36JqAoLn
-        ouoF2R+r/nguiKoJCH4SVS/I3iF4pLfVxSxu0+mWuq/OssuUujGg6bQQtRv45mSiBYAOtRoOANS8xpuD
-        ptPgdem2+ygBFbRoXlh6brzRx0SWdDPSk+or5yrDoGPAVCFj+DtOx7KRJRjqDxTYatcllH3DgQgdS15M
-        Kn6v8S/V5XNjeGbZV45Bo/ZOeW4CXDW+UeLegsv1s3q5lkJnjAYWi3sChNwCUxI8TstnFn+v6ErplUAB
-        GQ3f1zNywo4L4cRGkYbnKWsemIAjFOzJCbT1gPPTuifwccoJ9Pz9cKYlgbseLU7wTqvBOx8ZD6d4Wl8q
-        UAQOkvE/HChENyJ1ExwAAAAASUVORK5CYII=
-</value>
-  </data>
-  <metadata name="timer_filter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="vwlistTransaksiPenyewaanBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>118, 17</value>
+  </metadata>
+  <metadata name="dsReport.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
+  </metadata>
+  <metadata name="vw_listTransaksiPenyewaanTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>386, 17</value>
   </metadata>
 </root>

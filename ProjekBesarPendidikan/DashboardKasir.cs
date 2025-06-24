@@ -138,5 +138,15 @@ namespace ProjekBesarPendidikan
         {
 
         }
+
+        private void btnLaporan_Click(object sender, EventArgs e)
+        {
+
+
+            lblMenu.Text = "Laporan";
+            viewKeranjang.Visible = false;
+
+            ShowFormInPanel(new Laporan.ReportPendidikan());
+        }
     }
 }

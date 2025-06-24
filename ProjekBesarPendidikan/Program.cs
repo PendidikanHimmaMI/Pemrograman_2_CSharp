@@ -1,5 +1,6 @@
 ﻿using ProjekBesarPendidikan.MasterKaryawan;
 using ProjekBesarPendidikan.Transaksi;
+using ProjekBesarPendidikan.Laporan;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +18,7 @@ namespace ProjekBesarPendidikan
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Login());
             Application.Run(new DashboardKasir());
+            //Application.Run(new ReportPendidikan());
         }
     }
 }
