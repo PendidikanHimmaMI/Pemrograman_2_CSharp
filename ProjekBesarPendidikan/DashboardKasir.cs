@@ -63,9 +63,6 @@ namespace ProjekBesarPendidikan
             btnBeranda.ForeColor = Color.FromArgb(2, 10, 122);
             btnBeranda.Image = Image.FromFile(@"..\..\Icon\Beranda - Hover.png");
 
-            btnTransaksi.FillColor = Color.FromArgb(2, 10, 122);
-            btnTransaksi.ForeColor = Color.White;
-            btnTransaksi.Image = Image.FromFile(@"..\..\Icon\Transaksi.png");
 
             btnLogOut.FillColor = Color.FromArgb(2, 10, 122);
             btnLogOut.ForeColor = Color.White;
@@ -79,9 +76,7 @@ namespace ProjekBesarPendidikan
 
         private void btnTransaksi_Click(object sender, EventArgs e)
         {
-            btnTransaksi.FillColor = Color.White;
-            btnTransaksi.ForeColor = Color.FromArgb(2, 10, 122);
-            btnTransaksi.Image = Image.FromFile(@"..\..\Icon\Transaksi - Hover.png");
+
 
             btnBeranda.FillColor = Color.FromArgb(2, 10, 122);
             btnBeranda.ForeColor = Color.White;
@@ -123,9 +118,7 @@ namespace ProjekBesarPendidikan
             btnBeranda.ForeColor = Color.White;
             btnBeranda.Image = Image.FromFile(@"..\..\Icon\Beranda.png");
 
-            btnTransaksi.FillColor = Color.FromArgb(2, 10, 122);
-            btnTransaksi.ForeColor = Color.White;
-            btnTransaksi.Image = Image.FromFile(@"..\..\Icon\Transaksi.png");
+           
 
             viewKeranjang.Visible = false;
             this.Hide(); // Sembunyikan form saat ini

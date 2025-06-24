@@ -6,22 +6,22 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>1.45833in</Width>
+              <Width>1.94965in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.5625in</Width>
+              <Width>2.30729in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.125in</Width>
+              <Width>2.33507in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.03125in</Width>
+              <Width>1.8316in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.32292in</Width>
+              <Width>2.24306in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.3125in</Width>
+              <Width>1.86632in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -297,7 +297,9 @@
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>pps_tanggal_transaksi</rd:DefaultName>
@@ -511,10 +513,10 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Top>0.86333in</Top>
-        <Left>0.63542in</Left>
+        <Top>0.75917in</Top>
+        <Left>0.81187in</Left>
         <Height>0.5in</Height>
-        <Width>7.8125in</Width>
+        <Width>12.53299in</Width>
         <Style>
           <Border>
             <Style>Solid</Style>
@@ -554,10 +556,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>0.17236in</Top>
+        <Top>0.05556in</Top>
         <Left>0.63542in</Left>
         <Height>0.47917in</Height>
-        <Width>7.8125in</Width>
+        <Width>12.33507in</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -569,78 +571,16 @@
           <PaddingBottom>2pt</PaddingBottom>
         </Style>
       </Textbox>
-      <Image Name="Logo2">
-        <Source>Embedded</Source>
-        <Value>Login_Play_Game</Value>
-        <Sizing>FitProportional</Sizing>
-        <Top>3.16667in</Top>
-        <Left>6.56187in</Left>
-        <Height>1.73958in</Height>
-        <Width>2.32354in</Width>
-        <ZIndex>2</ZIndex>
-        <ToolTip>foto</ToolTip>
-        <Style>
-          <Border>
-            <Style>None</Style>
-          </Border>
-        </Style>
-      </Image>
-      <Textbox Name="Textbox17">
-        <CanGrow>true</CanGrow>
-        <KeepTogether>true</KeepTogether>
-        <Paragraphs>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>Total Pendapatan: </Value>
-                <Style>
-                  <FontFamily>Segoe UI Black</FontFamily>
-                  <FontSize>15pt</FontSize>
-                  <Color>White</Color>
-                </Style>
-              </TextRun>
-              <TextRun>
-                <Label>total</Label>
-                <Value>=Fields!total.Value</Value>
-                <ToolTip>total</ToolTip>
-                <Style>
-                  <FontFamily>Segoe UI Black</FontFamily>
-                  <FontSize>15pt</FontSize>
-                  <Format>'Rp'#,0.00;('Rp'#,0.00)</Format>
-                  <Color>White</Color>
-                  <rd:FormatSymbolCulture>id-ID</rd:FormatSymbolCulture>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-        </Paragraphs>
-        <rd:DefaultName>Textbox15</rd:DefaultName>
-        <Top>1.71354in</Top>
-        <Left>4.53125in</Left>
-        <Height>0.45833in</Height>
-        <Width>3.91666in</Width>
-        <ZIndex>3</ZIndex>
-        <Style>
-          <Border>
-            <Style>None</Style>
-          </Border>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-      </Textbox>
     </ReportItems>
-    <Height>4.90625in</Height>
+    <Height>1.25917in</Height>
     <Style>
       <BackgroundColor>DarkBlue</BackgroundColor>
     </Style>
   </Body>
-  <Width>8.88542in</Width>
+  <Width>14.31597in</Width>
   <Page>
     <PageHeader>
-      <Height>1in</Height>
+      <Height>0.59375in</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -648,8 +588,6 @@
           <Source>Embedded</Source>
           <Value>Login_logo_Hima</Value>
           <Sizing>FitProportional</Sizing>
-          <Top>0.17583in</Top>
-          <Left>0.28125in</Left>
           <Height>0.59375in</Height>
           <Width>3.13667in</Width>
           <ToolTip>logo</ToolTip>
@@ -686,10 +624,9 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox15</rd:DefaultName>
-          <Top>0.31125in</Top>
-          <Left>4.78125in</Left>
+          <Left>10.40625in</Left>
           <Height>0.45833in</Height>
-          <Width>3.91666in</Width>
+          <Width>3.67882in</Width>
           <ZIndex>1</ZIndex>
           <Style>
             <Border>
@@ -710,7 +647,7 @@
       </Style>
     </PageHeader>
     <PageFooter>
-      <Height>1in</Height>
+      <Height>1.17222in</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -753,8 +690,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox15</rd:DefaultName>
-          <Top>0.02306in</Top>
-          <Left>0.28125in</Left>
+          <Top>0.46389in</Top>
+          <Left>0.16667in</Left>
           <Height>0.25in</Height>
           <Width>3.89583in</Width>
           <Style>
@@ -767,6 +704,68 @@
             <PaddingBottom>2pt</PaddingBottom>
           </Style>
         </Textbox>
+        <Textbox Name="Textbox17">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Total Pendapatan: </Value>
+                  <Style>
+                    <FontFamily>Segoe UI Black</FontFamily>
+                    <FontSize>15pt</FontSize>
+                    <Color>White</Color>
+                  </Style>
+                </TextRun>
+                <TextRun>
+                  <Label>total</Label>
+                  <Value>=Fields!total.Value</Value>
+                  <ToolTip>total</ToolTip>
+                  <Style>
+                    <FontFamily>Segoe UI Black</FontFamily>
+                    <FontSize>15pt</FontSize>
+                    <Format>'Rp'#,0.00;('Rp'#,0.00)</Format>
+                    <Color>White</Color>
+                    <rd:FormatSymbolCulture>id-ID</rd:FormatSymbolCulture>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox15</rd:DefaultName>
+          <Top>0.25556in</Top>
+          <Left>9.23548in</Left>
+          <Height>0.45833in</Height>
+          <Width>3.91666in</Width>
+          <ZIndex>1</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Image Name="Logo2">
+          <Source>Embedded</Source>
+          <Value>Login_Play_Game</Value>
+          <Sizing>FitProportional</Sizing>
+          <Top>0.25556in</Top>
+          <Left>13.50284in</Left>
+          <Height>0.65625in</Height>
+          <Width>0.46938in</Width>
+          <ZIndex>2</ZIndex>
+          <ToolTip>foto</ToolTip>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </Image>
       </ReportItems>
       <Style>
         <Border>

@@ -418,4 +418,4 @@ D:\s2\pendidikan\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\ru\Microso
 D:\s2\pendidikan\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 D:\s2\pendidikan\Pemrograman_2_CSharp\ProjekBesarPendidikan\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 D:\s2\pendidikan\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Laporan.ReportPendidikan.resources
-D:\s2\pendidikan\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Transaksi.Report.resources
+D:\s2\pendidikan\Pemrograman_2_CSharp\ProjekBesarPendidikan\obj\Debug\ProjekBesarPendidikan.Transaksi.PeminjamanPlayStation.resources

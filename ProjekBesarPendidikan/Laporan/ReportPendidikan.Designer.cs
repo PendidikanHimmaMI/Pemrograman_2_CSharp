@@ -44,10 +44,10 @@
             reportDataSource1.Value = this.vwlistTransaksiPenyewaanBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "ProjekBesarPendidikan.reportWizardPendidikan.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(23, 32);
+            this.reportViewer1.Location = new System.Drawing.Point(12, 12);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(1168, 489);
+            this.reportViewer1.Size = new System.Drawing.Size(1392, 876);
             this.reportViewer1.TabIndex = 0;
             // 
             // vwlistTransaksiPenyewaanBindingSource
@@ -69,8 +69,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1220, 664);
+            this.ClientSize = new System.Drawing.Size(1417, 900);
             this.Controls.Add(this.reportViewer1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ReportPendidikan";
             this.Text = "ReportPendidikan";
             this.Load += new System.EventHandler(this.ReportPendidikan_Load);

@@ -1,6 +1,6 @@
 ﻿namespace ProjekBesarPendidikan.Transaksi
 {
-    partial class Report
+    partial class PeminjamanPlayStation
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Report));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PeminjamanPlayStation));
             this.flData = new System.Windows.Forms.FlowLayoutPanel();
             this.txtCariPlaystation = new Guna.UI2.WinForms.Guna2TextBox();
             this.p_filter = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
@@ -46,8 +46,8 @@
             // flData
             // 
             this.flData.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.flData.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.flData.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.flData.AutoScroll = true;
             this.flData.Location = new System.Drawing.Point(0, 93);
@@ -58,7 +58,7 @@
             // 
             // txtCariPlaystation
             // 
-            this.txtCariPlaystation.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtCariPlaystation.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCariPlaystation.BackColor = System.Drawing.Color.Transparent;
             this.txtCariPlaystation.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
