@@ -63,9 +63,6 @@ namespace ProjekBesarPendidikan
             btnBeranda.ForeColor = Color.FromArgb(2, 10, 122);
             btnBeranda.Image = Image.FromFile(@"..\..\Icon\Beranda - Hover.png");
 
-            btnTransaksi.FillColor = Color.FromArgb(2, 10, 122);
-            btnTransaksi.ForeColor = Color.White;
-            btnTransaksi.Image = Image.FromFile(@"..\..\Icon\Transaksi.png");
 
             btnLogOut.FillColor = Color.FromArgb(2, 10, 122);
             btnLogOut.ForeColor = Color.White;
@@ -73,13 +70,13 @@ namespace ProjekBesarPendidikan
 
             lblMenu.Text = "Beranda";
             viewKeranjang.Visible = false;
+
+            ShowFormInPanel(new Dashboard.DashboardKasir1());
         }
 
         private void btnTransaksi_Click(object sender, EventArgs e)
         {
-            btnTransaksi.FillColor = Color.White;
-            btnTransaksi.ForeColor = Color.FromArgb(2, 10, 122);
-            btnTransaksi.Image = Image.FromFile(@"..\..\Icon\Transaksi - Hover.png");
+
 
             btnBeranda.FillColor = Color.FromArgb(2, 10, 122);
             btnBeranda.ForeColor = Color.White;
@@ -121,18 +118,28 @@ namespace ProjekBesarPendidikan
             btnBeranda.ForeColor = Color.White;
             btnBeranda.Image = Image.FromFile(@"..\..\Icon\Beranda.png");
 
-            btnTransaksi.FillColor = Color.FromArgb(2, 10, 122);
-            btnTransaksi.ForeColor = Color.White;
-            btnTransaksi.Image = Image.FromFile(@"..\..\Icon\Transaksi.png");
+           
 
             viewKeranjang.Visible = false;
+            this.Hide(); // Sembunyikan form saat ini
+            Login login = new Login();
+            login.FormClosed += (s, args) => this.Close(); // Jika Login ditutup, form saat ini ikut ditutup
             login.Show();
-            this.Close();
         }
 
         private void viewKeranjang_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnLaporan_Click(object sender, EventArgs e)
+        {
+
+
+            lblMenu.Text = "Laporan";
+            viewKeranjang.Visible = false;
+
+            ShowFormInPanel(new Laporan.ReportPendidikan());
         }
     }
 }

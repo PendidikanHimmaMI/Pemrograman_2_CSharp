@@ -1,10 +1,12 @@
-﻿using System;
+﻿using ProjekBesarPendidikan.Master;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.Json.Nodes;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Guna.UI2.Native.WinApi;
 
 namespace ProjekBesarPendidikan.Transaksi
 {
@@ -23,7 +25,7 @@ namespace ProjekBesarPendidikan.Transaksi
             JumlahHarga = Harga * Durasi;
         }
 
-        public TrDetailPeminjamanPlayStation() { }
+        public TrDetailPeminjamanPlayStation() {}
 
         public int PlayStationId { get; set; }
         public string NamaPlayStation { get; set; }
@@ -32,5 +34,9 @@ namespace ProjekBesarPendidikan.Transaksi
         public decimal Harga { get; set; }
         public decimal JumlahHarga { get; set; }
         public Decimal Durasi { get; set; }
+
+        //public decimal Durasi => Convert.ToDecimal((WaktuSelesai - WaktuMulai).TotalHours);
+
+        //public decimal JumlahHarga => Durasi * Harga;
     }
 }

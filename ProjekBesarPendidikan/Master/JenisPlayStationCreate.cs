@@ -65,29 +65,28 @@ namespace ProjekBesarPendidikan.Master
 
             if (string.IsNullOrWhiteSpace(txt_nama.Text))
             {
-                kesalahan += "Nama tidak boleh kosong";
+                kesalahan += "\nNama tidak boleh kosong.";
             }
 
             if (string.IsNullOrWhiteSpace(txt_deskripsi.Text))
             {
-                kesalahan += "Deskripsi tidak boleh kosong";
+                kesalahan += "\nDeskripsi tidak boleh kosong.";
             }
 
             if (string.IsNullOrWhiteSpace(txt_tahun_rilis.Text))
             {
-                kesalahan += "Tahun Rilis tidak boleh kosong";
+                kesalahan += "\nTahun Rilis tidak boleh kosong.";
             }
 
             if (string.IsNullOrWhiteSpace(txt_max_pemain.Text))
             {
-                kesalahan += "Max Pemain tidak boleh kosong";
+                kesalahan += "\nMax Pemain tidak boleh kosong.";
             }
 
-            if (string.IsNullOrWhiteSpace(createdBy))
-            {
-                MessageBox.Show("Created By tidak boleh kosong.", "Validasi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
+            //if (string.IsNullOrWhiteSpace(createdBy))
+            //{
+            //    MessageBox.Show("\nCreated By tidak boleh kosong.", "Validasi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //}
 
             if (kesalahan != "")
             {
@@ -98,6 +97,7 @@ namespace ProjekBesarPendidikan.Master
 
             try
             {
+                string connectionString = "Data Source=127.0.0.4,9210;Initial Catalog=DB_RentalPlaystation;User ID=Pendidikan;Password=123;";
                 using (SqlConnection conn = new SqlConnection(Connection))
                 {
                     using (SqlCommand cmd = new SqlCommand("rps_createJenisPlayStation", conn))
@@ -111,10 +111,10 @@ namespace ProjekBesarPendidikan.Master
 
                         conn.Open();
                         cmd.ExecuteNonQuery();
-                        conn.Close();
+                     
 
                         MessageBox.Show("Jenis PlayStation berhasil disimpan.", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                        conn.Close();
                         // Kembali ke form sebelumnya
                         btn_back_Click(sender, e);
                     }

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using CustomMessageBox;
 
 
 namespace ProjekBesarPendidikan.Master
@@ -57,40 +58,48 @@ namespace ProjekBesarPendidikan.Master
 
         private void btnSimpan_Click(object sender, EventArgs e)
         {
-            try
+            if (String.IsNullOrWhiteSpace(txtHargaPerJam.Text) || String.IsNullOrWhiteSpace(txtMerk.Text) || String.IsNullOrWhiteSpace(txtSerialNumber.Text) || cbJenisPlaystation.SelectedIndex == -1)
             {
-                string connectionString = "Data Source=127.0.0.4,9210;Initial Catalog=DB_RentalPlaystation;User ID=Pendidikan;Password=123;";
-                using (SqlConnection connect = new SqlConnection(connectionString))
+                RJMessageBox.Show("Semua data wajib diisi!", "Validasi!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                try
                 {
-                    connect.Open();
-
-                    using (SqlCommand cmd = new SqlCommand("rps_createPlayStation", connect))
+                    string connectionString = "Data Source=127.0.0.4,9210;Initial Catalog=DB_RentalPlaystation;User ID=Pendidikan;Password=123;";
+                    using (SqlConnection connect = new SqlConnection(connectionString))
                     {
-                        cmd.CommandType = CommandType.StoredProcedure;
+                        connect.Open();
 
-                        cmd.Parameters.AddWithValue("@jps_id", cbJenisPlaystation.SelectedValue);
-                        cmd.Parameters.AddWithValue("@pst_serial_number", txtSerialNumber.Text);
-                        cmd.Parameters.AddWithValue("@pst_merk", txtMerk.Text);
-                        cmd.Parameters.AddWithValue("@pst_harga_per_jam", Convert.ToDecimal(txtHargaPerJam.Text));
-                        cmd.Parameters.AddWithValue("@pst_created_by", "admin");
+                        using (SqlCommand cmd = new SqlCommand("rps_createPlayStation", connect))
+                        {
+                            cmd.CommandType = CommandType.StoredProcedure;
 
-                        cmd.ExecuteNonQuery();
+                            cmd.Parameters.AddWithValue("@jps_id", cbJenisPlaystation.SelectedValue);
+                            cmd.Parameters.AddWithValue("@pst_serial_number", txtSerialNumber.Text);
+                            cmd.Parameters.AddWithValue("@pst_merk", txtMerk.Text);
+                            cmd.Parameters.AddWithValue("@pst_harga_per_jam", Convert.ToDecimal(txtHargaPerJam.Text));
+                            cmd.Parameters.AddWithValue("@pst_created_by", "admin");
+
+                            cmd.ExecuteNonQuery();
+                        }
+
+                        MessageBox.Show("Data berhasil ditambahkan!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        connect.Close();
+                        cbJenisPlaystation.SelectedIndex = -1;
+                        txtMerk.Clear();
+                        txtSerialNumber.Clear();
+                        txtHargaPerJam.Clear();
                     }
-
-                    MessageBox.Show("Data berhasil ditambahkan!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                    connect.Close();
-                    cbJenisPlaystation.SelectedIndex = -1;
-                    txtMerk.Clear();
-                    txtSerialNumber.Clear();
-                    txtHargaPerJam.Clear();
                 }
-            }
-            catch (SqlException ex)
-            {
-                MessageBox.Show(ex.ToString(), "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+                catch (SqlException ex)
+                {
+                    MessageBox.Show(ex.Message, "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
 
+                ShowFormInPanel(new PlayStation(admin, nameKry));
+            }
         }
 
         private void ShowFormInPanel(Form form)
@@ -112,6 +121,14 @@ namespace ProjekBesarPendidikan.Master
 
         private void PlayStationCreate_Load(object sender, EventArgs e)
         {
+            cbJenisPlaystation.SelectedIndex = -1;
+        }
+
+        private void btnBersihkan_Click(object sender, EventArgs e)
+        {
+            txtMerk.Text = "";
+            txtSerialNumber.Text = "";
+            txtHargaPerJam.Text = "";
             cbJenisPlaystation.SelectedIndex = -1;
         }
     }

@@ -63,64 +63,33 @@ namespace ProjekBesarPendidikan.Master
 
         private void btn_save_Click(object sender, EventArgs e)
         {
-            //string nama = txt_nama.Text.Trim();
-            //string deskripsi = txt_deskripsi.Text.Trim();
-
-            //string tahunRilis = txt_tahun_rilis.Text.Trim();
-            //string maxPemain = txt_max_pemain.Text.Trim();
-
-            //int tahunRilisInt = int.Parse(txt_tahun_rilis.Text.Trim());
-            //int maxPemainInt = int.Parse(txt_max_pemain.Text.Trim());
             string kesalahan = null;
             string modifBy = "Shofi";
-            //string modifBy = nameKry.ToString(); 
-
-            //// Validasi input
-            //if (string.IsNullOrWhiteSpace(nama))
-            //{
-            //    MessageBox.Show("Nama  tidak boleh kosong.", "Validasi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //    return;
-            //}
-            //if (string.IsNullOrWhiteSpace(deskripsi))
-            //{
-            //    MessageBox.Show("Deskripsi  tidak boleh kosong.", "Validasi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //    return;
-            //}
-            //if (string.IsNullOrWhiteSpace(tahunRilis))
-            //{
-            //    MessageBox.Show("Tahun Rilis  tidak boleh kosong.", "Validasi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //    return;
-            //}
-            //if (string.IsNullOrWhiteSpace(maxPemain))
-            //{
-            //    MessageBox.Show("Max Pemain  tidak boleh kosong.", "Validasi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //    return;
-            //}
-
+            
 
             if (string.IsNullOrWhiteSpace(txt_nama.Text))
             {
-                kesalahan += "Nama tidak boleh kosong";
+                kesalahan += "\nNama tidak boleh kosong";
             }
 
             if (string.IsNullOrWhiteSpace(txt_deskripsi.Text))
             {
-                kesalahan += "Deskripsi tidak boleh kosong";
+                kesalahan += "\nDeskripsi tidak boleh kosong";
             }
 
             if (string.IsNullOrWhiteSpace(txt_tahun_rilis.Text))
             {
-                kesalahan += "Tahun Rilis tidak boleh kosong";
+                kesalahan += "\nTahun Rilis tidak boleh kosong";
             }
 
             if (string.IsNullOrWhiteSpace(txt_max_pemain.Text))
             {
-                kesalahan += "Max Pemain tidak boleh kosong";
+                kesalahan += "\nMax Pemain tidak boleh kosong";
             }
 
             if (string.IsNullOrWhiteSpace(modifBy))
             {
-                MessageBox.Show("Modif By tidak boleh kosong.", "Validasi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("\nModif By tidak boleh kosong.", "Validasi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 

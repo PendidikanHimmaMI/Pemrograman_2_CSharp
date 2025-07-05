@@ -28,7 +28,6 @@ namespace ProjekBesarPendidikan.Transaksi
             {
                 if (control is ItemKeranjang item)
                 {
-                    // Ambil list dari masing-masing ItemKeranjang dan gabungkan
                     hasil.AddRange(item.DetailPeminjamanList);
                 }
             }
@@ -45,6 +44,14 @@ namespace ProjekBesarPendidikan.Transaksi
             {
                 RJMessageBox.Show("Semua Data Wajib Terisi!", "Validasi", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+            else if (Decimal.Parse(txtTunai.Text) < Decimal.Parse(lblTotalBayar.Text.Substring(2)))
+            {
+                RJMessageBox.Show("Maaf uang anda kurang!", "Validasi Tunai", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            //else if (semuaDetail.Any(item => item.Harga == 0 || item.JumlahHarga == 0))
+            //{
+            //    RJMessageBox.Show("Terdapat item dengan harga 0. Silakan periksa kembali!", "Validasi Harga", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //}
             else
             {
                 try
@@ -73,6 +80,7 @@ namespace ProjekBesarPendidikan.Transaksi
                         }
 
                         MessageBox.Show("Data berhasil ditambahkan!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        clear();
 
                         connect.Close();
                         
@@ -83,6 +91,17 @@ namespace ProjekBesarPendidikan.Transaksi
                     RJMessageBox.Show("Error : " + ex.Message, "Error Input", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
             }
+        }
+
+        public void clear()
+        {
+            pnlTengah.Controls.Clear();
+            txtNoTelp.Text = "";
+            txtNamaPelanggan.Text = "";
+            txtTunai.Text = "";
+            cbMetodePembayaran.SelectedIndex = -1;
+            ComboBoxDataShow();
+            hitungTotalHarga();
         }
 
         public Panel PanelTengah
@@ -107,6 +126,32 @@ namespace ProjekBesarPendidikan.Transaksi
         }
 
         private void txtNoTelp_MouseClick(object sender, MouseEventArgs e)
+        {
+            //if (pnlTengah.Controls.Count == 0)
+            //{
+            //    lblTotalBayar.Text = "Rp0,00";
+            //}
+            //else
+            //{
+            //    Decimal totalHarga = 0;
+
+            //    foreach (Control control in pnlTengah.Controls)
+            //    {
+            //        if (control is ItemKeranjang item)
+            //        {
+            //            List<TrDetailPeminjamanPlayStation> detail = item.DetailPeminjamanList;
+
+            //            foreach (var d in detail)
+            //            {
+            //                totalHarga += d.JumlahHarga;
+            //            }
+            //        }
+            //    }
+            //    lblTotalBayar.Text = "Rp" + totalHarga;
+            //}
+        }
+
+        public void hitungTotalHarga()
         {
             if (pnlTengah.Controls.Count == 0)
             {
@@ -177,6 +222,30 @@ namespace ProjekBesarPendidikan.Transaksi
             }
 
             return table;
+        }
+
+        private void txtTunai_TextChanged(object sender, EventArgs e)
+        {
+            if (!String.IsNullOrEmpty(txtTunai.Text) && !String.IsNullOrEmpty(lblTotalBayar.Text))
+            {
+                Decimal kembalian = Decimal.Parse(txtTunai.Text) - Decimal.Parse(lblTotalBayar.Text.Substring(2));
+                if (kembalian > 0)
+                {
+                    txtKembalian.Text = kembalian.ToString();
+                }
+            }
+            else
+            {
+                txtKembalian.Text = "";
+            }
+        }
+
+        private void txtTunai_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

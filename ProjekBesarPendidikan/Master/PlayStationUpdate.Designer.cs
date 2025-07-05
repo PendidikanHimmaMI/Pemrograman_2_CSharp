@@ -34,12 +34,17 @@
             this.cbJenisPlaystation = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Shapes2 = new Guna.UI2.WinForms.Guna2Shapes();
             this.pnlInsertData = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnBersihkan = new Guna.UI2.WinForms.Guna2Button();
             this.btnSimpan = new Guna.UI2.WinForms.Guna2Button();
             this.btnKembali = new Guna.UI2.WinForms.Guna2Button();
             this.label4 = new System.Windows.Forms.Label();
             this.txtSerialNumber = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtHargaPerJam = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.pnlInsertData.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,11 +55,11 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.label2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(169, 313);
+            this.label2.Location = new System.Drawing.Point(171, 310);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(213, 35);
+            this.label2.Size = new System.Drawing.Size(184, 28);
             this.label2.TabIndex = 12;
-            this.label2.Text = "Merk Playstation";
+            this.label2.Text = "Merek Playstation";
             // 
             // txtMerk
             // 
@@ -71,7 +76,7 @@
             this.txtMerk.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtMerk.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtMerk.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMerk.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMerk.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMerk.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.txtMerk.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMerk.Location = new System.Drawing.Point(173, 359);
@@ -91,7 +96,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(171, 517);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(209, 35);
+            this.label1.Size = new System.Drawing.Size(171, 28);
             this.label1.TabIndex = 10;
             this.label1.Text = "Jenis Playstation";
             // 
@@ -113,7 +118,7 @@
             this.cbJenisPlaystation.FocusedState.FillColor = System.Drawing.Color.White;
             this.cbJenisPlaystation.FocusedState.Font = new System.Drawing.Font("Dubai Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbJenisPlaystation.FocusedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
-            this.cbJenisPlaystation.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.cbJenisPlaystation.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbJenisPlaystation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.cbJenisPlaystation.ItemHeight = 30;
             this.cbJenisPlaystation.ItemsAppearance.BackColor = System.Drawing.Color.White;
@@ -149,6 +154,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlInsertData.BackColor = System.Drawing.Color.White;
+            this.pnlInsertData.Controls.Add(this.label8);
+            this.pnlInsertData.Controls.Add(this.label7);
+            this.pnlInsertData.Controls.Add(this.label6);
+            this.pnlInsertData.Controls.Add(this.label5);
+            this.pnlInsertData.Controls.Add(this.btnBersihkan);
             this.pnlInsertData.Controls.Add(this.btnSimpan);
             this.pnlInsertData.Controls.Add(this.btnKembali);
             this.pnlInsertData.Controls.Add(this.label4);
@@ -164,6 +174,27 @@
             this.pnlInsertData.Name = "pnlInsertData";
             this.pnlInsertData.Size = new System.Drawing.Size(1615, 942);
             this.pnlInsertData.TabIndex = 21;
+            // 
+            // btnBersihkan
+            // 
+            this.btnBersihkan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBersihkan.AutoRoundedCorners = true;
+            this.btnBersihkan.BackColor = System.Drawing.Color.Transparent;
+            this.btnBersihkan.BorderColor = System.Drawing.Color.Transparent;
+            this.btnBersihkan.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBersihkan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBersihkan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBersihkan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBersihkan.FillColor = System.Drawing.Color.Gray;
+            this.btnBersihkan.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBersihkan.ForeColor = System.Drawing.Color.White;
+            this.btnBersihkan.Location = new System.Drawing.Point(1061, 765);
+            this.btnBersihkan.Name = "btnBersihkan";
+            this.btnBersihkan.Size = new System.Drawing.Size(195, 72);
+            this.btnBersihkan.TabIndex = 19;
+            this.btnBersihkan.Text = "Bersihkan";
+            this.btnBersihkan.UseTransparentBackground = true;
+            this.btnBersihkan.Click += new System.EventHandler(this.btnBersihkan_Click);
             // 
             // btnSimpan
             // 
@@ -196,10 +227,10 @@
             this.btnKembali.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnKembali.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnKembali.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnKembali.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
+            this.btnKembali.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(188)))), ((int)(((byte)(222)))));
             this.btnKembali.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKembali.ForeColor = System.Drawing.Color.White;
-            this.btnKembali.Location = new System.Drawing.Point(1029, 765);
+            this.btnKembali.Location = new System.Drawing.Point(825, 765);
             this.btnKembali.Name = "btnKembali";
             this.btnKembali.Size = new System.Drawing.Size(195, 72);
             this.btnKembali.TabIndex = 17;
@@ -216,9 +247,10 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(883, 310);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(185, 35);
+            this.label4.Size = new System.Drawing.Size(137, 28);
             this.label4.TabIndex = 16;
-            this.label4.Text = "Serial Number";
+            this.label4.Text = "Nomor Serial";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // txtSerialNumber
             // 
@@ -235,7 +267,7 @@
             this.txtSerialNumber.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtSerialNumber.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtSerialNumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSerialNumber.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSerialNumber.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSerialNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.txtSerialNumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSerialNumber.Location = new System.Drawing.Point(886, 359);
@@ -255,7 +287,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(881, 510);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(186, 35);
+            this.label3.Size = new System.Drawing.Size(150, 28);
             this.label3.TabIndex = 14;
             this.label3.Text = "Harga per Jam";
             // 
@@ -274,7 +306,7 @@
             this.txtHargaPerJam.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtHargaPerJam.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtHargaPerJam.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtHargaPerJam.Font = new System.Drawing.Font("Dubai", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHargaPerJam.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHargaPerJam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
             this.txtHargaPerJam.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtHargaPerJam.Location = new System.Drawing.Point(886, 556);
@@ -284,6 +316,58 @@
             this.txtHargaPerJam.SelectedText = "";
             this.txtHargaPerJam.Size = new System.Drawing.Size(652, 45);
             this.txtHargaPerJam.TabIndex = 13;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Red;
+            this.label5.Location = new System.Drawing.Point(419, 297);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(21, 28);
+            this.label5.TabIndex = 20;
+            this.label5.Text = "*";
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Red;
+            this.label6.Location = new System.Drawing.Point(391, 503);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(21, 28);
+            this.label6.TabIndex = 21;
+            this.label6.Text = "*";
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Red;
+            this.label7.Location = new System.Drawing.Point(1121, 301);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(21, 28);
+            this.label7.TabIndex = 22;
+            this.label7.Text = "*";
+            // 
+            // label8
+            // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(10)))), ((int)(((byte)(122)))));
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Red;
+            this.label8.Location = new System.Drawing.Point(1121, 503);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(21, 28);
+            this.label8.TabIndex = 23;
+            this.label8.Text = "*";
             // 
             // PlayStationUpdate
             // 
@@ -316,5 +400,10 @@
         private Guna.UI2.WinForms.Guna2TextBox txtSerialNumber;
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2TextBox txtHargaPerJam;
+        private Guna.UI2.WinForms.Guna2Button btnBersihkan;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
     }
 }
